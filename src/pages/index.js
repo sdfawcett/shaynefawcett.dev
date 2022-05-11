@@ -5,6 +5,7 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
+import FaqOne from 'sections/faq-one';
 import Services from 'sections/services';
 import Jackpot from 'sections/jackpot';
 import CallToAction from 'sections/call-to-action';
@@ -20,8 +21,9 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Startup Landing 014" />
+          <SEO title="Shayne Fawcett Web Development" />
           <Banner />
+          <FaqOne />
           <Services />
           <Jackpot />
           <CallToAction />
