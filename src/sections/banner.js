@@ -1,15 +1,14 @@
 import React from 'react';
 import { Box, Container, Image, Heading } from 'theme-ui';
 import { keyframes } from '@emotion/core';
-import logoImage from 'assets/banner-logo.png';
+import gravatarImage from 'assets/gravatar-image.png';
 import bannerImage from 'assets/banner-mockup.png';
 import bannerIcon1 from 'assets/banner-icon-1-1.svg';
 import bannerIcon2 from 'assets/banner-icon-1-2.svg';
-import bannerIcon3 from 'assets/banner-icon-1-3.svg';
-import bannerIcon4 from 'assets/banner-icon-1-4.svg';
 import bannerIcon5 from 'assets/banner-icon-1-5.svg';
 import bannerIcon6 from 'assets/banner-icon-1-6.svg';
 import bannerIcon7 from 'assets/dot-pattern.svg';
+import { motion } from 'framer-motion';
 
 const Banner = () => {
   return (
@@ -27,18 +26,7 @@ const Banner = () => {
           alt="banner icon"
           src={bannerIcon2}
         />
-        <Image
-          sx={styles.bannerIcon3}
-          className="bannerIcon"
-          alt="banner icon"
-          src={bannerIcon3}
-        />
-        <Image
-          sx={styles.bannerIcon4}
-          className="bannerIcon"
-          alt="banner icon"
-          src={bannerIcon4}
-        />
+
         <Image
           sx={styles.bannerIcon5}
           className="bannerIcon"
@@ -58,9 +46,40 @@ const Banner = () => {
           src={bannerIcon7}
         />
 
-        <Image sx={styles.logo} src={logoImage} alt="logo image" />
-        <Heading as="h2">Create beautiful landing page in few minutes</Heading>
-        <Image src={bannerImage} sx={styles.bannerImage} alt="banner moc" />
+
+        <Image sx={styles.logo} src={gravatarImage} alt="Shayne Fawcett gravatar image" />
+
+        <motion.div 
+        initial="hidden" 
+        animate="visible"
+        transition={{
+          delay: 0.6, type: 'tween'
+        }} 
+        variants={{
+            hidden: {
+              scale: .8,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: .6
+              }
+            },
+          }}
+        >
+          <Heading as="h2">Create beautiful landing page in few minutes</Heading>
+        </motion.div>
+        
+        <motion.div
+          initial={{ y: 250 }}
+          animate={{ y: 5 }}
+          transition={{ delay:0.2, type: 'spring', stiffness: 300 }}
+        >
+          <Image src={bannerImage} sx={styles.bannerImage} alt="banner moc" />
+        </motion.div>
+
       </Container>
     </Box>
   );
@@ -119,12 +138,27 @@ const bannerAnim2 = keyframes`
 const bannerAnim3 = keyframes`
     0%,
     100% {
-        transform: perspective(400px) translateY(0) rotate(0deg) translateZ(0px) translateX(0);
+        transform: perspective(400px) rotate(0deg) translateZ(0px);
     }
 
     50% {
-        transform: perspective(400px) rotate(-45deg) translateZ(20px) translateY(20px) translateX(20px);
+        transform: perspective(400px) rotate(-45deg) translateZ(20px);
     }
+`;
+
+const bannerAnim4 = keyframes`
+      0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+      50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-5px);
+      }
+      100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
 `;
 
 const styles = {
@@ -150,6 +184,8 @@ const styles = {
     borderRadius: '50%',
     mx: 'auto',
     boxShadow: '0px 15px 35px rgba(65, 104, 139, 0.12)',
+    transform: 'translatey(0px)',
+    animation: `${bannerAnim4} 6s ease-in-out infinite`,
   },
   bannerImage: {
     display: 'block',

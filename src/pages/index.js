@@ -7,12 +7,9 @@ import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import FaqOne from 'sections/faq-one';
 import Services from 'sections/services';
-import Jackpot from 'sections/jackpot';
 import CallToAction from 'sections/call-to-action';
 import Featured from 'sections/featured';
-import Pricing from 'sections/pricing';
 import Testimonials from 'sections/testimonials';
-import Blogs from 'sections/blogs';
 import FAQ from 'sections/faq';
 import Subscribe from 'sections/subscribe';
 
@@ -23,15 +20,12 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Shayne Fawcett Web Development" />
           <Banner />
+          <CallToAction />
           <FaqOne />
           <Services />
-          <Jackpot />
-          <CallToAction />
           <Featured />
-          <Pricing />
-          <Testimonials />
-          <Blogs />
           <FAQ />
+          <Testimonials />
           <Subscribe />
         </Layout>
       </StickyProvider>
