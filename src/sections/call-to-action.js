@@ -1,8 +1,14 @@
 import React from 'react';
-import { Box, Container, Flex, Text, Heading, Image } from 'theme-ui';
+import { Box, Container, Flex, Text, Heading, Image, Grid, Avatar } from 'theme-ui';
 import { Link } from 'components/link';
 
-import callImage from 'assets/call-image.png';
+import ReactIcon from 'assets/react.svg';
+import NextIcon from 'assets/nextdotjs.svg';
+import GatsbyIcon from 'assets/gatsby.svg';
+import HtmlIcon from 'assets/html5.svg';
+import CssIcon from 'assets/css3.svg';
+import JavaScriptIcon from 'assets/javascript.svg';
+import FloatingIconsBg from 'assets/banner-icon-1-6.svg';
 
 const CallToAction = () => {
   return (
@@ -24,9 +30,20 @@ const CallToAction = () => {
               Explore More
             </Link>
           </Box>
-          <Box sx={styles.images}>
-            <Image src={callImage} alt="call image" />
+
+          <Box as="section" sx={styles.section}>
+            <Container sx={styles.container}>      
+              <Grid gap={30} columns={[3, '1fr 1fr 1fr']}>
+                <Avatar src={ReactIcon} />
+                <Avatar src={NextIcon} />
+                <Avatar src={GatsbyIcon} />
+                <Avatar src={HtmlIcon} />
+                <Avatar src={CssIcon} />
+                <Avatar src={JavaScriptIcon} />
+              </Grid>
+            </Container>
           </Box>
+
         </Flex>
       </Container>
     </Box>
@@ -36,15 +53,23 @@ const CallToAction = () => {
 export default CallToAction;
 
 const styles = {
+
+  section: {
+    background: `transparent url(${FloatingIconsBg}) no-repeat center top / cover`,
+  },
   callToAction: {
     mt: ['-90px', null, null, null, '0'],
     py: ['50px', null, null, null, '110px', null, '140px'],
   },
   flex: {
     flexWrap: 'wrap',
+    justifyContent: 'space-evenly',
+  },
+  container: {
+    margin: '25% 0',
   },
   content: {
-    flex: ['0 0 100%', null, null, null, '0 0 38.5%'],
+    flex: ['0 0 100%', null, null, null, '0 0 50.5%'],
     textAlign: ['center', null, null, null, 'left'],
     pt: ['80px', null, null, null, '0'],
     maxWidth: ['100%', null, null, '80%', '100%'],
@@ -91,5 +116,10 @@ const styles = {
   },
   images: {
     flex: ['0 0 100%', null, null, null, '0 0 61.5%'],
+  },
+  boxBg: {
+    backgroundSize: 'contain',
+    backgroundRepeat: 'no-repeat',
+    backgroundImage: `url(${FloatingIconsBg})`,
   },
 };

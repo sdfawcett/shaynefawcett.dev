@@ -128,9 +128,9 @@ export default {
   },
   images: {
     avatar: {
-      width: 48,
-      height: 48,
-      borderRadius: 99999,
+      width: 75,
+      height: 75,
+      borderRadius: 0,
     },
   },
   // variants for buttons
