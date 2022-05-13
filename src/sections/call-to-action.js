@@ -1,7 +1,8 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { keyframes } from '@emotion/core';
 import { Box, Container, Flex, Text, Heading, Image, Grid, Avatar } from 'theme-ui';
 import { Link } from 'components/link';
-
 import ReactIcon from 'assets/react.svg';
 import NextIcon from 'assets/nextdotjs.svg';
 import GatsbyIcon from 'assets/gatsby.svg';
@@ -11,6 +12,10 @@ import JavaScriptIcon from 'assets/javascript.svg';
 import FloatingIconsBg from 'assets/banner-icon-1-6.svg';
 
 const CallToAction = () => {
+
+  const { ref: myRef, inView: myElementIsVisible } = useInView()
+  console.log('myElementIsVisible', myElementIsVisible)
+
   return (
     <Box as="section" sx={styles.callToAction}>
       <Container>
@@ -31,17 +36,19 @@ const CallToAction = () => {
             </Link>
           </Box>
 
-          <Box as="section" sx={styles.section}>
-            <Container sx={styles.container}>      
-              <Grid gap={30} columns={[3, '1fr 1fr 1fr']}>
-                <Avatar src={ReactIcon} />
-                <Avatar src={NextIcon} />
-                <Avatar src={GatsbyIcon} />
-                <Avatar src={HtmlIcon} />
-                <Avatar src={CssIcon} />
-                <Avatar src={JavaScriptIcon} />
-              </Grid>
-            </Container>
+          <Box ref={myRef} as="section">
+            <Box sx={myElementIsVisible ? styles.animateInFromLeft : ''} >
+              <Container sx={styles.container}>      
+                <Grid gap={30} columns={[3, '1fr 1fr 1fr']}>
+                  <Avatar src={ReactIcon} />
+                  <Avatar src={NextIcon} />
+                  <Avatar src={GatsbyIcon} />
+                  <Avatar src={HtmlIcon} />
+                  <Avatar src={CssIcon} />
+                  <Avatar src={JavaScriptIcon} />
+                </Grid>
+              </Container>
+            </Box>
           </Box>
 
         </Flex>
@@ -52,8 +59,20 @@ const CallToAction = () => {
 
 export default CallToAction;
 
+const inFromLeft = keyframes`
+  0% {
+    transform: translate(-1000%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+`;
+
 const styles = {
 
+  animateInFromLeft: {
+    animation: `${inFromLeft} 1.5s ease-in-out 1`,
+  },
   section: {
     background: `transparent url(${FloatingIconsBg}) no-repeat center top / cover`,
   },

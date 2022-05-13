@@ -1,4 +1,6 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+import { keyframes } from '@emotion/core';
 import Image from 'components/image';
 import { Box, Container, Flex, Heading, Text } from 'theme-ui';
 import Accordion from 'components/accordion/accordion';
@@ -46,16 +48,22 @@ const FAQ_ONE_DATA = {
   ],
 };
 const FaqOne = () => {
+
+  const { ref: myRef, inView: myElementIsVisible } = useInView()
+  console.log('myElementIsVisible', myElementIsVisible)
+
   const { sectionImage, title, text, tagline, faqs } = FAQ_ONE_DATA;
   return (
-    <Box as="section" sx={styles.section}>
-      <Box sx={styles.sectionImage}>
-        <Image
-          src={sectionImage}
-          width="1011"
-          height="830"
-          alt="sectionImage"
-        />
+    <Box ref={myRef} as="section" sx={styles.section}>
+      <Box sx={myElementIsVisible ? styles.animateInFromLeft : ''} >
+        <Box sx={styles.sectionImage}>
+          <Image
+            src={sectionImage}
+            width="1011"
+            height="830"
+            alt="sectionImage"
+          />
+        </Box>
       </Box>
       <Container sx={styles.container}>
         <Flex sx={styles.flex}>
@@ -75,7 +83,20 @@ const FaqOne = () => {
 
 export default FaqOne;
 
+const inFromLeft = keyframes`
+  0% {
+    transform: translate(-1000%, 0);
+  }
+  100% {
+    transform: translate(0%, 0);
+  }
+`;
+
 const styles = {
+
+  animateInFromLeft: {
+    animation: `${inFromLeft} 1.5s ease-in-out 1`,
+  },
   section: {
     position: 'relative',
   },
