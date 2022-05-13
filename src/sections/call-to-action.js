@@ -14,7 +14,6 @@ import FloatingIconsBg from 'assets/banner-icon-1-6.svg';
 const CallToAction = () => {
 
   const { ref: myRef, inView: myElementIsVisible } = useInView()
-  console.log('myElementIsVisible', myElementIsVisible)
 
   return (
     <Box as="section" sx={styles.callToAction}>
@@ -37,7 +36,7 @@ const CallToAction = () => {
           </Box>
 
           <Box ref={myRef} as="section">
-            <Box sx={myElementIsVisible ? styles.animateInFromLeft : ''} >
+            <Box sx={myElementIsVisible ? styles.animateinFromRight : ''} >
               <Container sx={styles.container}>      
                 <Grid gap={30} columns={[3, '1fr 1fr 1fr']}>
                   <Avatar src={ReactIcon} />
@@ -59,9 +58,9 @@ const CallToAction = () => {
 
 export default CallToAction;
 
-const inFromLeft = keyframes`
+const inFromRight = keyframes`
   0% {
-    transform: translate(-1000%, 0);
+    transform: translate(1000%, 0);
   }
   100% {
     transform: translate(0%, 0);
@@ -70,8 +69,8 @@ const inFromLeft = keyframes`
 
 const styles = {
 
-  animateInFromLeft: {
-    animation: `${inFromLeft} 1.5s ease-in-out 1`,
+  animateinFromRight: {
+    animation: `${inFromRight} 1.5s ease-in-out 1`,
   },
   section: {
     background: `transparent url(${FloatingIconsBg}) no-repeat center top / cover`,

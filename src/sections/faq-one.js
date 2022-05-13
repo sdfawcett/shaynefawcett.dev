@@ -50,7 +50,6 @@ const FAQ_ONE_DATA = {
 const FaqOne = () => {
 
   const { ref: myRef, inView: myElementIsVisible } = useInView()
-  console.log('myElementIsVisible', myElementIsVisible)
 
   const { sectionImage, title, text, tagline, faqs } = FAQ_ONE_DATA;
   return (

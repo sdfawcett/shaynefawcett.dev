@@ -185,7 +185,7 @@ const styles = {
     mx: 'auto',
     boxShadow: '0px 15px 35px rgba(65, 104, 139, 0.12)',
     transform: 'translatey(0px)',
-    animation: `${bannerAnim4} 6s ease-in-out infinite`,
+    animation: `${bannerAnim4} 4s ease-in-out infinite`,
   },
   bannerImage: {
     display: 'block',
