@@ -81,7 +81,7 @@ export default Services;
 
 const styles = {
   services: {
-    pt: ['80px', null, null, null, '80px', null, '100px'],
+    py: ['80px', null, null, null, '80px', null, '100px'],
   },
   grid: {
     gridGap: '30px',

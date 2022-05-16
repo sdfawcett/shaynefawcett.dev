@@ -60,7 +60,7 @@ export default CallToAction;
 
 const inFromRight = keyframes`
   0% {
-    transform: translate(1000%, 0);
+    transform: translate(800%, 0);
   }
   100% {
     transform: translate(0%, 0);

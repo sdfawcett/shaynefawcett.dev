@@ -79,7 +79,7 @@ const accordionData = [
 
 const FAQ = () => {
   return (
-    <Box as="section">
+    <Box sx={styles.box} as="section">
       <Container>
         <BlockTitle
           title="Frequently Ask Question"
@@ -110,6 +110,10 @@ const FAQ = () => {
 export default FAQ;
 
 const styles = {
+  box: {
+    mt: '200px',
+  },
+
   flex: {
     flexWrap: 'wrap',
     flexDirection: ['column', null, null, null, null, 'row-reverse'],

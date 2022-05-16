@@ -3,7 +3,8 @@ import Router from 'next/router';
 import { initGA, logPageView } from 'analytics';
 import 'swiper/swiper-bundle.min.css';
 import 'rc-drawer/assets/index.css';
-import 'typeface-dm-sans';
+import 'typeface-raleway';
+import 'typeface-nunito-sans';
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {

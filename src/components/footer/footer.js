@@ -43,7 +43,7 @@ export default function Footer() {
 const styles = {
   footer: {
     py: ['40px', null, null, null, null, '30px', '40px'],
-    backgroundColor: '#020718',
+    backgroundColor: '#232946',
     position: 'relative',
     '&::before': {
       content: '""',

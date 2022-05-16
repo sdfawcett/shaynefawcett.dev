@@ -49,12 +49,12 @@ export default function Header({ className }) {
 
 const styles = {
   headerBtn: {
-    backgroundColor: 'black',
+    backgroundColor: '#ff8e3c',
     fontSize: '16px',
     fontWeight: 'bold',
     letterSpacing: '-0.16px',
     borderRadius: '5px',
-    color: '#ffffff',
+    color: '#02073E',
     padding: '6.5px 24px',
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
@@ -106,7 +106,7 @@ const styles = {
         mr: '0',
       },
       '&:hover, &.active': {
-        color: 'primary',
+        color: 'secondary',
       },
     },
   },

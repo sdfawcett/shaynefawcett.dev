@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Box, Container, Button } from 'theme-ui';
 import { keyframes } from '@emotion/core';
-import BlockTitle from 'components/block-title';
+import BlockTitleDarkBg from 'components/block-title-dark-bg';
 import Image from 'components/image';
 import { AiFillDollarCircle, AiFillPieChart } from 'react-icons/ai';
 import { FaBriefcase, FaCog } from 'react-icons/fa';
@@ -42,7 +42,7 @@ const Featured = () => {
   return (
     <Box as="section" sx={styles.featured}>
       <Container sx={styles.container}>
-        <BlockTitle
+        <BlockTitleDarkBg
           title="What the features of product"
           text="Introducing all screen details"
         />
@@ -101,16 +101,18 @@ export default Featured;
 const fadeIn = keyframes`
   from {
     opacity: 0;
+    transform: translateY(5%);
   }
   to {
     opacity: 1;
+    transform: translateY(0%);
   }
 `;
 
 const styles = {
   featured: {
     pt: ['80px', null, null, null, '80px', null, '100px'],
-    backgroundColor: '#F9FAFC',
+    backgroundColor: '#232946',
   },
   container: {
     position: 'relative',

@@ -10,17 +10,17 @@ export default {
     background_secondary: '#F9FBFD', // secondary background color
     border_color: '#E9EDF5', // border color
     primary: '#8D448B', // primary button and link color
-    secondary: '#793677', // secondary color - can be used for hover states
+    secondary: '#d9376e', // secondary color - can be used for hover states
     black: '#0F2137', // black color
     gray: '#F8FAFC',
     muted: '#7B8188', // muted color
     accent: '#609', // a contrast color for emphasizing UI
   },
   fonts: {
-    body: 'DM Sans',
+    body: 'Nunito Sans',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'DM Sans',
+    heading: 'Raleway',
     // heading: 'Bree Serif',
     monospace: 'Menlo, monospace',
   },
