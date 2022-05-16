@@ -97,7 +97,7 @@ const FAQ = () => {
               If your question is not list here, please feel free to make a
               manual support.
             </Text>
-            <Link sx={styles.askButton} path="#">
+            <Link sx={styles.askButton} path="#" variant="buttons.secondary">
               Ask your Question
             </Link>
           </Box>

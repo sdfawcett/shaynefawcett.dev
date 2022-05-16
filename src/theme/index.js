@@ -151,6 +151,18 @@ export default {
         'transform': 'translateY(-.45rem)',
       },
     },
+    secondary: {
+      fontWeight: 'bold',
+      color: 'white',
+      bg: 'primary',
+      cursor: 'pointer',
+      transition: '500ms',
+      fontSize: 2,
+      outline: 'none',
+      '&:hover': {
+        'transform': 'translateY(-.45rem)',
+      },
+    },
   },
 
   styles: {

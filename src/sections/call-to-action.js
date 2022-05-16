@@ -30,7 +30,7 @@ const CallToAction = () => {
               guidelines ever. Get your tests delivered at let home collect
               sample.
             </Text>
-            <Link path="#" sx={styles.button}>
+            <Link path="#" sx={styles.button} variant="buttons.secondary">
               Explore More
             </Link>
           </Box>

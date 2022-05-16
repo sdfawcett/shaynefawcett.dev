@@ -72,8 +72,8 @@ const styles = {
     alignItems: 'center',
     justifyContent: 'center',
     backgroundSize: '300% 300%',
-    backgroundImage: 'linear-gradient(-45deg, #2cb67d 0%, #72757e 25%, #7f5af0 51%, #f25042 100%)',
-    animation: `${bgAnimation} 12s ease infinite`,
+    backgroundImage: 'linear-gradient(-45deg, #2cb67d 0%, #ff8e3c 25%, #7f5af0 51%, #232946 100%)',
+    animation: `${bgAnimation} 15s ease infinite`,
     h3: {
       textAlign: 'center',
       fontSize: ['23px', null, null, null, null, '30px', '36px'],
