@@ -139,7 +139,7 @@ const styles = {
       flexShrink: '0',
       border: 0,
       backgroundColor: 'rgba(0,0,0,0)',
-      color: '#0F2137',
+      color: '#ADBDD0',
       fontSize: ['14px', null, null, null, '18px'],
       fontWeight: 500,
       lineHeight: 1,
@@ -154,9 +154,9 @@ const styles = {
       },
       '&:hover, &.active': {
         backgroundColor: 'rgba(0,0,0,0)',
-        color: '#0F2137',
+        color: '#ff8e3c',
         svg: {
-          color: '#0F2137',
+          color: '#ff8e3c',
           opacity: 1,
         },
         '&::before': {
@@ -167,7 +167,7 @@ const styles = {
         content: "''",
         position: 'absolute',
         bottom: '-2px',
-        backgroundColor: '#0F2137',
+        backgroundColor: '#ff8e3c',
         left: 0,
         width: '100%',
         height: '3px',

@@ -94,7 +94,7 @@ const inFromLeft = keyframes`
 const styles = {
 
   animateInFromLeft: {
-    animation: `${inFromLeft} 1.5s ease-in-out 1`,
+    animation: `${inFromLeft} 1s ease-in-out 1`,
   },
   section: {
     position: 'relative',

@@ -59,9 +59,6 @@ const styles = {
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
     mr: ['0', null, null, '20px', '0'],
-    '&:hover': {
-      color: '#fff',
-    },
   },
   header: {
     color: 'text_white',
@@ -76,7 +73,13 @@ const styles = {
 
     '&.sticky': {
       backgroundColor: 'background',
-      color: 'text',
+      color: '#232946',
+      py: '15px',
+      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
+    },
+    '&.unSticky': {
+      backgroundColor: 'transparent',
+      color: '#fffffe',
       py: '15px',
       boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
     },
@@ -96,7 +99,6 @@ const styles = {
     },
     navLink: {
       fontSize: '16px',
-      color: '#02073E',
       fontWeight: '400',
       cursor: 'pointer',
       lineHeight: '1.2',
@@ -106,7 +108,7 @@ const styles = {
         mr: '0',
       },
       '&:hover, &.active': {
-        color: 'secondary',
+        color: '#ff8e3c',
       },
     },
   },

@@ -6,7 +6,7 @@ import SEO from 'components/seo';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import FaqOne from 'sections/faq-one';
-import Services from 'sections/services';
+import UltimateFeatures from 'sections/ultimate-features';
 import CallToAction from 'sections/call-to-action';
 import Featured from 'sections/featured';
 import Testimonials from 'sections/testimonials';
@@ -20,9 +20,9 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Shayne Fawcett Web Development" />
           <Banner />
+          <UltimateFeatures />
           <CallToAction />
           <FaqOne />
-          <Services />
           <Featured />
           <FAQ />
           <Testimonials />

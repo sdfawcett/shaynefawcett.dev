@@ -70,7 +70,7 @@ const inFromRight = keyframes`
 const styles = {
 
   animateinFromRight: {
-    animation: `${inFromRight} 1.5s ease-in-out 1`,
+    animation: `${inFromRight} 1s ease-in-out 1`,
   },
   section: {
     background: `transparent url(${FloatingIconsBg}) no-repeat center top / cover`,

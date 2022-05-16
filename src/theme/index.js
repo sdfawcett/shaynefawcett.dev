@@ -148,7 +148,7 @@ export default {
       fontSize: 2,
       outline: 'none',
       '&:hover': {
-        bg: 'secondary',
+        'transform': 'translateY(-.45rem)',
       },
     },
   },
