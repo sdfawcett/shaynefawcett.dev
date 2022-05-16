@@ -1,5 +1,6 @@
 import React from 'react';
-import { Button, Input, Box, Container, Heading, Text } from 'theme-ui';
+import { Button, Input, Box, Container, Heading, Text, Textarea } from 'theme-ui';
+import { keyframes } from '@emotion/core';
 
 const Subscribe = () => {
   return (
@@ -10,15 +11,37 @@ const Subscribe = () => {
           By subscribing with your mail, you will accept our privacy policy
         </Text>
         <Box as="form" sx={styles.form}>
-          <Box as="label" htmlFor="subscribeEmail" variant="styles.srOnly">
+          <Box as="label" htmlFor="contactName" variant="styles.srOnly">
+            First Name
+          </Box>
+          <Input
+            placeholder="Enter your first name"
+            type="text"
+            id="contactName"
+            sx={styles.input}
+          />
+
+          <Box as="label" htmlFor="contactEmail" variant="styles.srOnly">
             Email
           </Box>
           <Input
-            placeholder="Enter your email"
+            placeholder="Enter your email address"
             type="email"
-            id="subscribeEmail"
+            id="contactEmail"
             sx={styles.input}
           />
+
+          <Box as="label" htmlFor="contactMessage" variant="styles.srOnly">
+            Your message
+          </Box>
+          <Textarea
+            id="contactMessage"
+            sx={styles.textarea}
+            placeholder="Your message here"
+          >
+
+          </Textarea>
+
           <Button type="submit" sx={styles.button}>
             Subscribe us
           </Button>
@@ -30,10 +53,27 @@ const Subscribe = () => {
 
 export default Subscribe;
 
+const bgAnimation = keyframes`
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+`;
+
 const styles = {
   subscribe: {
     py: ['80px', null, null, null, '80px', '100px', '140px'],
-    backgroundColor: '#020718',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundSize: '300% 300%',
+    backgroundImage: 'linear-gradient(-45deg, #2cb67d 0%, #72757e 25%, #7f5af0 51%, #f25042 100%)',
+    animation: `${bgAnimation} 12s ease infinite`,
     h3: {
       textAlign: 'center',
       fontSize: ['23px', null, null, null, null, '30px', '36px'],
@@ -60,12 +100,12 @@ const styles = {
     maxWidth: ['555px'],
     mx: ['auto'],
     display: ['flex'],
-    flexWrap: ['wrap'],
+    flexDirection: 'column',
     mt: ['30px', null, null, null, '60px'],
   },
   input: {
     width: ['100%'],
-    maxWidth: ['100%', null, '370px', '380px'],
+    maxWidth: '100%',
     borderRadius: '5px',
     border: 'none',
     backgroundColor: 'rgba(255,255,255, .08)',
@@ -75,9 +115,29 @@ const styles = {
     pl: ['0px', null, null, '30px'],
     height: ['50px', null, null, '60px'],
     mr: ['0px', null, null, '15px'],
+    mb: '1rem',
     textAlign: ['center', null, null, 'left'],
   },
-  button: {
+  input: {
+    width: ['100%'],
+    maxWidth: '100%',
+    borderRadius: '5px',
+    border: 'none',
+    backgroundColor: 'rgba(255,255,255, .08)',
+    outline: 'none',
+    color: 'rgba(255,255,255, .8)',
+    fontSize: '16px',
+    pl: ['0px', null, null, '30px'],
+    height: ['50px', null, null, '60px'],
+    mr: ['0px', null, null, '15px'],
+    mb: '1rem',
+    textAlign: ['center', null, null, 'left'],
+    '::placeholder': {
+      color: 'white',
+      fontSize: '1rem',
+    }
+  },
+  textarea: {
     backgroundColor: '#fff',
     borderRadius: '5px',
     fontWeight: '500',
@@ -86,13 +146,15 @@ const styles = {
     letterSpacing: '-0.5px',
     outline: 'none',
     padding: ['0px 30.75px'],
+    height: '10rem',
     minHeight: ['50px', null, null, '60px'],
     width: ['100%', null, null, 'auto'],
     mt: ['10px', null, null, '0'],
+    mb: '1rem',
     mx: ['auto', null, null, '0'],
-    '&:hover': {
-      backgroundColor: '#fff',
-      opacity: '0.8',
-    },
+    '::placeholder': {
+      color: '#333',
+      fontSize: '1rem',
+    }
   },
 };
