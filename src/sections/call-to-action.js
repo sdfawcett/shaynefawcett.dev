@@ -9,6 +9,9 @@ import GatsbyIcon from 'assets/gatsby.svg';
 import HtmlIcon from 'assets/html5.svg';
 import CssIcon from 'assets/css3.svg';
 import JavaScriptIcon from 'assets/javascript.svg';
+import GoogleIcon from 'assets/google.svg';
+import ShopifyIcon from 'assets/shopify.svg';
+import WordPressIcon from 'assets/wordpress.svg';
 import FloatingIconsBg from 'assets/banner-icon-1-6.svg';
 
 const CallToAction = () => {
@@ -48,6 +51,15 @@ const CallToAction = () => {
                   </a>
                   <a href='https://www.gatsbyjs.com/' target='_blank' rel='noopener noreferrer'>
                     <Avatar src={GatsbyIcon} />
+                  </a>
+                  <a href='https://wordpress.org/download/' target='_blank' rel='noopener noreferrer'>
+                    <Avatar src={WordPressIcon} />
+                  </a>
+                  <a href='https://www.shopify.com/' target='_blank' rel='noopener noreferrer'>
+                    <Avatar src={ShopifyIcon} />
+                  </a>
+                  <a href='https://www.google.com/' target='_blank' rel='noopener noreferrer'>
+                    <Avatar src={GoogleIcon} />
                   </a>
                   <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank' rel='noopener noreferrer'>
                     <Avatar src={HtmlIcon} />
@@ -98,7 +110,7 @@ const styles = {
     justifyContent: 'space-evenly',
   },
   container: {
-    margin: '25% 0',
+    margin: '15% 0',
   },
   content: {
     flex: ['0 0 100%', null, null, null, '0 0 50.5%'],

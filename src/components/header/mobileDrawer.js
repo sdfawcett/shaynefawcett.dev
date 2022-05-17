@@ -29,7 +29,7 @@ const MobileDrawer = () => {
       }
       open={state.isOpen}
       toggleHandler={toggleHandler}
-      closeButton={<IoMdClose size="24px" color="#02073E" />}
+      closeButton={<IoMdClose size="24px" cursor='pointer' color="#02073E" />}
       drawerStyle={styles.drawer}
       closeBtnStyle={styles.close}
     >
@@ -43,6 +43,7 @@ const MobileDrawer = () => {
                 to={path}
                 spy={true}
                 smooth={true}
+                onClick={toggleHandler}
                 offset={10}
                 duration={500}
                 key={i}
@@ -79,6 +80,7 @@ const styles = {
     justifyContent: 'center',
     flexShrink: '0',
     width: '26px',
+    cursor: 'pointer',
 
     '@media screen and (min-width: 960px)': {
       display: 'none',

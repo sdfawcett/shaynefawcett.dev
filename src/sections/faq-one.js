@@ -98,6 +98,7 @@ const styles = {
   },
   section: {
     position: 'relative',
+    mb: '-1%',
   },
   container: {
     maxWidth: ['100%', null, null, null, null, '1170px', '1280px'],
@@ -106,12 +107,13 @@ const styles = {
   sectionImage: {
     display: ['none', null, null, null, 'block'],
     position: ['relative', null, null, null, 'absolute'],
+    zIndex: '-1',
     top: 0,
-    left: [0, null, null, null, '-55%', '-15%', '0%'],
+    left: [0, null, null, null, '-55%', '-26%', '0%'],
     maxWidth: ['80%', null, null, '94%', null, '100%'],
     mx: ['auto', null, null, null, 0],
     '@media(min-width: 1240px)': {
-      left: '-20%',
+      left: '-25%',
     },
     '@media(min-width: 1440px)': {
       left: '-17%',
@@ -131,7 +133,7 @@ const styles = {
   content: {
     flex: ['0 0 100%', null, null, null, '0 0 60%', '0 0 45%'],
     pl: ['0', null, null, null, '80px'],
-    pt: ['60px', null, null, null, '80px'],
+    pt: ['10px', null, null, null, '80px'],
     pb: ['50px', null, null, '70px', null, null, '90px'],
   },
   sectionTitle: {
