@@ -9,7 +9,6 @@ import FaqOne from 'sections/faq-one';
 import UltimateFeatures from 'sections/ultimate-features';
 import CallToAction from 'sections/call-to-action';
 import Featured from 'sections/featured';
-import Testimonials from 'sections/testimonials';
 import FAQ from 'sections/faq';
 import Subscribe from 'sections/subscribe';
 
@@ -25,7 +24,6 @@ export default function IndexPage() {
           <FaqOne />
           <Featured />
           <FAQ />
-          <Testimonials />
           <Subscribe />
         </Layout>
       </StickyProvider>

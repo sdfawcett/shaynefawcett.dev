@@ -133,19 +133,20 @@ const styles = {
     width: ['100%'],
     maxWidth: '100%',
     borderRadius: '5px',
-    border: 'none',
+    border: '1px solid #020718',
     backgroundColor: 'rgba(255,255,255, .08)',
     outline: 'none',
     color: 'rgba(255,255,255, .8)',
     fontSize: '16px',
-    pl: ['0px', null, null, '30px'],
+    pl: ['10px', null, null, '30px'],
     height: ['50px', null, null, '60px'],
     mr: ['0px', null, null, '15px'],
     mb: '1rem',
-    textAlign: ['center', null, null, 'left'],
+    textAlign: 'left',
     '::placeholder': {
       color: 'white',
       fontSize: '1rem',
+      fontFamily: 'Nunito Sans', 
     }
   },
   textarea: {
@@ -156,7 +157,7 @@ const styles = {
     color: '#020718',
     letterSpacing: '-0.5px',
     outline: 'none',
-    padding: ['0px 30.75px'],
+    pl: ['10px', null, null, '30px'],
     height: '10rem',
     minHeight: ['50px', null, null, '60px'],
     width: ['100%', null, null, 'auto'],
@@ -166,16 +167,18 @@ const styles = {
     '::placeholder': {
       color: '#333',
       fontSize: '1rem',
+      fontFamily: 'Nunito Sans', 
     }
   },
   button: {
     backgroundColor: '#fffffe',
-    border: '1px solid #fffffe',
+    border: '1px solid #020718',
     color: '#232946',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
+    fontFamily: 'Nunito Sans', 
 
     '.withIcon': {
       paddingLeft: '.5rem',
@@ -205,7 +208,6 @@ const styles = {
         content: '""',
         height: '0.115em',
         backgroundColor: '#232946',
-        border: '1px solid #fffffe',
         flex: '1',
         margin: '0 0.25em 0 0',
       },
@@ -213,7 +215,6 @@ const styles = {
         content: '""',
         height: '0.115em',
         backgroundColor: '#232946',
-        border: '1px solid #fffffe',
         flex: '1',
         margin: '0 0.25em 0 0',
       }
