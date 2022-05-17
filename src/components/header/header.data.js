@@ -8,15 +8,15 @@ export default [
     label: 'Services',
   },
   {
-    path: 'pricing',
-    label: 'Pricing',
+    path: 'work',
+    label: 'Work',
   },
   {
     path: 'testimonials',
     label: 'Testimonials',
   },
   {
-    path: 'news',
-    label: 'News',
+    path: 'faq',
+    label: 'FAQ',
   },
 ];

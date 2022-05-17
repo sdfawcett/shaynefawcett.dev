@@ -39,12 +39,26 @@ const CallToAction = () => {
             <Box sx={myElementIsVisible ? styles.animateinFromRight : ''} >
               <Container sx={styles.container}>      
                 <Grid gap={30} columns={[3, '1fr 1fr 1fr']}>
-                  <Avatar src={ReactIcon} />
-                  <Avatar src={NextIcon} />
-                  <Avatar src={GatsbyIcon} />
-                  <Avatar src={HtmlIcon} />
-                  <Avatar src={CssIcon} />
-                  <Avatar src={JavaScriptIcon} />
+
+                  <a href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>
+                    <Avatar src={ReactIcon} />
+                  </a>
+                  <a href='https://nextjs.org/' target='_blank' rel='noopener noreferrer'>
+                    <Avatar src={NextIcon} />
+                  </a>
+                  <a href='https://www.gatsbyjs.com/' target='_blank' rel='noopener noreferrer'>
+                    <Avatar src={GatsbyIcon} />
+                  </a>
+                  <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank' rel='noopener noreferrer'>
+                    <Avatar src={HtmlIcon} />
+                  </a>
+                  <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target='_blank' rel='noopener noreferrer'>
+                    <Avatar src={CssIcon} />
+                  </a>
+                  <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank' rel='noopener noreferrer'>
+                    <Avatar src={JavaScriptIcon} />
+                  </a>
+  
                 </Grid>
               </Container>
             </Box>

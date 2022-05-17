@@ -79,7 +79,7 @@ const accordionData = [
 
 const FAQ = () => {
   return (
-    <Box sx={styles.box} as="section">
+    <Box sx={styles.box} id='faq' as="section">
       <Container>
         <BlockTitle
           title="Frequently Ask Question"

@@ -53,9 +53,18 @@ const MobileDrawer = () => {
           </Box>
 
           <Box sx={styles.menuFooter}>
-            <Button variant="primary" sx={styles.button}>
-              Purchase Now
-            </Button>
+            
+              <ScrollLink
+                to="contact"
+                variant="buttons.primary"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+              >
+                Contact
+              </ScrollLink>
+
           </Box>
         </Box>
       </Scrollbars>
@@ -123,6 +132,20 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     mt: 'auto',
+
+    a: {
+      backgroundColor: '#ff8e3c',
+      cursor: 'pointer',
+      fontSize: '16px',
+      fontWeight: 'bold',
+      letterSpacing: '-0.16px',
+      borderRadius: '5px',
+      color: '#02073E',
+      padding: '6.5px 24px',
+      display: 'block',
+      width: '100%',
+      textAlign: 'center',
+    },
   },
 
   button: {

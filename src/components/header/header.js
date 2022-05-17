@@ -32,13 +32,18 @@ export default function Header({ className }) {
             ))}
           </Flex>
 
-          <Link
-            path="/"
+          <ScrollLink
+            to="contact"
             ml={2}
-            label="Purchase Now"
             sx={styles.headerBtn}
             variant="buttons.primary"
-          />
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Contact
+          </ScrollLink>
 
           <MobileDrawer />
         </Container>
@@ -50,6 +55,7 @@ export default function Header({ className }) {
 const styles = {
   headerBtn: {
     backgroundColor: '#ff8e3c',
+    cursor: 'pointer',
     fontSize: '16px',
     fontWeight: 'bold',
     letterSpacing: '-0.16px',

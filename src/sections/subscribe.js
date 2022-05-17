@@ -4,7 +4,7 @@ import { keyframes } from '@emotion/core';
 
 const Subscribe = () => {
   return (
-    <Box as="section" sx={styles.subscribe}>
+    <Box as="section" id='contact' sx={styles.subscribe}>
       <Container>
         <Heading as="h3">Subscribe to get notified about event</Heading>
         <Text as="p">

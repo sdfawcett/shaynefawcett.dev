@@ -63,7 +63,7 @@ export default function UltimateFeatures() {
   const { ref: myRef, inView: myElementIsVisible } = useInView()
 
   return (
-    <section id="features" sx={styles.section}>
+    <section id="services" sx={styles.section}>
       <Container>
       <BlockTitle
           title="Ideal solutions for you"

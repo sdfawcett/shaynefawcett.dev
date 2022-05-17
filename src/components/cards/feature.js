@@ -38,6 +38,7 @@ const styles = {
         borderColor: 'white',
         boxShadow: '0px 20px 50px rgba(59, 90, 136, 0.05)',
         transform: 'translate(-1px, -1px)',
+        cursor: 'help',
       },
     },
     figure: {
