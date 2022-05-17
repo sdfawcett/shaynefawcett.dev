@@ -1,6 +1,8 @@
 import React from 'react';
 import { Button, Input, Box, Container, Heading, Text, Textarea } from 'theme-ui';
 import { keyframes } from '@emotion/core';
+import { AiFillPhone } from "react-icons/ai";
+import { GrMail } from 'react-icons/gr';
 
 const Subscribe = () => {
   return (
@@ -43,8 +45,17 @@ const Subscribe = () => {
           </Textarea>
 
           <Button type="submit" sx={styles.button}>
-            Subscribe us
+            <div className='icon'><AiFillPhone /></div>
+            <div className='withIcon'>Send Email</div>
           </Button>
+
+          <Box as='div' sx={styles.orDivider}><span>OR</span></Box>
+
+          <Button type="submit" sx={styles.button}>
+            <div className='icon'><GrMail /></div>
+            <div className='withIcon'>Schedule A Call</div>
+          </Button>
+
         </Box>
       </Container>
     </Box>
@@ -156,5 +167,55 @@ const styles = {
       color: '#333',
       fontSize: '1rem',
     }
+  },
+  button: {
+    backgroundColor: '#fffffe',
+    border: '1px solid #fffffe',
+    color: '#232946',
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    flexDirection: 'row',
+
+    '.withIcon': {
+      paddingLeft: '.5rem',
+    },
+    '.icon': {
+      paddingTop: '.3rem',
+    },
+  },
+
+
+  orDivider: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    alignItems: 'center',
+    fontStyle: 'italic',
+    fontSize: '1.25em',
+    margin: '0 1em',
+    padding: '1rem',
+
+      span: {
+        padding: '0 1rem',
+        color: '#fffffe',
+      },
+
+      '&:before': {
+        content: '""',
+        height: '0.115em',
+        backgroundColor: '#232946',
+        border: '1px solid #fffffe',
+        flex: '1',
+        margin: '0 0.25em 0 0',
+      },
+      '&:after': {
+        content: '""',
+        height: '0.115em',
+        backgroundColor: '#232946',
+        border: '1px solid #fffffe',
+        flex: '1',
+        margin: '0 0.25em 0 0',
+      }
   },
 };
