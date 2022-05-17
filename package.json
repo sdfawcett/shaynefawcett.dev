@@ -13,7 +13,7 @@
     "@fontsource/red-hat-display": "^4.5.9",
     "@fontsource/yeseva-one": "^4.5.8",
     "framer-motion": "^2.7.5",
-    "next": "9.5.3",
+    "next": "10.2.3",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.6.2",
     "polished": "^4.2.2",

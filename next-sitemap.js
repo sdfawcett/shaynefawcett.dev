@@ -1,5 +1,5 @@
 module.exports = {
-  siteUrl: 'https://startup-agency-classic.vercel.app',
+  siteUrl: 'https://shaynefawcett.dev',
   generateRobotsTxt: true,
   // optional
   // robotsTxtOptions: {
