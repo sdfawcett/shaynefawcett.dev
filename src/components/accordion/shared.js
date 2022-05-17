@@ -19,7 +19,7 @@ export const AccordionButton = ({ children, ...rest }) => (
       paddingRight: '30px',
       position: 'relative',
       color: '#0F2137',
-      '@media(min-width: 768px)': {
+      '@media(minWidth: 768px)': {
         paddingLeft: '30px',
         paddingRight: '30px',
         paddingTop: '20px',
@@ -41,12 +41,12 @@ export const AccordionButton = ({ children, ...rest }) => (
         justifyContent: 'center',
         borderRadius: '50%',
         color: '#fff',
-        '@media(min-width: 768px)': {
+        '@media(minWidth: 768px)': {
           right: '30px',
         },
         img: {
           width: '7px',
-          '@media(min-width: 768px)': {
+          '@media(minWidth: 768px)': {
             width: 'auto',
           },
         },
@@ -63,7 +63,7 @@ const variants = {
     // maxHeight: 200,
     height: 'auto',
     marginBottom: 10,
-    '@media(min-width: 768px)': {
+    '@media(minWidth: 768px)': {
       marginBottom: 30,
     },
   },
@@ -82,7 +82,7 @@ export function AccordionContents({ isOpen, ...props }) {
         paddingRight: '40px',
         lineHeight: '30px',
         color: '#343D48',
-        '@media(min-width: 768px)': {
+        '@media(minWidth: 768px)': {
           padding: '0 30px',
         },
       }}
