@@ -10,7 +10,7 @@ export const AccordionButton = ({ children, ...rest }) => (
       letterSpacing: '-0.2px',
       cursor: 'pointer',
       fontSize: '17px',
-      lineHeight: 1.5,
+      lineHeight: '1.5',
       fontWeight: '500',
       border: 'none',
       paddingTop: '10px',
@@ -45,7 +45,8 @@ export const AccordionButton = ({ children, ...rest }) => (
           right: '30px',
         },
         img: {
-          width: '7px',
+          width: '12px',
+          height: '12px',
           '@media(minWidth: 768px)': {
             width: 'auto',
           },
