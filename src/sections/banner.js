@@ -9,23 +9,12 @@ import bannerIcon5 from 'assets/banner-icon-1-5.svg';
 import bannerIcon6 from 'assets/banner-icon-1-6.svg';
 import bannerIcon7 from 'assets/dot-pattern.svg';
 import { motion } from 'framer-motion';
+import Typed from 'react-typed';
 
 const Banner = () => {
   return (
     <Box as="section" id="banner" sx={styles.banner}>
       <Container sx={styles.container}>
-        <Image
-          sx={styles.bannerIcon1}
-          className="bannerIcon"
-          alt="banner icon"
-          src={bannerIcon1}
-        />
-        <Image
-          sx={styles.bannerIcon2}
-          className="bannerIcon"
-          alt="banner icon"
-          src={bannerIcon2}
-        />
 
         <Image
           sx={styles.bannerIcon5}
@@ -70,7 +59,22 @@ const Banner = () => {
           }}
         >
           <Heading as="h2">Create beautiful landing page in few minutes</Heading>
+          <Heading as="h2">
+            <Typed
+              strings=
+              {[
+                "I'm a Full Stack Developer",
+                "I Love Software Development",
+                "I Love All My Subscribers",
+              ]}
+              typeSpeed={150}
+              backSpeed={100}
+              loop
+            />
+          </Heading>
         </motion.div>
+
+        
         
         <motion.div
           initial={{ y: 250 }}
