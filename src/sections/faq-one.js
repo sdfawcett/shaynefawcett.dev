@@ -4,7 +4,7 @@ import { keyframes } from '@emotion/core';
 import Image from 'components/image';
 import { Box, Container, Flex, Heading, Text } from 'theme-ui';
 import Accordion from 'components/accordion/accordion';
-import image from 'assets/faq-one-1.png';
+import image from 'assets/bb-static-tablet_ipad_silver_landscape.png';
 const FAQ_ONE_DATA = {
   sectionImage: image,
   tagline: 'Website content builder',
@@ -58,9 +58,9 @@ const FaqOne = () => {
         <Box sx={styles.sectionImage}>
           <Image
             src={sectionImage}
-            width="1011"
-            height="830"
-            alt="sectionImage"
+            width="1000"
+            height="600"
+            alt="bomb botanicals website mockup"
           />
         </Box>
       </Box>
@@ -107,9 +107,9 @@ const styles = {
   sectionImage: {
     display: ['none', null, null, null, 'block'],
     position: ['relative', null, null, null, 'absolute'],
-    zIndex: '-1',
+    zIndex: '1',
     top: 0,
-    left: [0, null, null, null, '-55%', '-26%', '0%'],
+    left: [0, null, null, null, '-39%', '-26%', '0%'],
     maxWidth: ['80%', null, null, '94%', null, '100%'],
     mx: ['auto', null, null, null, 0],
     '@media(min-width: 1240px)': {
@@ -122,7 +122,7 @@ const styles = {
       left: '-10%',
     },
     '@media(min-width: 1850px)': {
-      left: '0%',
+      left: '-8%',
     },
   },
   flex: {
@@ -131,10 +131,25 @@ const styles = {
     justifyContent: ['flex-start', null, null, null, 'flex-end'],
   },
   content: {
-    flex: ['0 0 100%', null, null, null, '0 0 60%', '0 0 45%'],
+    flex: '0 0 100%',
     pl: ['0', null, null, null, '80px'],
-    pt: ['10px', null, null, null, '80px'],
     pb: ['50px', null, null, '70px', null, null, '90px'],
+    '@media(min-width: 1850px)': {
+      flex: '0 0 60%',
+    },
+    '@media(min-width: 1440px)': {
+      flex: '0 0 50%',
+    },
+    '@media only screen and (min-width: 1241px) and (max-width: 1439px)': {
+      flex: '0 0 50%',
+    },
+    '@media only screen and (min-width: 992px) and (max-width: 1240px)': {
+      flex: '0 0 50%',
+    },
+
+    '@media only screen and (min-width: 320px) and (max-width: 991px)': {
+      flex: '0 0 100%',
+    },
   },
   sectionTitle: {
     mb: '30px',

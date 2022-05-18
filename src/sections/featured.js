@@ -111,7 +111,7 @@ const fadeIn = keyframes`
 
 const styles = {
   featured: {
-    pt: ['80px', null, null, null, '80px', null, '100px'],
+    pt: ['80px', null, null, null, '145px', null, '145px'],
     backgroundColor: '#232946',
   },
   container: {
