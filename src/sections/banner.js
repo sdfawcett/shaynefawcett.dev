@@ -8,7 +8,6 @@ import bannerIcon2 from 'assets/banner-icon-1-2.svg';
 import bannerIcon5 from 'assets/banner-icon-1-5.svg';
 import bannerIcon6 from 'assets/banner-icon-1-6.svg';
 import bannerIcon7 from 'assets/dot-pattern.svg';
-import { motion } from 'framer-motion';
 import Typed from 'react-typed';
 
 const Banner = () => {
@@ -38,26 +37,7 @@ const Banner = () => {
 
         <Image sx={styles.logo} src={gravatarImage} alt="Shayne Fawcett gravatar image" />
 
-        <motion.div 
-        initial="hidden" 
-        animate="visible"
-        transition={{
-          delay: 0.6, type: 'tween'
-        }} 
-        variants={{
-            hidden: {
-              scale: .8,
-              opacity: 0
-            },
-            visible: {
-              scale: 1,
-              opacity: 1,
-              transition: {
-                delay: 1
-              }
-            },
-          }}
-        >
+
           <Heading as="h2">Create beautiful landing page in few minutes</Heading>
           <Heading as="h2">
             <Typed
@@ -72,17 +52,13 @@ const Banner = () => {
               loop
             />
           </Heading>
-        </motion.div>
+
 
         
         
-        <motion.div
-          initial={{ y: 250 }}
-          animate={{ y: 5 }}
-          transition={{ delay:0.2, type: 'spring', stiffness: 500 }}
-        >
+
           <Image src={bannerImage} sx={styles.bannerImage} alt="banner moc" />
-        </motion.div>
+        
 
       </Container>
     </Box>
