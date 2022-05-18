@@ -61,15 +61,12 @@ const Banner = () => {
           <Heading as="h2">Create beautiful landing page in few minutes</Heading>
           <Heading as="h2">
             <Typed
-              strings=
-              {[
-                "I'm a Full Stack Developer",
-                "I Love Software Development",
-                "I Love All My Subscribers",
-              ]}
-              typeSpeed={150}
-              backSpeed={100}
+              strings={["I'm a developer", "I'm a communicator", "I'm a UX specialist"]}
+              typeSpeed={200}
+              backSpeed={200}
+              backDelay={7}
               loop
+              smartBackspace
             />
           </Heading>
         </motion.div>
