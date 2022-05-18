@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx, Container, Flex } from 'theme-ui';
+import { jsx, Container, Flex, Box } from 'theme-ui';
 import { Link } from 'components/link';
 import { Link as ScrollLink } from 'react-scroll';
 import Logo from 'components/logo';
@@ -7,13 +7,16 @@ import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobileDrawer';
 import menuItems from './header.data';
 import logoDark from 'assets/logo-dark.svg';
+import logoBald from 'assets/tl-logo-no-text.svg';
 
 export default function Header({ className }) {
   return (
     <DrawerProvider>
       <header sx={styles.header} className={className}>
         <Container sx={styles.container}>
-          <Logo image={logoDark} />
+          <Box sx={styles.logoContainer}>
+            <Logo image={logoBald} />
+          </Box>
 
           <Flex as="nav" sx={styles.nav}>
             {menuItems.map(({ path, label }, i) => (
@@ -97,6 +100,9 @@ const styles = {
     '@media screen and (max-width: 960px)': {
       justifyContent: 'space-between',
     },
+  },
+  logoContainer: {
+    width: '4rem',
   },
   nav: {
     mx: 'auto',

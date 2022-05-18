@@ -9,7 +9,7 @@ import GatsbyIcon from 'assets/gatsby.svg';
 import HtmlIcon from 'assets/html5.svg';
 import CssIcon from 'assets/css3.svg';
 import JavaScriptIcon from 'assets/javascript.svg';
-import GoogleIcon from 'assets/google.svg';
+import GraphqlIcon from 'assets/graphql.svg';
 import ShopifyIcon from 'assets/shopify.svg';
 import WordPressIcon from 'assets/wordpress.svg';
 import FloatingIconsBg from 'assets/banner-icon-1-6.svg';
@@ -44,31 +44,31 @@ const CallToAction = () => {
                 <Grid gap={30} columns={[3, '1fr 1fr 1fr']}>
 
                   <a href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar src={ReactIcon} />
+                    <Avatar alt='react' src={ReactIcon} />
                   </a>
                   <a href='https://nextjs.org/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar src={NextIcon} />
+                    <Avatar alt='next.js' src={NextIcon} />
                   </a>
                   <a href='https://www.gatsbyjs.com/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar src={GatsbyIcon} />
+                    <Avatar alt='gatsby.js' src={GatsbyIcon} />
                   </a>
                   <a href='https://wordpress.org/download/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar src={WordPressIcon} />
+                    <Avatar alt='wordpress' src={WordPressIcon} />
                   </a>
                   <a href='https://www.shopify.com/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar src={ShopifyIcon} />
+                    <Avatar alt='shopify' src={ShopifyIcon} />
                   </a>
-                  <a href='https://www.google.com/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar src={GoogleIcon} />
+                  <a href='https://graphql.org/' target='_blank' rel='noopener noreferrer'>
+                    <Avatar alt='graph ql' src={GraphqlIcon} />
                   </a>
                   <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank' rel='noopener noreferrer'>
-                    <Avatar src={HtmlIcon} />
+                    <Avatar alt='html' src={HtmlIcon} />
                   </a>
                   <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target='_blank' rel='noopener noreferrer'>
-                    <Avatar src={CssIcon} />
+                    <Avatar alt='css' src={CssIcon} />
                   </a>
                   <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank' rel='noopener noreferrer'>
-                    <Avatar src={JavaScriptIcon} />
+                    <Avatar alt='javascript' src={JavaScriptIcon} />
                   </a>
   
                 </Grid>
