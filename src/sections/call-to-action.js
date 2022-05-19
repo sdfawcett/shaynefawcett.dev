@@ -113,7 +113,7 @@ const styles = {
     margin: '15% 0',
   },
   content: {
-    flex: ['0 0 100%', null, null, null, '0 0 50.5%'],
+    flex: ['0 0 100%', null, null, null, '0 0 60.5%'],
     textAlign: ['center', null, null, null, 'left'],
     pt: ['80px', null, null, null, '0'],
     maxWidth: ['100%', null, null, '80%', '100%'],

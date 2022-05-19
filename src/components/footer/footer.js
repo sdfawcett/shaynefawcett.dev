@@ -4,6 +4,8 @@ import { jsx, Box, Text, Container } from 'theme-ui';
 import { Link } from 'components/link';
 import Logo from 'components/logo';
 import logoLight from 'assets/logo-light.svg';
+import logoBald from 'assets/tl-logo-no-text.svg';
+
 export default function Footer() {
   return (
     <Box as="footer" sx={styles.footer}>
@@ -11,11 +13,13 @@ export default function Footer() {
         <Box
           sx={{
             display: 'flex',
-            alignItems: 'center',
+            alignItems: ['center', null, null, null, null, 'end'],
             flexDirection: ['column', null, null, null, null, 'row'],
           }}
         >
-          <Logo image={logoLight} />
+          <Box sx={styles.logoContainer}>
+            <Logo image={logoBald} />
+          </Box>
           <Text
             as="p"
             sx={{
@@ -25,7 +29,7 @@ export default function Footer() {
               mt: ['10px', null, null, null, null, '0'],
             }}
           >
-            Copyright by {new Date().getFullYear()} RedQ, Inc
+            Copyright &copy; {new Date().getFullYear()} Shayne Fawcett. All rights reserved.
           </Text>
         </Box>
         <Box sx={styles.linksWrap}>
@@ -45,16 +49,6 @@ const styles = {
     py: ['40px', null, null, null, null, '30px', '40px'],
     backgroundColor: '#232946',
     position: 'relative',
-    '&::before': {
-      content: '""',
-      position: 'absolute',
-      top: 0,
-      left: 0,
-      right: 0,
-      bottom: 0,
-      backgroundColor: '#ffffff',
-      opacity: '0.05',
-    },
   },
   container: {
     display: 'flex',
@@ -63,6 +57,9 @@ const styles = {
     alignItems: 'center',
     position: 'relative',
     flexWrap: 'wrap',
+  },
+  logoContainer: {
+    width: '4rem',
   },
   linksWrap: {
     mt: ['15px', null, null, null, null, '0'],
