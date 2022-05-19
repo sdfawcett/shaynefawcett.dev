@@ -63,6 +63,7 @@ const MobileDrawer = () => {
               <ScrollLink
                 to="contact"
                 variant="buttons.primary"
+                onClick={toggleHandler}
                 spy={true}
                 smooth={true}
                 offset={-70}
