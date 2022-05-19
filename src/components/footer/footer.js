@@ -2,8 +2,8 @@
 import React from 'react';
 import { jsx, Box, Text, Container } from 'theme-ui';
 import { Link } from 'components/link';
+import { Link as ScrollLink } from 'react-scroll';
 import Logo from 'components/logo';
-import logoLight from 'assets/logo-light.svg';
 import logoBald from 'assets/tl-logo-no-text.svg';
 
 export default function Footer() {
@@ -35,8 +35,18 @@ export default function Footer() {
           </Text>
         </Box>
         <Box sx={styles.linksWrap}>
-          <Link path="/">Home</Link>
-          <Link path="/">Advertise</Link>
+
+          <ScrollLink 
+            activeClass="active"
+            to='services'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Services
+          </ScrollLink>
+
           <Link path="/">Supports</Link>
           <Link path="/">Marketing</Link>
           <Link path="/">FAQ</Link>
@@ -76,7 +86,10 @@ const styles = {
       fontSize: ['14px', null, null, null, '16px'],
       color: '#ffffff',
       transition: 'all 500ms ease',
-      '&:hover': { opacity: 0.7 },
+      cursor: 'pointer',
+      '&:hover, &.active': { 
+        color: '#ff8e3c',
+      },
     },
     'a+a': { ml: ['15px', null, null, null, '35px'] },
   },
