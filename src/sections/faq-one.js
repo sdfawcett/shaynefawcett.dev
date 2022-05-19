@@ -53,7 +53,7 @@ const FaqOne = () => {
 
   const { sectionImage, title, text, tagline, faqs } = FAQ_ONE_DATA;
   return (
-    <Box ref={myRef} as="section" sx={styles.section}>
+    <Box id="work" ref={myRef} as="section" sx={styles.section}>
       <Box sx={myElementIsVisible ? styles.animateInFromLeft : ''} >
         <Box sx={styles.sectionImage}>
           <Image
@@ -72,6 +72,16 @@ const FaqOne = () => {
               <Heading as="h2">{title}</Heading>
               <Text as="p">{text}</Text>
             </Box>
+
+            <Box sx={styles.sectionAccordionImage}>
+              <Image
+                src={sectionImage}
+                width="100%"
+                height="auto"
+                alt="bomb botanicals website mockup"
+              />
+            </Box>
+
             <Accordion items={faqs} />
           </Box>
         </Flex>
@@ -123,6 +133,13 @@ const styles = {
     },
     '@media(min-width: 1850px)': {
       left: '-8%',
+    },
+  },
+  sectionAccordionImage: {
+    display: 'none',
+    '@media(max-width: 991px)': {
+      display: 'block',
+      width: '100%',
     },
   },
   flex: {

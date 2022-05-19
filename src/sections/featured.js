@@ -26,21 +26,9 @@ const Featured = () => {
         active: 'adjust',
       });
     }
-    if (tab === 'report') {
-      setTab({
-        ...tab,
-        active: 'report',
-      });
-    }
-    if (tab === 'create') {
-      setTab({
-        ...tab,
-        active: 'create',
-      });
-    }
   };
   return (
-    <Box as="section" id="work" sx={styles.featured}>
+    <Box as="section" sx={styles.featured}>
       <Container sx={styles.container}>
         <BlockTitleDarkBg
           title="What the features of product"
@@ -62,33 +50,14 @@ const Featured = () => {
               <FaCog />
               Create & adjust
             </Button>
-            <Button
-              onClick={() => handleTab('report')}
-              className={`${tab.active === 'report' ? 'active' : ''}`}
-            >
-              <AiFillPieChart />
-              View Reports
-            </Button>
-            <Button
-              onClick={() => handleTab('create')}
-              className={`${tab.active === 'create' ? 'active' : ''}`}
-            >
-              <FaBriefcase />
-              Create & adjust
-            </Button>
+
           </Box>
         </Box>
         <Box sx={styles.tabContent}>
           {tab.active === 'budget' && (
             <Image src={tabImage1} alt="tab image" className="tabImage" />
           )}
-          {tab.active === 'create' && (
-            <Image src={tabImage1} alt="tab image" className="tabImage" />
-          )}
           {tab.active === 'adjust' && (
-            <Image src={tabImage1} alt="tab image" className="tabImage" />
-          )}
-          {tab.active === 'report' && (
             <Image src={tabImage1} alt="tab image" className="tabImage" />
           )}
         </Box>
@@ -121,7 +90,7 @@ const styles = {
   },
   tabButtonTopWrapper: {
     overflowY: ['hidden', null, null, null, null, 'inherit'],
-    overflowX: ['auto', null, null, null, null, 'inherit'],
+    overflowX: ['hidden', null, null, null, null, 'inherit'],
   },
   tabButtonWrapper: {
     width: ['700px', null, null, null, null, '100%'],
@@ -131,6 +100,15 @@ const styles = {
     alignItems: 'center',
     borderBottom: '1px solid rgba(1,7,13,.1)',
     mb: '35px',
+
+    '@media(max-width: 746px)': {
+      justifyContent: 'left',
+    },
+    '@media(max-width: 400px)': {
+      flexDirection: 'column',
+      width: '60%',
+    },
+
     button: {
       display: 'flex',
       alignItems: 'center',
@@ -151,16 +129,37 @@ const styles = {
         opacity: 0.7,
         mr: '15px',
         transition: 'all 500ms ease',
+
+        '@media(max-width: 400px)': {
+          mr: '3px',
+        },
       },
-      '&:hover, &.active': {
+      '&:hover': {
         backgroundColor: 'rgba(0,0,0,0)',
         color: '#ff8e3c',
+        transform: 'translateY(0)',
+        svg: {
+          color: '#ff8e3c',
+          opacity: 1,
+        },
+        '&::before': {
+          transform: 'scale(0)',
+        },
+      },
+      '&.active': {
+        backgroundColor: 'rgba(0,0,0,0)',
+        color: '#ff8e3c',
+        transform: 'translateY(0)',
         svg: {
           color: '#ff8e3c',
           opacity: 1,
         },
         '&::before': {
           transform: 'scale(1,1)',
+
+            '@media(max-width: 400px)': {
+              transform: 'scale(0)',
+            },
         },
       },
       '&::before': {
