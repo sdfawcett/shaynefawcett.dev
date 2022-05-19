@@ -27,9 +27,11 @@ export default function Footer() {
               opacity: '0.7',
               fontSize: '14px',
               mt: ['10px', null, null, null, null, '0'],
+              textAlign: 'center',
+              lineHeight: '1.6',
             }}
           >
-            Copyright &copy; {new Date().getFullYear()} Shayne Fawcett. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} Shayne Fawcett and Mindful Web Partnership, LLC. All rights reserved.
           </Text>
         </Box>
         <Box sx={styles.linksWrap}>
@@ -57,6 +59,10 @@ const styles = {
     alignItems: 'center',
     position: 'relative',
     flexWrap: 'wrap',
+
+    '@media(min-width: 1200px)': {
+      alignItems: 'end',
+    },
   },
   logoContainer: {
     width: '4rem',
@@ -65,6 +71,7 @@ const styles = {
     mt: ['15px', null, null, null, null, '0'],
     display: 'flex',
     flexWrap: 'wrap',
+
     a: {
       fontSize: ['14px', null, null, null, '16px'],
       color: '#ffffff',
