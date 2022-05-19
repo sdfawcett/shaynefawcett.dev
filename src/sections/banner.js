@@ -75,10 +75,24 @@ const Banner = () => {
         
         <motion.div
           initial={{ y: 250 }}
-          animate={{ y: 5 }}
+          animate={{ y: -23 }}
           transition={{ delay:0.2, type: 'spring', stiffness: 500 }}
         >
-          <Image src={bannerImage} sx={styles.bannerImage} alt="banner moc" />
+          
+          <Container sx={styles.macbook} className='macbook'>
+            <Box sx={styles.screen}>
+              <Box 
+                sx={styles.viewport} 
+                style={{ backgroundImage: `url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/datauri-generator-preview.jpg")`}}
+                className='viewport'
+              >
+
+              </Box>
+            </Box>
+            <Box sx={styles.base}></Box>
+            <Box sx={styles.notch}></Box>
+          </Container>
+          
         </motion.div>
 
       </Container>
@@ -234,4 +248,100 @@ const styles = {
     bottom: '30%',
     right: '0%',
   },
+  
+  screen: {
+    background: '#000',
+    borderRadius: '3% 3% 0.5% 0.5% / 5%',
+    margin: '0 auto',
+    /* for aspect ratio */
+    position: 'relative',
+    width: '80%',
+
+    '&::before': {
+      border: '2px solid #cacacc',
+      borderRadius: '3% 3% 0.5% 0.5% / 5%',
+      boxShadow: '0 0 0 1px rgba(0, 0, 0, 0.8) inset, 0 0 1px 2px rgba(255, 255, 255, 0.3) inset',
+      content: "''",
+      display: 'block',
+      /* for aspect ratio ~67:100 */
+      pt: '67%',
+    },
+    '&::after': {
+      content: "''",
+      borderTop: '2px solid rgba(255, 255, 255, 0.15)',
+      position: 'absolute',
+      bottom: '0.75%',
+      left: '0.5%',
+      pt: '1%',
+      width: '99%',
+    },
+  },
+
+  viewport: {
+    position: 'absolute',
+    bottom: '0',
+    left: '0',
+    right: '0',
+    top: '0',
+    margin: '4.3% 3.2%',
+    background: '#333',
+    transition: 'background-position 3s ease',
+    backgroundPosition: '0 0',
+    backgroundSize: '100% auto',
+    overflow: 'hidden',
+    cursor: 'pointer',
+
+    '&:hover': {
+      backgroundPosition: '0 100%',
+    },
+
+    '&::after': {
+      content: "''",
+      background: 'radial-gradient(circle at right bottom, transparent 75%, rgba(255, 255, 255, 0.05) 75%, transparent)',
+      bottom: '0',
+      left: '0',
+      position: 'absolute',
+      right: '0',
+      top: '0',
+    },
+  },
+
+  base: {
+    /* for aspect ratio */
+    position: 'relative',
+    width: '100%',
+
+    '&::before': {
+      content: "''",
+      display: 'block',
+      /* for aspect ratio ~33:1000*/
+      pt: '3.3%',
+      /* styling */
+      background: 'linear-gradient(#eaeced, #edeef0 55%, #fff 55%, #8a8b8f 56%, #999ba0 61%, #4B4B4F 84%, #262627 89%, rgba(0, 0, 0, .01) 98%)',
+      borderRadius: '0 0 10% 10%/ 0 0 50% 50%',
+    },
+
+
+  },
+
+  notch: {
+    background: '#ddd',
+    borderRadius: '0 0 7% 7% / 0 0 95% 95%',
+    boxShadow: '-5px -1px 3px rgba(0, 0, 0, 0.2) inset, 5px -1px 3px rgba(0, 0, 0, 0.2) inset',
+    ml: 'auto',
+    mr: 'auto',
+    mt: '-3.5%',
+    zIndex: '2',
+    /* for aspect ratio */
+    position: 'relative',
+    width: '14%',
+
+    '&::before': {
+      content: "''",
+      display: 'block',
+      /* for aspect ratio ~1:10 */
+      pt: '10%',
+    },
+  },
+
 };
