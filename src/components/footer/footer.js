@@ -47,9 +47,39 @@ export default function Footer() {
             Services
           </ScrollLink>
 
-          <Link path="/">Supports</Link>
-          <Link path="/">Marketing</Link>
-          <Link path="/">FAQ</Link>
+          <ScrollLink 
+            activeClass="active"
+            to='work'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Work
+          </ScrollLink>
+
+          <ScrollLink 
+            activeClass="active"
+            to='testimonials'
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+          >
+            Testimonials
+          </ScrollLink>
+
+          <ScrollLink 
+            activeClass="active"
+            to='faq'
+            spy={true}
+            smooth={true}
+            offset={-100}
+            duration={500}
+          >
+            FAQ
+          </ScrollLink>
+
         </Box>
       </Container>
     </Box>
