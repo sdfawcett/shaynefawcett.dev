@@ -58,10 +58,10 @@ const Banner = () => {
             },
           }}
         >
-          <Heading as="h2">Create beautiful landing page in few minutes</Heading>
+          <Heading as="h2">Call me when you</Heading>
           <Heading as="h2">
             <Typed
-              strings={["I'm a developer", "I'm a communicator", "I'm a UX specialist"]}
+              strings={["need a developer", "with a UX background", "with professional communications experience"]}
               typeSpeed={200}
               backSpeed={200}
               backDelay={7}
