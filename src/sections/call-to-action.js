@@ -99,7 +99,7 @@ const popIn = keyframes`
 const styles = {
 
   animatepopIn: {
-    animation: `${popIn} .5s ease-in-out 1`,
+    animation: `${popIn} 1s ease-in-out 1`,
   },
   section: {
     background: `transparent url(${FloatingIconsBg}) no-repeat center top / cover`,
