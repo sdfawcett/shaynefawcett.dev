@@ -146,7 +146,7 @@ const styles = {
     '::placeholder': {
       color: 'white',
       fontSize: '1rem',
-      fontFamily: 'Nunito Sans', 
+      fontFamily: 'Raleway', 
     }
   },
   textarea: {
@@ -167,7 +167,7 @@ const styles = {
     '::placeholder': {
       color: '#333',
       fontSize: '1rem',
-      fontFamily: 'Nunito Sans', 
+      fontFamily: 'Raleway', 
     }
   },
   button: {
@@ -178,7 +178,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     flexDirection: 'row',
-    fontFamily: 'Nunito Sans', 
+    fontFamily: 'Raleway', 
 
     '.withIcon': {
       paddingLeft: '.5rem',
