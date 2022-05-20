@@ -39,7 +39,7 @@ const CallToAction = () => {
           </Box>
 
           <Box ref={myRef} as="section">
-            <Box sx={myElementIsVisible ? styles.animateinFromRight : ''} >
+            <Box sx={myElementIsVisible ? styles.animatepopIn : ''} >
               <Container sx={styles.container}>      
                 <Grid gap={30} columns={[3, '1fr 1fr 1fr']}>
 
@@ -84,19 +84,22 @@ const CallToAction = () => {
 
 export default CallToAction;
 
-const inFromRight = keyframes`
+const popIn = keyframes`
   0% {
-    transform: translate(800%, 0);
+    opacity: 0;
+    transform: scale(0.5, 0.5);
   }
+
   100% {
-    transform: translate(0%, 0);
+    opacity: 1;
+    transform: scale(1, 1);
   }
 `;
 
 const styles = {
 
-  animateinFromRight: {
-    animation: `${inFromRight} 1s ease-in-out 1`,
+  animatepopIn: {
+    animation: `${popIn} .5s ease-in-out 1`,
   },
   section: {
     background: `transparent url(${FloatingIconsBg}) no-repeat center top / cover`,
