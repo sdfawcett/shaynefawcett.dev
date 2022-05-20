@@ -17,10 +17,10 @@ export default {
     accent: '#609', // a contrast color for emphasizing UI
   },
   fonts: {
-    body: 'Nunito Sans',
+    body: 'Raleway',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'Raleway',
+    heading: 'Space Grotesk',
     // heading: 'Bree Serif',
     monospace: 'Menlo, monospace',
   },
@@ -37,7 +37,7 @@ export default {
   letterSpacings: {
     body: 'normal',
     caps: '0.2em',
-    heading: '-0.5px',
+    heading: '0px',
   },
   // space: [0, 4, 8, 16, 32, 64],
   sizes: {

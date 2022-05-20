@@ -4,7 +4,7 @@ import { initGA, logPageView } from 'analytics';
 import 'swiper/swiper-bundle.min.css';
 import 'rc-drawer/assets/index.css';
 import 'typeface-raleway';
-import 'typeface-nunito-sans';
+import '@fontsource/space-grotesk';
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {

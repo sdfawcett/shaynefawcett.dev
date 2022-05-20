@@ -115,13 +115,19 @@ const styles = {
     position: 'relative',
   },
   sectionImage: {
-    display: ['none', null, null, null, 'block'],
+    display: 'none',
     position: ['relative', null, null, null, 'absolute'],
     zIndex: '1',
     top: 0,
     left: [0, null, null, null, '-39%', '-26%', '0%'],
     maxWidth: ['80%', null, null, '94%', null, '100%'],
     mx: ['auto', null, null, null, 0],
+
+    '@media(min-width: 1024px)': {
+      display: 'block',
+      width: '100%',
+    },
+
     '@media(min-width: 1240px)': {
       left: '-25%',
     },
@@ -137,7 +143,7 @@ const styles = {
   },
   sectionAccordionImage: {
     display: 'none',
-    '@media(max-width: 991px)': {
+    '@media(max-width: 1023px)': {
       display: 'block',
       width: '100%',
     },
@@ -160,7 +166,7 @@ const styles = {
     '@media only screen and (min-width: 1241px) and (max-width: 1439px)': {
       flex: '0 0 50%',
     },
-    '@media only screen and (min-width: 992px) and (max-width: 1240px)': {
+    '@media only screen and (min-width: 1024px) and (max-width: 1240px)': {
       flex: '0 0 50%',
     },
 
@@ -170,7 +176,12 @@ const styles = {
   },
   sectionTitle: {
     mb: '30px',
-    textAlign: ['left', null, 'center', null, 'left'],
+    textAlign: 'left',
+
+      '@media(max-width: 1023px)': {
+        textAlign: 'center',
+      },
+
     h2: {
       color: '#0F2137',
       fontWeight: 500,
