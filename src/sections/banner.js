@@ -8,6 +8,7 @@ import bannerIcon2 from 'assets/banner-icon-1-2.svg';
 import bannerIcon5 from 'assets/banner-icon-1-5.svg';
 import bannerIcon6 from 'assets/banner-icon-1-6.svg';
 import bannerIcon7 from 'assets/dot-pattern.svg';
+import macbookPage from 'assets/macbook-mockup-webpage.png';
 import { motion } from 'framer-motion';
 import Typed from 'react-typed';
 
@@ -83,7 +84,7 @@ const Banner = () => {
             <Box sx={styles.screen}>
               <Box 
                 sx={styles.viewport} 
-                style={{ backgroundImage: `url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/451895/datauri-generator-preview.jpg")`}}
+                style={{ backgroundImage: `url(${macbookPage})`}}
                 className='viewport'
               >
 
