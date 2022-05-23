@@ -193,7 +193,7 @@ const styles = {
       lineHeight: 1.5,
       letterSpacing: '-1.5px',
       mt: '10px',
-      maxWidth: ['100%', '300px', '400px', null, '100%'],
+      maxWidth: ['100%', null, '400px', null, '100%'],
       mx: ['0', null, 'auto', null, '0'],
     },
     span: {
@@ -206,7 +206,7 @@ const styles = {
       color: '#0F2137',
       fontSize: '16px',
       lineHeight: 2.19,
-      maxWidth: ['100%', '340px', '400px', null, '100%'],
+      maxWidth: ['100%', null, '400px', null, '100%'],
       mx: ['0', null, 'auto', null, '0'],
       mt: ['15px', null, null, '25px'],
     },

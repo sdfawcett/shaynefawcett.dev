@@ -32,7 +32,7 @@ const styles = {
     ],
     textAlign: ['center', null, null, null, null, 'left'],
     transition: '0.3s ease 0s',
-    '@media only screen and (min-width:768px)': {
+    '@media only screen and (min-width:576px)': {
       ':hover': {
         backgroundColor: 'white',
         borderColor: 'white',
