@@ -41,7 +41,7 @@ const CallToAction = () => {
           <Box ref={myRef} as="section">
             <Box sx={myElementIsVisible ? styles.animatepopIn : ''} >
               <Container sx={styles.container}>      
-                <Grid gap={30} columns={[3, '1fr 1fr 1fr']}>
+                <Grid sx={styles.gridContainer} columns={[3, '1fr 1fr 1fr']}>
 
                   <a href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>
                     <Avatar alt='react' src={ReactIcon} />
@@ -99,7 +99,7 @@ const popIn = keyframes`
 const styles = {
 
   animatepopIn: {
-    animation: `${popIn} 1s ease-in-out 1`,
+    animation: `${popIn} 2s ease-in-out 1`,
   },
   section: {
     background: `transparent url(${FloatingIconsBg}) no-repeat center top / cover`,
@@ -115,8 +115,17 @@ const styles = {
   container: {
     margin: '15% 0',
   },
+  gridContainer: {
+    columnGap: '3.5rem',
+    rowGap: '2rem',
+
+    '@media(max-width: 400px)': {
+      columnGap: '2rem',
+      rowGap: '1rem',
+    },
+  },
   content: {
-    flex: ['0 0 100%', null, null, null, '0 0 60.5%'],
+    flex: ['0 0 100%', null, null, null, '0 0 50.5%'],
     textAlign: ['center', null, null, null, 'left'],
     pt: ['80px', null, null, null, '0'],
     maxWidth: ['100%', null, null, '80%', '100%'],

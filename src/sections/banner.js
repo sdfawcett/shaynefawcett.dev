@@ -7,6 +7,7 @@ import bannerIcon6 from 'assets/banner-icon-1-6.svg';
 import bannerIcon7 from 'assets/dot-pattern.svg';
 import macbookPage from 'assets/macbook-mockup-webpage.png';
 import { motion } from 'framer-motion';
+import Typed from 'react-typed';
 
 const Banner = () => {
   return (
@@ -56,9 +57,24 @@ const Banner = () => {
           }}
         >
           <Text as="p">Hi, I'm Shayne</Text>
-          <Heading as="h1">I turn thoughts and ideas into user-centric, interactive web experiences.</Heading>
+          <Heading as="h1">I can turn your
+            <span>
+              <Typed
+                strings={["thoughts", "designs", "data", "ideas", "mockups", "content", "pitches"]}
+                typeSpeed={200}
+                backSpeed={50}
+                backDelay={1000}
+                loop
+                smartBackspace
+                cursorChar={'_'}
+                className='typed'
+              /><br />
+            </span>
+            into user-centric, interactive web experiences.
+          </Heading>
+          
           <Heading as="h2">
-            With my background in web development, UX, and marketing, I can unlock the potential of your idea and bring your brand to life with a stunning online. 
+            With my background in web development, UX, and marketing, I can unlock your idea's potential and bring your brand to life with a stunning online presence. 
           </Heading>
         </motion.div>
 
@@ -184,16 +200,32 @@ const styles = {
       mt: '30px',
       mb: ['40px', null, null, '65px'],
 
+      '.typed, .typed-cursor': {
+        WebkitTextFillColor: '#fffffe',
+      },
+
+      span: {
+        ml: '.25rem',
+      },
+
+      '.typed, span': {
+        background: '#FF8E3C',
+        background: 'linear-gradient(to right, #FF8E3C 0%, #7F5AF0 100%)',
+        backgroundSize: '200% auto',
+        WebkitBackgroundClip: 'text',
+        WebkitTextFillColor: 'transparent',
+      },
+
       '@media(max-width: 600px)': {
         textAlign: 'left',
       },
     },
     h2: {
       display: 'none',
-      fontSize: '1.5rem',
+      fontSize: '1.25rem',
       lineHeight: 1.25,
       color: '#ccc',
-      fontWeight: 600,
+      fontWeight: 400,
       width: '100%',
       maxWidth: ['100%', null, null, '55%', '500px', '640px', '851px'],
       mx: 'auto',
@@ -208,6 +240,7 @@ const styles = {
     },
     p: {
       color: '#fffffe',
+      fontSize: '1.25rem',
     },
   },
   

@@ -108,18 +108,18 @@ const styles = {
     },
   },
   grid: {
-    gap: [6, null, 0],
+    gap: [5, null, 0],
     display: 'grid',
     maxWidth: 1080,
     margin: '0 auto',
     gridTemplateColumns: [
       'repeat(1, 1fr)',
       null,
-      null,
+      'repeat(2, 1fr)',
       'repeat(2, 1fr)',
       'repeat(3, 1fr)',
     ],
-    borderTop: (t) => [null, null, `1px solid #EDEFF2`],
-    borderLeft: (t) => [null, null, `1px solid #EDEFF2`],
+    borderTop: (t) => [null, null, `1px solid #EDEFF2`, `1px solid #EDEFF2`],
+    borderLeft: (t) => [null, null, `1px solid #EDEFF2`, `1px solid #EDEFF2`],
   },
 };

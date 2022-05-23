@@ -51,6 +51,8 @@ const FaqOne = () => {
 
   const { ref: myRef, inView: myElementIsVisible } = useInView()
 
+  const { ref: mySecRef, inView: mySecElementIsVisible } = useInView()
+
   const { sectionImage, title, text, tagline, faqs } = FAQ_ONE_DATA;
   return (
     <Box id="work" ref={myRef} as="section" sx={styles.section}>
@@ -73,13 +75,15 @@ const FaqOne = () => {
               <Text as="p">{text}</Text>
             </Box>
 
-            <Box sx={styles.sectionAccordionImage}>
-              <Image
-                src={sectionImage}
-                width="100%"
-                height="auto"
-                alt="bomb botanicals website mockup"
-              />
+            <Box ref={mySecRef} sx={styles.sectionAccordionImage}>
+              <Box sx={mySecElementIsVisible ? styles.animateInFromLeft : ''} >
+                <Image
+                  src={sectionImage}
+                  width="100%"
+                  height="auto"
+                  alt="bomb botanicals website mockup"
+                />
+              </Box>
             </Box>
 
             <Accordion items={faqs} />

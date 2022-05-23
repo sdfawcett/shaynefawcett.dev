@@ -20,12 +20,12 @@ export default Feature;
 
 const styles = {
   feature: {
-    borderBottom: (t) => [null, null, `1px solid #EDEFF2`],
-    borderRight: (t) => [null, null, `1px solid #EDEFF2`],
+    borderBottom: (t) => [null, null, `1px solid #EDEFF2`, `1px solid #EDEFF2`],
+    borderRight: (t) => [null, null, `1px solid #EDEFF2`, `1px solid #EDEFF2`],
     padding: [
       null,
       null,
-      null,
+      '1rem',
       '45px 30px 55px',
       '40px 25px 50px 35px',
       '60px 45px 60px 50px',
