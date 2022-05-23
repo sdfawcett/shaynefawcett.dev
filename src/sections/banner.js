@@ -1,16 +1,12 @@
 import React from 'react';
-import { Box, Container, Image, Heading } from 'theme-ui';
+import { Box, Container, Image, Heading, Text } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import gravatarImage from 'assets/gravatar-image.png';
-import bannerImage from 'assets/banner-mockup.png';
-import bannerIcon1 from 'assets/banner-icon-1-1.svg';
-import bannerIcon2 from 'assets/banner-icon-1-2.svg';
 import bannerIcon5 from 'assets/banner-icon-1-5.svg';
 import bannerIcon6 from 'assets/banner-icon-1-6.svg';
 import bannerIcon7 from 'assets/dot-pattern.svg';
 import macbookPage from 'assets/macbook-mockup-webpage.png';
 import { motion } from 'framer-motion';
-import Typed from 'react-typed';
 
 const Banner = () => {
   return (
@@ -59,16 +55,10 @@ const Banner = () => {
             },
           }}
         >
-          <Heading as="h2">Call me when you</Heading>
+          <Text as="p">Hi, I'm Shayne</Text>
+          <Heading as="h1">I turn thoughts and ideas into user-centric, interactive web experiences.</Heading>
           <Heading as="h2">
-            <Typed
-              strings={["need a developer", "with a UX background", "with professional communications experience"]}
-              typeSpeed={200}
-              backSpeed={200}
-              backDelay={7}
-              loop
-              smartBackspace
-            />
+            With my background in web development, UX, and marketing, I can unlock the potential of your idea and bring your brand to life with a stunning online. 
           </Heading>
         </motion.div>
 
@@ -183,7 +173,7 @@ const styles = {
     backgroundColor: '#232946',
     textAlign: 'center',
     pt: ['110px', null, null, null, '130px'],
-    h2: {
+    h1: {
       fontSize: ['28px', null, null, '32px', '38px', '48px', '64px'],
       lineHeight: 1.25,
       color: '#fffffe',
@@ -193,8 +183,34 @@ const styles = {
       mx: 'auto',
       mt: '30px',
       mb: ['40px', null, null, '65px'],
+
+      '@media(max-width: 600px)': {
+        textAlign: 'left',
+      },
+    },
+    h2: {
+      display: 'none',
+      fontSize: '1.5rem',
+      lineHeight: 1.25,
+      color: '#ccc',
+      fontWeight: 600,
+      width: '100%',
+      maxWidth: ['100%', null, null, '55%', '500px', '640px', '851px'],
+      mx: 'auto',
+      mt: '30px',
+      mb: ['40px', null, null, '65px'],
+
+      '@media(max-width: 600px)': {
+        display: 'block',
+        textAlign: 'left',
+        width: '100%',
+      },
+    },
+    p: {
+      color: '#fffffe',
     },
   },
+  
   logo: {
     display: 'block',
     borderRadius: '50%',
@@ -248,6 +264,14 @@ const styles = {
   bannerIcon7: {
     bottom: '30%',
     right: '0%',
+  },
+
+  macbook: {
+    display: 'block',
+
+    '@media(max-width: 600px)': {
+      display: 'none',
+    },
   },
   
   screen: {
