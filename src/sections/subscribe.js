@@ -45,14 +45,14 @@ const Subscribe = () => {
           </Textarea>
 
           <Button type="submit" sx={styles.button}>
-            <div className='icon'><AiFillPhone /></div>
+            <div className='icon'><GrMail /></div>
             <div className='withIcon'>Send Email</div>
           </Button>
 
           <Box as='div' sx={styles.orDivider}><span>OR</span></Box>
 
           <Button type="submit" sx={styles.button}>
-            <div className='icon'><GrMail /></div>
+            <div className='icon'><AiFillPhone /></div>
             <div className='withIcon'>Schedule A Call</div>
           </Button>
 

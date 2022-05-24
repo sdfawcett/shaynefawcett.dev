@@ -60,7 +60,7 @@ const Banner = () => {
           <Heading as="h1">I can turn your
             <span>
               <Typed
-                strings={["thoughts", "designs", "data", "ideas", "mockups", "content", "pitches"]}
+                strings={["thoughts", "designs", "prototypes", "data", "ideas", "mockups", "content", "pitches"]}
                 typeSpeed={200}
                 backSpeed={50}
                 backDelay={1000}
@@ -195,7 +195,7 @@ const styles = {
       color: '#fffffe',
       fontWeight: 800,
       width: '100%',
-      maxWidth: ['100%', null, null, '55%', '500px', '640px', '851px'],
+      maxWidth: ['100%', null, null, '60%', '500px', '640px', '851px'],
       mx: 'auto',
       mt: '30px',
       mb: ['40px', null, null, '65px'],
