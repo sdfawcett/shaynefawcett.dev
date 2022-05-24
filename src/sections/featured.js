@@ -5,7 +5,8 @@ import BlockTitleDarkBg from 'components/block-title-dark-bg';
 import Image from 'components/image';
 import { AiFillDollarCircle, AiFillPieChart } from 'react-icons/ai';
 import { FaBriefcase, FaCog } from 'react-icons/fa';
-import tabImage1 from 'assets/tab-image-1.png';
+import cowtownTeesCard from 'assets/cowtown-tees-card.webp';
+import mindfulCard from 'assets/mindful-card.webp';
 import dotPattern from 'assets/dot-pattern.svg';
 
 const Featured = () => {
@@ -55,10 +56,10 @@ const Featured = () => {
         </Box>
         <Box sx={styles.tabContent}>
           {tab.active === 'budget' && (
-            <Image src={tabImage1} alt="tab image" className="tabImage" />
+            <Image src={cowtownTeesCard} alt="cowtown tees screenshot" className="tabImage" />
           )}
           {tab.active === 'adjust' && (
-            <Image src={tabImage1} alt="tab image" className="tabImage" />
+            <Image src={mindfulCard} alt="mindful web partnership screenshot" className="tabImage" />
           )}
         </Box>
       </Container>
