@@ -26,7 +26,7 @@ export default function Header({ className }) {
                 to={path}
                 spy={true}
                 smooth={true}
-                offset={-70}
+                offset={-90}
                 duration={500}
                 key={i}
               >
@@ -42,7 +42,7 @@ export default function Header({ className }) {
             variant="buttons.primary"
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-90}
             duration={500}
           >
             Contact
@@ -68,6 +68,12 @@ const styles = {
     display: ['none', null, null, null, 'inline-block'],
     ml: ['0', null, null, 'auto', '0'],
     mr: ['0', null, null, '20px', '0'],
+    transition: 'all 500ms ease',
+
+    '&:hover': {
+      transform: 'translateY(-0.45rem)',
+    },
+    
   },
   header: {
     color: 'text_white',

@@ -22,17 +22,11 @@ export default function Footer() {
           </Box>
           <Text
             as="p"
-            sx={{
-              color: '#ffffff',
-              opacity: '0.7',
-              fontSize: '14px',
-              mt: ['10px', null, null, null, null, '0'],
-              textAlign: 'center',
-              lineHeight: '1.6',
-            }}
+            sx={styles.footerText}
           >
-            Copyright &copy; {new Date().getFullYear()} Shayne Fawcett and Mindful Web Partnership, LLC. All rights reserved.
+            Copyright &copy; {new Date().getFullYear()} Shayne Fawcett and Mindful Web Partnership, LLC. All rights reserved. <br />Designed, coded, and written by Shayne Fawcett. ✌️
           </Text>
+
         </Box>
         <Box sx={styles.linksWrap}>
 
@@ -41,7 +35,7 @@ export default function Footer() {
             to='services'
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-90}
             duration={500}
           >
             Services
@@ -52,7 +46,7 @@ export default function Footer() {
             to='work'
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-90}
             duration={500}
           >
             Work
@@ -63,7 +57,7 @@ export default function Footer() {
             to='testimonials'
             spy={true}
             smooth={true}
-            offset={-70}
+            offset={-90}
             duration={500}
           >
             Testimonials
@@ -74,7 +68,7 @@ export default function Footer() {
             to='faq'
             spy={true}
             smooth={true}
-            offset={-100}
+            offset={-90}
             duration={500}
           >
             FAQ
@@ -107,8 +101,22 @@ const styles = {
   logoContainer: {
     width: '4rem',
   },
+  footerText: {
+    color: '#fffffe',
+    opacity: '0.7',
+    fontSize: '14px',
+    mt: ['10px', null, null, null, null, '0'],
+    textAlign: 'left',
+    lineHeight: '1.6',
+
+    '@media(max-width: 1199px)': {
+      textAlign: 'center',
+    },
+
+   
+  },
   linksWrap: {
-    mt: ['15px', null, null, null, null, '0'],
+    mt: ['25px', null, null, null, null, '0'],
     display: 'flex',
     flexWrap: 'wrap',
 

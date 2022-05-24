@@ -351,7 +351,7 @@ const styles = {
     animation: `${bannerAnim1} 5s ease-out infinite`,
   },
   bannerIcon5: {
-    bottom: '50%',
+    bottom: '58%',
     left: '15%',
   },
   bannerIcon6: {
