@@ -112,6 +112,10 @@ export default FAQ;
 const styles = {
   box: {
     mt: '200px',
+
+    '@media(max-width: 600px)': {
+      mt: '75px',
+    },
   },
 
   flex: {

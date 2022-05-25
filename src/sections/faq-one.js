@@ -138,7 +138,7 @@ const styles = {
     '@media(min-width: 1440px)': {
       left: '-17%',
     },
-    '@media(min-width: 1650px)': {
+    '@media(min-width: 1750px)': {
       left: '-10%',
     },
     '@media(min-width: 1850px)': {
@@ -161,13 +161,10 @@ const styles = {
     flex: '0 0 100%',
     pl: ['0', null, null, null, '80px'],
     pb: ['50px', null, null, '70px', null, null, '90px'],
-    '@media(min-width: 1850px)': {
+    '@media only screen and (min-width: 1560px) and (max-width: 3000px)': {
       flex: '0 0 60%',
     },
-    '@media(min-width: 1440px)': {
-      flex: '0 0 50%',
-    },
-    '@media only screen and (min-width: 1241px) and (max-width: 1439px)': {
+    '@media only screen and (min-width: 1241px) and (max-width: 1559px)': {
       flex: '0 0 50%',
     },
     '@media only screen and (min-width: 1024px) and (max-width: 1240px)': {

@@ -88,6 +88,11 @@ const styles = {
     position: 'relative',
     top: '150px',
     mt: '-150px',
+
+    '@media(max-width: 600px)': {
+      top: '0',
+      mt: '0',
+    },
   },
   tabButtonTopWrapper: {
     overflowY: ['hidden', null, null, null, null, 'inherit'],
@@ -179,6 +184,12 @@ const styles = {
   tabContent: {
     minHeight: ['190px', null, '300px', '385px', null, '600px'],
     position: 'relative',
+    margin: '0 20%',
+
+    '@media(max-width: 746px)': {
+      margin: '0',
+    },
+
     '&::before': {
       content: "''",
       width: '302px',
