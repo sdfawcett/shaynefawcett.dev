@@ -56,10 +56,23 @@ const Featured = () => {
         </Box>
         <Box sx={styles.tabContent}>
           {tab.active === 'budget' && (
-            <Image src={cowtownTeesCard} alt="cowtown tees screenshot" className="tabImage" />
+            <>
+              <Box sx={styles.linkButtonWrapper}>
+                <a className='buttonLink' href=''>Live Demo</a>
+                <a className='buttonLink' href=''>Github Repo</a>
+              </Box>
+              <Image src={cowtownTeesCard} alt="cowtown tees screenshot" className="tabImage" />
+            </>
           )}
           {tab.active === 'adjust' && (
-            <Image src={mindfulCard} alt="mindful web partnership screenshot" className="tabImage" />
+            <>
+              <Box sx={styles.linkButtonWrapper}>
+                <a className='buttonLink' href=''>Live Site</a>
+                <a className='buttonLink' href=''>Github Repo</a>
+              </Box>
+
+              <Image src={mindfulCard} alt="mindful web partnership screenshot" className="tabImage" />
+            </>
           )}
         </Box>
       </Container>
@@ -92,6 +105,7 @@ const styles = {
     '@media(max-width: 600px)': {
       top: '0',
       mt: '0',
+      pb: '5rem',
     },
   },
   tabButtonTopWrapper: {
@@ -203,6 +217,28 @@ const styles = {
     '.tabImage': {
       position: 'relative',
       animation: `${fadeIn} 0.8s linear`,
+    },
+  },
+  linkButtonWrapper: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-around',
+
+    '.buttonLink': {
+      display: 'inline-block',
+      verticalAlign: 'middle',
+      backgroundColor: '#02073E',
+      color: '#fff',
+      borderRadius: '5px',
+      fontSize: '16px',
+      fontWeight: 700,
+      p: '6.5px 19px',
+      textDecoration: 'none',
+      letterSpacing: '-0.16px',
+      transition: 'all 500ms ease',
+      '&:hover': {
+        opacity: 0.8,
+      },
     },
   },
 };

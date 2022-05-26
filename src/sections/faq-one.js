@@ -7,14 +7,14 @@ import Accordion from 'components/accordion/accordion';
 import image from 'assets/bb-static-tablet_ipad_silver_landscape.png';
 const FAQ_ONE_DATA = {
   sectionImage: image,
-  tagline: 'Website content builder',
-  title: 'Meet our premium features that will make you wow',
+  tagline: 'Featured Project',
+  title: 'Bomb Botanicals eCommerce Store Redesign and Rebuild',
   text:
     'Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents.',
   faqs: [
     {
       isExpanded: true,
-      title: 'Organize your project content',
+      title: 'Project Details and Scope',
       contents: (
         <div>
           Get your website ads tests delivered at let collect sample from the
@@ -25,7 +25,7 @@ const FAQ_ONE_DATA = {
     },
     {
       isExpanded: false,
-      title: 'Collaborate your multiple team support easily',
+      title: 'Technology Overview',
       contents: (
         <div>
           Get your website ads tests delivered at let collect sample from the
@@ -34,17 +34,7 @@ const FAQ_ONE_DATA = {
         </div>
       ),
     },
-    {
-      isExpanded: false,
-      title: "Build your team's knowledge base system",
-      contents: (
-        <div>
-          Get your website ads tests delivered at let collect sample from the
-          victory of the managments that supplies best design system which
-          guidelines ever with multiple features.
-        </div>
-      ),
-    },
+
   ],
 };
 const FaqOne = () => {
@@ -66,6 +56,7 @@ const FaqOne = () => {
           />
         </Box>
       </Box>
+      
       <Container sx={styles.container}>
         <Flex sx={styles.flex}>
           <Box sx={styles.content}>
@@ -84,7 +75,13 @@ const FaqOne = () => {
                   alt="bomb botanicals website mockup"
                 />
               </Box>
+              <Box sx={styles.buttonWrapper}>
+                <a className='button' href=''>Live Demo</a>
+                <a className='button' href=''>Github Repo</a>
+              </Box>
             </Box>
+
+            
 
             <Accordion items={faqs} />
           </Box>
@@ -147,9 +144,33 @@ const styles = {
   },
   sectionAccordionImage: {
     display: 'none',
+
     '@media(max-width: 1023px)': {
       display: 'block',
       width: '100%',
+      mb: '3rem',
+    },
+  },
+  buttonWrapper: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-between',
+
+    '.button': {
+      display: 'inline-block',
+      verticalAlign: 'middle',
+      backgroundColor: '#02073E',
+      color: '#fff',
+      borderRadius: '5px',
+      fontSize: '16px',
+      fontWeight: 700,
+      p: '6.5px 19px',
+      textDecoration: 'none',
+      letterSpacing: '-0.16px',
+      transition: 'all 500ms ease',
+      '&:hover': {
+        opacity: 0.8,
+      },
     },
   },
   flex: {
@@ -185,8 +206,8 @@ const styles = {
 
     h2: {
       color: '#0F2137',
-      fontWeight: 500,
-      fontSize: ['22px', null, null, '28px', '32px', '36px', '40px'],
+      fontWeight: 700,
+      fontSize: ['23px', null, null, '28px', '32px', '36px', '40px'],
       lineHeight: 1.5,
       letterSpacing: '-1.5px',
       mt: '10px',
@@ -194,9 +215,10 @@ const styles = {
       mx: ['0', null, 'auto', null, '0'],
     },
     span: {
-      color: 'secondary',
-      fontSize: ['15px', '16px'],
-      lineHeight: 1.87,
+      color: '#ff8e3c',
+      fontSize: '18px',
+      fontWeight: '700',
+      lineHeight: 1,
       display: 'block',
     },
     p: {

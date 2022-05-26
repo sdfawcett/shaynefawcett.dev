@@ -24,17 +24,17 @@ const CallToAction = () => {
         <Flex sx={styles.flex}>
           <Box sx={styles.content}>
             <Text as="span">Behind the design</Text>
-            <Heading as="h3">
-              Code that we used to built the website with integrating apps
+            <Heading as="h2">
+              Innovative Web Solutions Driven By Modern Technologies
             </Heading>
             <Text as="p">
-              Get your tests delivered at let home collect sample from the
-              victory of the managements that supplies best design system
-              guidelines ever. Get your tests delivered at let home collect
-              sample.
+              I know what it takes to build a stunning store and optimize it. And I get excited about new technologies.
+            </Text>
+            <Text as="p">
+              Why not leverage my focus on innovation to make your project a success?
             </Text>
             <Link path="#" sx={styles.button} variant="buttons.secondary">
-              Explore More
+              Start A Project
             </Link>
           </Box>
 
@@ -134,12 +134,12 @@ const styles = {
     span: {
       fontSize: '18px',
       fontWeight: 700,
-      color: 'primary',
+      color: '#ff8e3c',
       display: 'block',
       lineHeight: 1,
     },
-    h3: {
-      color: '#0F2137',
+    h2: {
+      color: '#232946',
       fontWeight: 700,
       fontSize: ['23px', null, null, null, '30px', '36px', '44px'],
       maxWidth: ['100%', null, null, null, null, '90%', '100%'],

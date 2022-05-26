@@ -18,42 +18,42 @@ const data = [
     id: 1,
     icon: icon1,
     path: '#!',
-    title: 'Email Subscription',
+    title: 'Web Design and Development',
     description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
   },
   {
     id: 2,
     icon: icon2,
     path: '#!',
-    title: 'Bolt Performance',
+    title: 'Site Migrations and Replatforming',
     description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
   },
   {
     id: 3,
     icon: icon3,
     path: '#!',
-    title: 'Secure Transaction',
+    title: 'Updates To Existing Sites',
     description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
   },
   {
     id: 4,
     icon: icon4,
     path: '#!',
-    title: 'Multiple Options',
+    title: 'eCommerce Consulting and Development',
     description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
   },
   {
     id: 5,
     icon: icon5,
     path: '#!',
-    title: 'Customer Support',
+    title: 'Headless eCommerce Solutions',
     description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
   },
   {
     id: 6,
     icon: icon6,
     path: '#!',
-    title: 'Integrated with Shopify',
+    title: 'React Development',
     description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
   },
 ];
@@ -66,8 +66,8 @@ export default function UltimateFeatures() {
     <section id="services" sx={styles.section}>
       <Container>
       <BlockTitle
-          title="Ideal solutions for you"
-          text="Go beyond ultimate features"
+          title="How I Can Help Your Web Project"
+          text="Don't settle for just a website. Invest in an online experience."
         />
         <Box ref={myRef} sx={styles.grid}>
           
