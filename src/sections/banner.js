@@ -72,7 +72,7 @@ const Banner = () => {
               },
             }}
           >
-            <Text as="p">Hi, I'm Shayne ✌🏿</Text>
+            <Text as="p">Hi, I'm Shayne ✌</Text>
             <Heading as="h1">I'll turn your
               <span>
                 <Typed

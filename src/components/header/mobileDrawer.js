@@ -49,7 +49,7 @@ const MobileDrawer = () => {
                 spy={true}
                 smooth={true}
                 onClick={toggleHandler}
-                offset={-90}
+                offset={-100}
                 duration={500}
                 key={i}
               >

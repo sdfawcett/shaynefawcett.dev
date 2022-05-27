@@ -26,7 +26,7 @@ export default function Header({ className }) {
                 to={path}
                 spy={true}
                 smooth={true}
-                offset={-90}
+                offset={-100}
                 duration={500}
                 key={i}
               >

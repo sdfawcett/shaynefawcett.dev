@@ -154,7 +154,7 @@ const styles = {
   buttonWrapper: {
     width: '100%',
     display: 'flex',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
 
     '.button': {
       display: 'inline-block',
