@@ -2,9 +2,12 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { keyframes } from '@emotion/core';
 import Image from 'components/image';
-import { Box, Container, Flex, Heading, Text } from 'theme-ui';
+import { Box, Container, Flex, Heading, Text, Button } from 'theme-ui';
 import Accordion from 'components/accordion/accordion';
 import image from 'assets/bb-static-tablet_ipad_silver_landscape.png';
+import { FaGithub } from 'react-icons/fa';
+import { FaExternalLinkSquareAlt } from 'react-icons/fa';
+
 const FAQ_ONE_DATA = {
   sectionImage: image,
   tagline: 'Featured Project',
@@ -75,14 +78,34 @@ const FaqOne = () => {
                   alt="bomb botanicals website mockup"
                 />
               </Box>
-              <Box sx={styles.buttonWrapper}>
-                <a className='button' href=''>Live Demo</a>
-                <a className='button' href=''>Github Repo</a>
+
+              <Box sx={styles.linkButtonWrapper}>
+                <Button type="button" className='buttonLink'>
+                  <div className='icon'><FaExternalLinkSquareAlt /></div>
+                  <div className='withIcon'>Live Demo</div>
+                </Button>
+
+                <Button type="button" className='buttonLink'>
+                  <div className='icon'><FaGithub /></div>
+                  <div className='withIcon'>Github Repo</div>
+                </Button>
               </Box>
+
             </Box>
 
-            
+            <Box sx={styles.desktop}>
+              <Box sx={styles.linkButtonWrapper}>
+                <Button type="button" className='buttonLink'>
+                  <div className='icon'><FaExternalLinkSquareAlt /></div>
+                  <div className='withIcon'>Live Demo</div>
+                </Button>
 
+                <Button type="button" className='buttonLink'>
+                  <div className='icon'><FaGithub /></div>
+                  <div className='withIcon'>Github Repo</div>
+                </Button>
+              </Box>
+            </Box>
             <Accordion items={faqs} />
           </Box>
         </Flex>
@@ -110,6 +133,14 @@ const styles = {
   section: {
     position: 'relative',
     mb: '-1%',
+  },
+  desktop: {
+    display: 'block',
+    mb: '2rem',
+
+    '@media(max-width: 1023px)': {
+      display: 'none',
+    },
   },
   container: {
     maxWidth: ['100%', null, null, null, null, '1170px', '1280px'],
@@ -173,6 +204,43 @@ const styles = {
       },
     },
   },
+  linkButtonWrapper: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-around',
+    flexDirection: 'row',
+
+    '@media(max-width: 690px)': {
+      flexDirection: 'column',
+    },
+
+    '.buttonLink': {
+      backgroundColor: '#232946',
+      border: '1px solid #020718',
+      color: '#fffffe',
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'row',
+      fontFamily: 'Raleway, sans-serif', 
+      zIndex: '100',
+
+      '@media(max-width: 690px)': {
+        mb: '.5rem',
+        fontSize: '14px',
+      },
+  
+      '.withIcon': {
+        paddingLeft: '.5rem',
+      },
+      '.icon': {
+        paddingTop: '.3rem',
+      },
+      '&:hover': {
+        opacity: 0.8,
+      },
+    },
+  },
   flex: {
     display: 'flex',
     gap: 0,
@@ -207,7 +275,7 @@ const styles = {
     h2: {
       color: '#0F2137',
       fontWeight: 700,
-      fontSize: ['23px', null, null, '28px', '32px', '36px', '40px'],
+      fontSize: ['26px', null, null, '30px', '36px', '36px', '44px'],
       lineHeight: 1.5,
       letterSpacing: '-1.5px',
       mt: '10px',

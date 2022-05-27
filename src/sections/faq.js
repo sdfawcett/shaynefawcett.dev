@@ -82,8 +82,8 @@ const FAQ = () => {
     <Box sx={styles.box} id='faq' as="section">
       <Container>
         <BlockTitle
-          title="Frequently Ask Question"
-          text="Ask your question and meet"
+          title="More Info About Me"
+          text="Answers to questions you may be asking"
         />
         <Flex sx={styles.flex}>
           <Box sx={styles.faqWrapper}>
@@ -91,11 +91,10 @@ const FAQ = () => {
           </Box>
           <Box sx={styles.content}>
             <Heading as="h3">
-              Do you have any quesiton? Please ask here we ready to support
+              Still have a question?
             </Heading>
             <Text as="p">
-              If your question is not list here, please feel free to make a
-              manual support.
+              Let's talk. Feel free to contact me anytime.
             </Text>
             <Link sx={styles.askButton} path="#" variant="buttons.secondary">
               Ask your Question
@@ -111,7 +110,7 @@ export default FAQ;
 
 const styles = {
   box: {
-    mt: '200px',
+    mt: '80px',
 
     '@media(max-width: 600px)': {
       mt: '75px',

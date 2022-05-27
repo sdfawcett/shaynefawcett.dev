@@ -141,7 +141,7 @@ const styles = {
     h2: {
       color: '#232946',
       fontWeight: 700,
-      fontSize: ['23px', null, null, null, '30px', '36px', '44px'],
+      fontSize: ['26px', null, null, '30px', '36px', '36px', '44px'],
       maxWidth: ['100%', null, null, null, null, '90%', '100%'],
       lineHeight: 1.36,
       letterSpacing: '-1.5px',

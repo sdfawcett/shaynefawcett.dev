@@ -8,7 +8,7 @@ const Subscribe = () => {
   return (
     <Box as="section" id='contact' sx={styles.subscribe}>
       <Container>
-        <Heading as="h3">Subscribe to get notified about event</Heading>
+        <Heading as="h2">Subscribe to get notified about event</Heading>
         <Text as="p">
           By subscribing with your mail, you will accept our privacy policy
         </Text>
@@ -85,19 +85,19 @@ const styles = {
     backgroundSize: '300% 300%',
     backgroundImage: 'linear-gradient(-45deg, #2cb67d 0%, #ff8e3c 25%, #7f5af0 51%, #232946 100%)',
     animation: `${bgAnimation} 15s ease infinite`,
-    h3: {
+    h2: {
       textAlign: 'center',
-      fontSize: ['23px', null, null, null, null, '30px', '36px'],
+      fontSize: ['26px', null, null, '30px', '36px', '36px', '44px'],
       lineHeight: [1.5, null, null, '1'],
-      color: '#fff',
-      letterSpacing: ['-0.5px'],
+      color: '#fffffe',
+      letterSpacing: ['-1.5px'],
       mb: ['0px', null, null, '15px'],
       width: ['70%', null, null, 'auto'],
       mx: ['auto', null, null, '0'],
     },
     p: {
-      fontSize: ['16px'],
-      color: '#fff',
+      fontSize: ['16px', null, null, '18px'],
+      color: '#fffffe',
       opacity: '.6',
       letterSpacing: ['-0.5px'],
       textAlign: 'center',
@@ -144,7 +144,7 @@ const styles = {
     mb: '1rem',
     textAlign: 'left',
     '::placeholder': {
-      color: 'white',
+      color: '#fffffe',
       fontSize: '1rem',
       fontFamily: 'Raleway', 
     }

@@ -37,8 +37,8 @@ const Featured = () => {
       <Box sx={styles.bg}>
         <Container sx={styles.container}>
           <BlockTitleDarkBg
-            title="What the features of product"
-            text="Introducing all screen details"
+            title="Other Recent Projects"
+            text="Modern solutions built with modern technologies."
           />
           <Box sx={styles.tabButtonTopWrapper}>
             <Box sx={styles.tabButtonWrapper}>
