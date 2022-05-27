@@ -6,7 +6,6 @@ import Logo from 'components/logo';
 import { DrawerProvider } from 'contexts/drawer/drawer.provider';
 import MobileDrawer from './mobileDrawer';
 import menuItems from './header.data';
-import logoDark from 'assets/logo-dark.svg';
 import logoBald from 'assets/tl-logo-no-text.svg';
 
 export default function Header({ className }) {
@@ -95,8 +94,7 @@ const styles = {
     '&.unSticky': {
       backgroundColor: 'transparent',
       color: '#fffffe',
-      py: '15px',
-      boxShadow: '0 1px 2px rgba(0, 0, 0, 0.06)',
+      pt: '15px',
 
       '@media(max-width: 991px)': {
 

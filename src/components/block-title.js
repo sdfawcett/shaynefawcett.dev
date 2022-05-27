@@ -25,7 +25,7 @@ const styles = {
       mb: '20px',
     },
     p: {
-      lineHeight: 1,
+      lineHeight: 1.5,
       fontSize: '18px',
       color: '#858B91',
     },

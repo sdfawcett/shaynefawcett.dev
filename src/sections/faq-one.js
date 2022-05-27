@@ -80,30 +80,30 @@ const FaqOne = () => {
               </Box>
 
               <Box sx={styles.linkButtonWrapper}>
-                <Button type="button" className='buttonLink'>
-                  <div className='icon'><FaExternalLinkSquareAlt /></div>
+                <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                  <span className='icon'><FaExternalLinkSquareAlt /></span>
                   <div className='withIcon'>Live Demo</div>
-                </Button>
+                </a>
 
-                <Button type="button" className='buttonLink'>
-                  <div className='icon'><FaGithub /></div>
+                <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                  <span className='icon'><FaGithub /></span>
                   <div className='withIcon'>Github Repo</div>
-                </Button>
+                </a>
               </Box>
 
             </Box>
 
             <Box sx={styles.desktop}>
               <Box sx={styles.linkButtonWrapper}>
-                <Button type="button" className='buttonLink'>
-                  <div className='icon'><FaExternalLinkSquareAlt /></div>
+                <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                  <span className='icon'><FaExternalLinkSquareAlt /></span>
                   <div className='withIcon'>Live Demo</div>
-                </Button>
+                </a>
 
-                <Button type="button" className='buttonLink'>
-                  <div className='icon'><FaGithub /></div>
+                <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                  <span className='icon'><FaGithub /></span>
                   <div className='withIcon'>Github Repo</div>
-                </Button>
+                </a>
               </Box>
             </Box>
             <Accordion items={faqs} />
@@ -191,7 +191,7 @@ const styles = {
       display: 'inline-block',
       verticalAlign: 'middle',
       backgroundColor: '#02073E',
-      color: '#fff',
+      color: '#fffffe',
       borderRadius: '5px',
       fontSize: '16px',
       fontWeight: 700,
@@ -210,7 +210,7 @@ const styles = {
     justifyContent: 'space-around',
     flexDirection: 'row',
 
-    '@media(max-width: 690px)': {
+    '@media(max-width: 590px)': {
       flexDirection: 'column',
     },
 
@@ -218,27 +218,35 @@ const styles = {
       backgroundColor: '#232946',
       border: '1px solid #020718',
       color: '#fffffe',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      flexDirection: 'row',
+      textDecoration: 'none',
+      display: 'inline-block',
+      verticalAlign: 'middle',
+      borderRadius: '5px',
+      fontSize: '16px',
+      fontWeight: 700,
+      p: '6.5px 19px',
+      letterSpacing: '-0.16px',
+      transition: 'all 500ms ease',
       fontFamily: 'Raleway, sans-serif', 
       zIndex: '100',
 
-      '@media(max-width: 690px)': {
+      '@media(max-width: 590px)': {
         mb: '.5rem',
         fontSize: '14px',
-      },
-  
-      '.withIcon': {
-        paddingLeft: '.5rem',
-      },
-      '.icon': {
-        paddingTop: '.3rem',
+        textAlign: 'center',
       },
       '&:hover': {
         opacity: 0.8,
+        transform: 'translateY(-0.45rem)',
       },
+    },
+    '.withIcon': {
+      paddingLeft: '.5rem',
+      display: 'inline',
+    },
+    '.icon': {
+      paddingTop: '.3rem',
+      display: 'inline',
     },
   },
   flex: {

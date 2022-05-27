@@ -3,8 +3,6 @@ import { Box, Container, Button, Avatar } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import BlockTitleDarkBg from 'components/block-title-dark-bg';
 import Image from 'components/image';
-import { AiFillDollarCircle, AiFillPieChart } from 'react-icons/ai';
-import { FaBriefcase, FaCog } from 'react-icons/fa';
 import cowtownTeesCard from 'assets/cowtown-tees-card.webp';
 import mindfulCard from 'assets/mindful-card.webp';
 import dotPattern from 'assets/dot-pattern.svg';
@@ -64,15 +62,15 @@ const Featured = () => {
               <>
                 <Image src={cowtownTeesCard} alt="cowtown tees screenshot" className="tabImage" />
                 <Box sx={styles.linkButtonWrapper}>
-                  <Button type="button" className='buttonLink'>
-                    <div className='icon'><BiLinkExternal /></div>
-                    <div className='withIcon'>Live Demo</div>
-                  </Button>
+                  <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                      <span className='icon'><BiLinkExternal /></span>
+                      <div className='withIcon'>Live Demo</div>
+                  </a>
 
-                  <Button type="button" className='buttonLink'>
-                    <div className='icon'><VscGithub /></div>
-                    <div className='withIcon'>Github Repo</div>
-                  </Button>
+                  <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                      <span className='icon'><VscGithub /></span>
+                      <div className='withIcon'>Github Repo</div>
+                  </a>
                 </Box>
               </>
             )}
@@ -81,15 +79,15 @@ const Featured = () => {
                 <Image src={mindfulCard} alt="mindful web partnership screenshot" className="tabImage" />
                 <Box sx={styles.linkButtonWrapper}>
 
-                  <Button type="button" className='buttonLink'>
-                    <div className='icon'><BiLinkExternal /></div>
-                    <div className='withIcon'>Live Demo</div>
-                  </Button>
+                  <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                    <span className='icon'><BiLinkExternal /></span>
+                    <div className='withIcon'>Live Site</div>
+                  </a>
 
-                  <Button type="button" className='buttonLink'>
-                    <div className='icon'><VscGithub /></div>
+                  <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                    <span className='icon'><VscGithub /></span>
                     <div className='withIcon'>Github Repo</div>
-                  </Button>
+                  </a>
                 </Box>
               </>
             )}
@@ -273,7 +271,7 @@ const styles = {
     justifyContent: 'space-around',
     flexDirection: 'row',
 
-    '@media(max-width: 690px)': {
+    '@media(max-width: 590px)': {
       flexDirection: 'column',
     },
 
@@ -281,26 +279,39 @@ const styles = {
       backgroundColor: '#fffffe',
       border: '1px solid #020718',
       color: '#232946',
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-      flexDirection: 'row',
       fontFamily: 'Raleway, sans-serif', 
+      textDecoration: 'none',
+      display: 'inline-block',
+      verticalAlign: 'middle',
+      borderRadius: '5px',
+      fontSize: '16px',
+      fontWeight: 700,
+      p: '6.5px 19px',
+      letterSpacing: '-0.16px',
+      transition: 'all 500ms ease',
+      '&:hover': {
+        opacity: 0.8,
+        transform: 'translateY(-0.45rem)',
+      },
 
       '@media(max-width: 690px)': {
         mb: '.5rem',
         fontSize: '14px',
       },
+
+      '@media(max-width: 590px)': {
+        textAlign: 'center',
+      },
   
       '.withIcon': {
         paddingLeft: '.5rem',
+        display: 'inline',
       },
       '.icon': {
         paddingTop: '.3rem',
-      },
-      '&:hover': {
-        opacity: 0.8,
+        display: 'inline',
       },
     },
   },
+
 };

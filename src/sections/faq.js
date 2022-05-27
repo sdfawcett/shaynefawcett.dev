@@ -96,9 +96,11 @@ const FAQ = () => {
             <Text as="p">
               Let's talk. Feel free to contact me anytime.
             </Text>
-            <Link sx={styles.askButton} path="#" variant="buttons.secondary">
-              Ask your Question
-            </Link>
+            <Box sx={styles.linkButtonWrapper}>
+              <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                Ask a question
+              </a>
+            </Box>
           </Box>
         </Flex>
       </Container>
@@ -147,6 +149,52 @@ const styles = {
       pr: ['0', null, null, null, null, '80px'],
     },
   },
+  linkButtonWrapper: {
+    width: '100%',
+    display: 'flex',
+    justifyContent: 'space-around',
+    flexDirection: 'row',
+    mt: '1rem',
+
+    '@media(max-width: 590px)': {
+      flexDirection: 'column',
+    },
+
+    '.buttonLink': {
+      backgroundColor: '#232946',
+      border: '1px solid #020718',
+      color: '#fffffe',
+      textDecoration: 'none',
+      display: 'inline-block',
+      verticalAlign: 'middle',
+      borderRadius: '5px',
+      fontSize: '16px',
+      fontWeight: 700,
+      p: '6.5px 19px',
+      letterSpacing: '-0.16px',
+      transition: 'all 500ms ease',
+      fontFamily: 'Raleway, sans-serif', 
+      zIndex: '100',
+
+      '@media(max-width: 590px)': {
+        mb: '.5rem',
+        fontSize: '14px',
+        textAlign: 'center',
+      },
+      '&:hover': {
+        opacity: 0.8,
+        transform: 'translateY(-0.45rem)',
+      },
+    },
+    '.withIcon': {
+      paddingLeft: '.5rem',
+      display: 'inline',
+    },
+    '.icon': {
+      paddingTop: '.3rem',
+      display: 'inline',
+    },
+  },
   askButton: {
     display: 'inline-block',
     verticalAlign: 'middle',
@@ -161,6 +209,7 @@ const styles = {
     transition: 'all 500ms ease',
     '&:hover': {
       opacity: 0.8,
+      transform: 'translateY(-0.45rem)',
     },
   },
   faqWrapper: {

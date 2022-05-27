@@ -67,7 +67,7 @@ export default function UltimateFeatures() {
       <Container>
       <BlockTitle
           title="How I Can Help Your Web Project"
-          text="Don't settle for just a website. Invest in an online experience."
+          text="Don't settle for just a website or app. Invest in an online experience."
         />
         <Box ref={myRef} sx={styles.grid}>
           
