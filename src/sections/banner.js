@@ -2,12 +2,10 @@ import React, { useState, useEffect } from 'react'
 import { Box, Container, Image, Heading, Text } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import gravatarImage from 'assets/gravatar-image.png';
-import bannerIcon5 from 'assets/banner-icon-1-5.svg';
-import bannerIcon6 from 'assets/banner-icon-1-6.svg';
-import bannerIcon7 from 'assets/dot-pattern.svg';
-import macbookPage from 'assets/macbook-mockup-webpage.webp';
+import { RiShieldCheckFill } from 'react-icons/ri';
 import { motion } from 'framer-motion';
 import Typed from 'react-typed';
+import { Link as ScrollLink } from 'react-scroll';
 
 const Banner = () => {
 
@@ -25,30 +23,16 @@ const Banner = () => {
     }
   }, [])
 
+  const points = [
+    { id: 1, years: "7+ Years", description: "of professional web development experience" },
+    { id: 2, years: "5 Years", description: "as a user experience consultant at a Fortune 100 company" },
+    { id: 3, years: "5+ Years", description: "of professional experience in digital marketing and communication" },
+  ];
+
   return (
     <Box as="section" id="banner" sx={styles.banner}>
       <Box sx={styles.bg}>
         <Container sx={styles.container}>
-
-          <Image
-            sx={styles.bannerIcon5}
-            className="bannerIcon"
-            alt="banner icon"
-            src={bannerIcon5}
-          />
-          <Image
-            sx={styles.bannerIcon6}
-            className="bannerIcon"
-            alt="banner icon"
-            src={bannerIcon6}
-          />
-          <Image
-            sx={styles.bannerIcon7}
-            className="bannerIcon"
-            alt="banner icon"
-            src={bannerIcon7}
-          />
-
 
           <Image sx={styles.logo} src={gravatarImage} alt="Shayne Fawcett gravatar image" />
 
@@ -56,18 +40,18 @@ const Banner = () => {
           initial="hidden" 
           animate="visible"
           transition={{
-            delay: 0.6, type: 'tween'
+            delay: 0.3, type: 'tween'
           }} 
           variants={{
               hidden: {
-                scale: .8,
+                scale: .1,
                 opacity: 0
               },
               visible: {
                 scale: 1,
                 opacity: 1,
                 transition: {
-                  delay: 1
+                  delay: 1.1
                 }
               },
             }}
@@ -92,62 +76,44 @@ const Banner = () => {
 
           </motion.div>
 
-          
-          {
-            typeof mobile !== 'undefined' ? (
-              mobile ? (
-                <motion.div 
-                  initial="hidden" 
-                  animate="visible"
-                  transition={{
-                    delay: 0.8, type: 'tween'
-                  }} 
-                  variants={{
-                      hidden: {
-                        scale: .8,
-                        opacity: 0
-                      },
-                      visible: {
-                        scale: 1,
-                        opacity: 1,
-                        transition: {
-                          delay: 1
-                        }
-                      },
-                    }}
-                  >
-                    <Heading as="h2">
-                      With my background in web development, UX, and marketing, I can unlock your idea's potential and bring your brand to life with a stunning online presence. 
-                    </Heading>
+                <Box sx={styles.points}>
 
-                  </motion.div>
-              ) : (
-                <motion.div
-                  initial={{ y: 250 }}
-                  animate={{ y: -23 }}
-                  transition={{ delay:0.2, type: 'spring', stiffness: 500 }}
-                >
-                  
-                  <Container sx={styles.macbook} className='macbook'>
-                    <Box sx={styles.screen}>
-                      <Box 
-                        sx={styles.viewport} 
-                        style={{ backgroundImage: `url(${macbookPage})`}}
-                        className='viewport'
+                  {points.map((point, i) => (
+                    
+                      <motion.div
+                        key={point.id}
+                        initial={{ y: 550 }}
+                        animate={{ y: -23 }}
+                        className='point'
+                        transition={{ duration: 1, delay: i * 1.5, type: 'spring', stiffness: 500 }}
                       >
-        
-                      </Box>
-                    </Box>
-                    <Box sx={styles.base}></Box>
-                    <Box sx={styles.notch}></Box>
-                  </Container>
-                  
-                </motion.div>
-              )
-            ) : null
-          }
-          
+                        <span className='icon'><RiShieldCheckFill /></span>
+                        <h2 className='withIcon'>
+                          {point.years}
+                        </h2>
+                        <p>{point.description}</p>
+                      </motion.div>
+                    
+                  ))}
 
+                </Box>
+
+
+                <Box sx={styles.heroFooter}>
+            
+                  <ScrollLink
+                    to="work"
+                    variant="buttons.primary"
+                    spy={true}
+                    smooth={true}
+                    offset={-100}
+                    duration={500}
+                  >
+                    See My Work
+                  </ScrollLink>
+
+                </Box>
+                   
 
         </Container>
       </Box>
@@ -237,17 +203,17 @@ const styles = {
     backgroundColor: '#232946',
     textAlign: 'center',
 
-    pt: ['110px', null, null, null, '130px'],
+    pt: ['110px', null, null, null, '110px'],
     h1: {
       fontSize: ['28px', null, null, '32px', '38px', '48px', '64px'],
       lineHeight: 1.25,
       color: '#fffffe',
       fontWeight: 800,
       width: '100%',
-      maxWidth: ['100%', null, null, '60%', '600px', '640px', '851px'],
+      maxWidth: ['100%', null, null, '800px', '800px', '800px', '900px'],
       mx: 'auto',
       mt: '30px',
-      mb: ['40px', null, null, '65px'],
+      mb: ['65px', null, null, '65px'],
 
       '.typed, .typed-cursor': {
         WebkitTextFillColor: '#fffffe',
@@ -270,16 +236,16 @@ const styles = {
       },
     },
     h2: {
-      display: 'none',
-      fontSize: '1.25rem',
+      
+      fontSize: '1.5rem',
       lineHeight: 1.25,
-      color: '#ccc',
+      color: '#fffffe',
       fontWeight: 400,
       width: '100%',
-      maxWidth: ['100%', null, null, '55%', '500px', '640px', '851px'],
+      maxWidth: ['100%', null, null, '65%', '500px', '640px', '851px'],
       mx: 'auto',
       mt: '30px',
-      mb: ['40px', null, null, '65px'],
+      mb: ['65px', null, null, '100px'],
 
       '@media(max-width: 699px)': {
         display: 'block',
@@ -296,25 +262,17 @@ const styles = {
   bg: {
     width: '100%',
     height: '100%',
-
-      '@media(max-width: 991px)': {
-
-        backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 150 150' width='150' height='150' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.184' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='31' specularConstant='0.7' specularExponent='20' lighting-color='%23ff8e3c' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E %3CfeDistantLight azimuth='3' elevation='65'%3E%3C/feDistantLight%3E %3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%23232946'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23ff8e3c' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E")`,
-      },
-
+    backgroundImage: `url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' viewBox='0 0 150 150' width='150' height='150' opacity='1'%3E%3Cdefs%3E%3Cfilter id='nnnoise-filter' x='-20%25' y='-20%25' width='140%25' height='140%25' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='linearRGB'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.184' numOctaves='4' seed='15' stitchTiles='stitch' x='0%25' y='0%25' width='100%25' height='100%25' result='turbulence'%3E%3C/feTurbulence%3E%3CfeSpecularLighting surfaceScale='31' specularConstant='0.7' specularExponent='20' lighting-color='%23ff8e3c' x='0%25' y='0%25' width='100%25' height='100%25' in='turbulence' result='specularLighting'%3E %3CfeDistantLight azimuth='3' elevation='65'%3E%3C/feDistantLight%3E %3C/feSpecularLighting%3E%3C/filter%3E%3C/defs%3E%3Crect width='700' height='700' fill='%23232946'%3E%3C/rect%3E%3Crect width='700' height='700' fill='%23ff8e3c' filter='url(%23nnnoise-filter)'%3E%3C/rect%3E%3C/svg%3E")`,
   },
   
   logo: {
-    display: 'none',
+    display: 'block',
     borderRadius: '50%',
     mx: 'auto',
     boxShadow: '0px 15px 35px rgba(65, 104, 139, 0.12)',
     transform: 'translatey(0px)',
     animation: `${bannerAnim4} 4s ease-in-out infinite`,
 
-    '@media(max-width: 699px)': {
-      display: 'block',
-    },
   },
   bannerImage: {
     display: 'block',
@@ -324,6 +282,7 @@ const styles = {
   },
   container: {
     position: 'relative',
+    pt: '3rem',
 
     '.bannerIcon': {
       position: 'absolute',
@@ -467,4 +426,100 @@ const styles = {
     },
   },
 
+  points: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    maxWidth: '1024px',
+    margin: '0 auto',
+    justifyContent: 'space-around',
+
+    '@media(max-width: 767px)': {
+      flexDirection: 'column',
+      width: '100%',
+    },
+
+    h2: {
+      fontFamily: 'Space Grotesk, sans-serif',
+      textShadow: '0px 4px 3px rgba(0,0,0,0.4), 0px 8px 13px rgba(0,0,0,0.1), 0px 18px 23px rgba(0,0,0,0.1)',
+      fontWeight: '700',
+      fontSize: '1.75rem',
+      letterSpacing: '1px',
+      mb: '.5rem',
+
+      '@media(max-width: 767px)': {
+        mb: '0',
+      },
+    },
+
+    p: {
+      mt: '0',
+
+      '@media(max-width: 767px)': {
+        lineHeight: '1.2',
+      },
+    },
+
+    '.point': {
+      width: 'calc(33.33% - 8px)',
+      margin: '4px',
+      color: '#fffffe',
+      borderLeft: '1px solid #fffffe',
+      padding: '1rem',
+
+      ':first-child': {
+        borderLeft: 'none',
+      },
+
+      '@media(max-width: 767px)': {
+        textAlign: 'left',
+        width: '100%',
+        borderLeft: 'none',
+        padding: '0',
+      },
+
+      '.withIcon': {
+        paddingLeft: '.5rem',
+        display: 'inline',
+      },
+
+      '.icon': {
+        paddingTop: '.3rem',
+        display: 'inline',
+        fontSize: '1.5rem',
+      },
+    },
+  },
+
+  heroFooter: {
+    width: '100%',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    mt: 'auto',
+    pb: '2rem',
+
+    a: {
+      backgroundColor: '#ff8e3c',
+      cursor: 'pointer',
+      fontSize: '16px',
+      fontWeight: 'bold',
+      letterSpacing: '-0.16px',
+      borderRadius: '5px',
+      color: '#02073E',
+      padding: '6.5px 24px',
+      display: 'block',
+      textAlign: 'center',
+      transition: 'all 500ms ease',
+
+      '@media(max-width: 590px)': {
+        width: '100%',
+      },
+
+      '&:hover': {
+        opacity: 0.8,
+        transform: 'translateY(-0.45rem)',
+      },
+    },
+  },
+  
 };

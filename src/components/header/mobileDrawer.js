@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { Button, Box } from 'theme-ui';
+import { Box } from 'theme-ui';
 import { Scrollbars } from 'react-custom-scrollbars';
 import Drawer from 'components/drawer';
 import { DrawerContext } from 'contexts/drawer/drawer.context';
@@ -8,7 +8,6 @@ import { Link as ScrollLink } from 'react-scroll';
 import menuItems from './header.data';
 import Logo from 'components/logo';
 import logoBald from 'assets/tl-logo-no-text.svg';
-import logoDark from 'assets/logo-dark.svg';
 
 const MobileDrawer = () => {
   const { state, dispatch } = useContext(DrawerContext);

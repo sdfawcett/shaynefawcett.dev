@@ -20,7 +20,7 @@ export default {
     body: 'Raleway',
     // body:
     //   'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
-    heading: 'Space Grotesk',
+    heading: 'Space Grotesk, sans-serif',
     // heading: 'Bree Serif',
     monospace: 'Menlo, monospace',
   },
