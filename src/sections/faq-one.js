@@ -7,6 +7,11 @@ import Accordion from 'components/accordion/accordion';
 import image from 'assets/bb-static-tablet_ipad_silver_landscape.png';
 import { FaGithub } from 'react-icons/fa';
 import { FaExternalLinkSquareAlt } from 'react-icons/fa';
+import { SiNextdotjs } from 'react-icons/si';
+import { FaReact } from 'react-icons/fa';
+import { FaShopify } from 'react-icons/fa';
+import { SiJavascript } from 'react-icons/si';
+import { SiGraphql } from 'react-icons/si';
 
 const FAQ_ONE_DATA = {
   sectionImage: image,
@@ -17,18 +22,24 @@ const FAQ_ONE_DATA = {
   faqs: [
     {
       isExpanded: true,
-      title: 'Project Details and Scope',
+      title: 'Technology Overview',
       contents: (
-        <div>
-          Get your website ads tests delivered at let collect sample from the
-          victory of the managments that supplies best design system which
-          guidelines ever with multiple features.
-        </div>
+        <>
+          <div className='accordionIcons'>
+
+
+          </div>
+          <div>
+            <p className='accordionIconText'>Get your website ads tests delivered at let collect sample from the
+            victory of the managments that supplies best design system which
+            guidelines ever with multiple features.</p>
+          </div>
+        </>
       ),
     },
     {
       isExpanded: false,
-      title: 'Technology Overview',
+      title: 'Project Details and Scope',
       contents: (
         <div>
           Get your website ads tests delivered at let collect sample from the
