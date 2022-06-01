@@ -13,8 +13,8 @@ import {
 } from './shared';
 
 export default function Accordion({ items, ...props }) {
-  const openIcon = <img src={accordionIconOpen} alt="open icon" />;
-  const closeIcon = <img src={accordionIconClose} alt="close icon" />;
+  const openIcon = <Image src={accordionIconOpen} alt="open icon" />;
+  const closeIcon = <Image src={accordionIconClose} alt="close icon" />;
   return (
     <BaseAccordion
       stateReducer={combineReducers(single, preventClose)}
