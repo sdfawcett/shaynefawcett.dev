@@ -231,7 +231,7 @@ const styles = {
         WebkitTextFillColor: 'transparent',
       },
 
-      '@media(max-width: 699px)': {
+      '@media(max-width: 767px)': {
         textAlign: 'left',
       },
     },
@@ -453,10 +453,7 @@ const styles = {
 
     p: {
       mt: '0',
-
-      '@media(max-width: 767px)': {
-        lineHeight: '1.2',
-      },
+      lineHeight: '1.5',
     },
 
     '.point': {
@@ -466,7 +463,7 @@ const styles = {
       borderLeft: '1px solid #fffffe',
       padding: '1rem',
 
-      ':first-child': {
+      ':first-of-type': {
         borderLeft: 'none',
       },
 
