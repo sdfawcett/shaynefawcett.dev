@@ -18,8 +18,7 @@ export default function Footer() {
           <Box sx={styles.logoContainer}>
             <Logo image={logoBald} />
           </Box>
-          <Text
-            as="p"
+          <Box
             sx={styles.footerText}
           >
             Copyright &copy; {new Date().getFullYear()} Shayne Fawcett and Mindful Web Partnership, LLC. All rights reserved. <br />Designed, coded, and written by Shayne Fawcett. ✌️<br />
@@ -33,7 +32,7 @@ export default function Footer() {
               <FaGithub />
               </a>
             </Box>
-          </Text>
+          </Box>
         </Box>
         
         <Box sx={styles.linksWrap}>
