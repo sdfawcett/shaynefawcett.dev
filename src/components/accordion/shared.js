@@ -100,6 +100,7 @@ export const AccordionItem = ({ isOpen, children, ...rest }) => (
       border: '1px solid #EDEFF2',
       padding: 0,
       overflow: 'hidden',
+      zIndex: '10',
     }}
     {...rest}
   >
