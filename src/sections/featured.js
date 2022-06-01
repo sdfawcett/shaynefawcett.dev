@@ -122,8 +122,14 @@ const styles = {
   },
   container: {
     position: 'relative',
-    pt: ['80px', null, null, null, '185px', '185px', '185px'],
+    pt: '185px',
     pb: ['80px', null, null, null, '80px', '80px', '185px'],
+
+    '@media (max-width: 1023px)': {
+      pt: '80px',
+    },
+
+
 
     '@media(max-width: 600px)': {
       top: '0',

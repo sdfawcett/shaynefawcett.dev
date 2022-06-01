@@ -496,7 +496,7 @@ const styles = {
     flexDirection: 'column',
     alignItems: 'center',
     mt: 'auto',
-    pb: '2rem',
+    padding: '4rem 0 4rem 0',
 
     a: {
       backgroundColor: '#ff8e3c',

@@ -66,7 +66,7 @@ export default function UltimateFeatures() {
     <section id="services" sx={styles.section}>
       <Container>
       <BlockTitle
-          title="How I Can Help Your Web Project"
+          title="Ways I Can Benefit Your Web Project"
           text="Don't settle for just a website or app. Invest in an online experience."
         />
         <Box ref={myRef} sx={styles.grid}>

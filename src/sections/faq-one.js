@@ -150,7 +150,7 @@ const styles = {
     display: 'none',
     position: ['relative', null, null, null, 'absolute'],
     zIndex: '1',
-    top: 0,
+    top: '80px',
     left: [0, null, null, null, '-39%', '-26%', '0%'],
     maxWidth: ['80%', null, null, '94%', null, '100%'],
     mx: ['auto', null, null, null, 0],
@@ -158,6 +158,10 @@ const styles = {
     '@media(min-width: 1024px)': {
       display: 'block',
       width: '100%',
+    },
+
+    '@media only screen and (min-width: 1024px) and (max-width: 1080px)': {
+      top: '130px',
     },
 
     '@media(min-width: 1240px)': {
@@ -256,7 +260,7 @@ const styles = {
   },
   content: {
     flex: '0 0 100%',
-    pl: ['0', null, null, null, '80px'],
+    pl: '80px',
     pb: ['50px', null, null, '70px', null, null, '90px'],
     '@media only screen and (min-width: 1560px) and (max-width: 3000px)': {
       flex: '0 0 60%',
@@ -266,6 +270,10 @@ const styles = {
     },
     '@media only screen and (min-width: 1024px) and (max-width: 1240px)': {
       flex: '0 0 50%',
+    },
+
+    '@media (max-width: 1024px)': {
+      pl: '0',
     },
 
     '@media only screen and (min-width: 320px) and (max-width: 991px)': {

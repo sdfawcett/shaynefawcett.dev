@@ -140,7 +140,8 @@ const styles = {
 
     a: {
       fontSize: ['14px', null, null, null, '16px'],
-      color: '#ffffff',
+      color: '#fffffe',
+      opacity: '0.7',
       transition: 'all 500ms ease',
       cursor: 'pointer',
       '&:hover, &.active': { 
