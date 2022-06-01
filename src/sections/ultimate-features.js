@@ -72,7 +72,7 @@ export default function UltimateFeatures() {
         <Box ref={myRef} sx={styles.grid}>
           
             {data?.map((item) => (
-              <Feature  sx={myElementIsVisible ? styles.animateinFromLeft : ''} className="feature-item" key={item.id} data={item} />
+              <Feature sx={myElementIsVisible ? styles.animateinFromLeft : ''} className="feature-item" key={item.id} data={item} />
             ))}
           
         </Box>

@@ -40,7 +40,7 @@ const Banner = () => {
           initial="hidden" 
           animate="visible"
           transition={{
-            delay: 0.3, type: 'tween'
+            delay: 0, type: 'tween'
           }} 
           variants={{
               hidden: {
@@ -51,7 +51,7 @@ const Banner = () => {
                 scale: 1,
                 opacity: 1,
                 transition: {
-                  delay: 1.1
+                  delay: .2
                 }
               },
             }}
@@ -82,10 +82,10 @@ const Banner = () => {
                     
                       <motion.div
                         key={point.id}
-                        initial={{ y: 550 }}
-                        animate={{ y: -23 }}
+                        initial={{ x: 1050 }}
+                        animate={{ x: 0 }}
                         className='point'
-                        transition={{ duration: 1, delay: i * 1.5, type: 'spring', stiffness: 500 }}
+                        transition={{ duration: 3, delay: i * 1.5, type: 'spring', stiffness: 500 }}
                       >
                         <span className='icon'><RiShieldCheckFill /></span>
                         <h2 className='withIcon'>
