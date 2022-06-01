@@ -12,10 +12,6 @@ export default [
     label: 'Work',
   },
   {
-    path: 'testimonials',
-    label: 'Testimonials',
-  },
-  {
     path: 'faq',
     label: 'FAQ',
   },
