@@ -7,7 +7,7 @@ import Accordion from 'components/accordion/accordion';
 import image from 'assets/bb-static-tablet_ipad_silver_landscape.png';
 import { FaGithub } from 'react-icons/fa';
 import { FaExternalLinkSquareAlt } from 'react-icons/fa';
-import { SiNextdotjs } from 'react-icons/si';
+import { SiNextDotJs } from 'react-icons/si';
 import { FaReact } from 'react-icons/fa';
 import { FaShopify } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
@@ -25,8 +25,35 @@ const FAQ_ONE_DATA = {
       title: 'Technology Overview',
       contents: (
         <>
-          <div className='accordionIcons'>
+          <div 
+            className='accordionIcons'
+            style={{ 
+              display: 'flex',
+              justifyContent: 'flex-start',
+              fontSize: '1.75rem',
+              width: '60%',
+            }}
+          >
+            <span className='next'>
+              <SiNextDotJs />
+            </span>
 
+            <span className='react'>
+              <FaReact />
+            </span>
+
+            <span className='shopify'>
+              <FaShopify />
+            </span>
+
+            <span className='js'>
+              <SiJavascript />
+            </span>
+
+            <span className='gq'>
+              <SiGraphql />
+            </span>
+            
 
           </div>
           <div>
@@ -144,6 +171,27 @@ const styles = {
   section: {
     position: 'relative',
     mb: '-1%',
+
+    '.next': {
+      color: '#000000',
+      pr: '1rem',
+    },
+    '.react': {
+      color: '#61DAFB',
+      pr: '1rem',
+    },
+    '.shopify': {
+      color: '#7AB55C',
+      pr: '1rem',
+    },
+    '.js': {
+      color: '#F7DF1E',
+      pr: '1rem',
+    },
+    '.gq': {
+      color: '#E10098',
+      pr: '1rem',
+    },
   },
   desktop: {
     display: 'block',
@@ -325,4 +373,7 @@ const styles = {
       mt: ['15px', null, null, '25px'],
     },
   },
+
+
+
 };
