@@ -5,17 +5,15 @@ import { Link } from 'components/link';
 import { Link as ScrollLink } from 'react-scroll';
 import Logo from 'components/logo';
 import logoBald from 'assets/tl-logo-no-text.svg';
+import { FaLinkedin } from 'react-icons/fa';
+import { FaGithub } from 'react-icons/fa';
 
 export default function Footer() {
   return (
     <Box as="footer" sx={styles.footer}>
       <Container sx={styles.container}>
         <Box
-          sx={{
-            display: 'flex',
-            alignItems: ['center', null, null, null, null, 'end'],
-            flexDirection: ['column', null, null, null, null, 'row'],
-          }}
+          sx={styles.footerMain}
         >
           <Box sx={styles.logoContainer}>
             <Logo image={logoBald} />
@@ -24,10 +22,20 @@ export default function Footer() {
             as="p"
             sx={styles.footerText}
           >
-            Copyright &copy; {new Date().getFullYear()} Shayne Fawcett and Mindful Web Partnership, LLC. All rights reserved. <br />Designed, coded, and written by Shayne Fawcett. ✌️
+            Copyright &copy; {new Date().getFullYear()} Shayne Fawcett and Mindful Web Partnership, LLC. All rights reserved. <br />Designed, coded, and written by Shayne Fawcett. ✌️<br />
+            <Box
+              sx={styles.iconContainer}
+            >
+              <a href=''>
+              <FaLinkedin />
+              </a>
+              <a href=''>
+              <FaGithub />
+              </a>
+            </Box>
           </Text>
-
         </Box>
+        
         <Box sx={styles.linksWrap}>
 
           <ScrollLink 
@@ -97,6 +105,17 @@ const styles = {
     '@media(min-width: 1200px)': {
       alignItems: 'end',
     },
+    '@media(max-width: 1199px)': {
+      alignItems: 'center',
+    },
+  },
+  footerMain: {
+    display: 'flex',
+    alignItems: 'center',
+
+    '@media(max-width: 1199px)': {
+      flexDirection: 'column',
+    },
   },
   logoContainer: {
     width: '4rem',
@@ -130,5 +149,20 @@ const styles = {
       },
     },
     'a+a': { ml: ['15px', null, null, null, '35px'] },
+  },
+
+  iconContainer: {
+    display: 'flex',
+    flexDirection: 'row',
+
+    '@media(max-width: 1199px)': {
+      justifyContent: 'center',
+    },
+
+    a: {
+      margin: '.5rem 1.5rem 0 0',
+      color: '#fffffe',
+      fontSize: '1.2rem',
+    },
   },
 };
