@@ -27,7 +27,7 @@ const CallToActionSubHero = () => {
           </Box>
 
          <Box sx={styles.images}>   
-            <Box data-aos="fade-left">
+            <Box data-aos="flip-up">
               <Image src={coreWebVitals} layout='fill' alt="shaynefawcett.dev real google core web vitals report" />
               <p>This website's actual <a href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> report with the maximum score of 100</p>
             </Box>

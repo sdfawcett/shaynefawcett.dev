@@ -18,7 +18,7 @@ import CallToActionSubHero from 'sections/cta-sub-hero';
 export default function IndexPage() {
 
   useEffect(() => {
-    Aos.init({ duration: 2000 });
+    Aos.init({ duration: 2000, disable: 'phone', });
   }, []);
 
   return (
