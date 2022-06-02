@@ -129,7 +129,7 @@ const styles = {
     marginTop: '30px',
 
     a: {
-      fontSize: '16px',
+      fontSize: '1.35rem',
       fontWeight: '400',
       color: 'black',
       py: '5px',

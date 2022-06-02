@@ -282,7 +282,7 @@ const styles = {
   },
   container: {
     position: 'relative',
-    pt: '3rem',
+    pt: '1rem',
 
     '.bannerIcon': {
       position: 'absolute',

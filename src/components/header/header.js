@@ -115,7 +115,7 @@ const styles = {
       display: 'none',
     },
     navLink: {
-      fontSize: '16px',
+      fontSize: '1.35rem',
       fontWeight: '400',
       cursor: 'pointer',
       lineHeight: '1.2',
