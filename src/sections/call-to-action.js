@@ -92,6 +92,11 @@ const popIn = keyframes`
     transform: scale(0.5, 0.5);
   }
 
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+
   100% {
     opacity: 1;
     transform: scale(1, 1);

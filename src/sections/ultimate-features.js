@@ -72,7 +72,7 @@ export default function UltimateFeatures() {
         <Box ref={myRef} sx={styles.grid}>
           
             {data?.map((item) => (
-              <Feature sx={myElementIsVisible ? styles.animateinFromLeft : ''} className="feature-item" key={item.id} data={item} />
+              <Feature sx={myElementIsVisible ? styles.animatepopIn : ''} className="feature-item" key={item.id} data={item} />
             ))}
           
         </Box>
@@ -81,6 +81,22 @@ export default function UltimateFeatures() {
   );
 };
 
+const popIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: scale(0.5, 0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1, 1);
+  }
+`;
 
 const inFromLeft = keyframes`
   0% {
@@ -94,6 +110,9 @@ const inFromLeft = keyframes`
 const styles = {
   animateinFromLeft: {
     animation: `${inFromLeft} 1s ease-in-out 1`,
+  },
+  animatepopIn: {
+    animation: `${popIn} 2s ease-in-out 1`,
   },
   section: {
     backgroundColor: '#F9FBFD',

@@ -28,9 +28,10 @@ const CallToActionSubHero = () => {
 
          <Box ref={myRef} sx={styles.images}>
          
-            <Box sx={myElementIsVisible ? styles.animateInFromRight : ''} >
+            <Box sx={myElementIsVisible ? styles.animatepopIn : ''} >
                
             <Image src={coreWebVitals} layout='fill' alt="shaynefawcett.dev real google core web vitals report" />
+            <p>This website's actual <a href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> report with the maximum score of 100</p>
             </Box>
          </Box>
 
@@ -48,6 +49,11 @@ const popIn = keyframes`
   0% {
     opacity: 0;
     transform: scale(0.5, 0.5);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.2, 1.2);
   }
 
   100% {
