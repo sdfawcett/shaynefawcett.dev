@@ -26,9 +26,9 @@ const CallToActionSubHero = () => {
 
           </Box>
 
-         <Box ref={myRef} sx={styles.images}>
+         <Box sx={styles.images}>
          
-            <Box sx={myElementIsVisible ? styles.animatepopIn : ''} >
+            <Box>
                
             <Image src={coreWebVitals} layout='fill' alt="shaynefawcett.dev real google core web vitals report" />
             <p>This website's actual <a href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> report with the maximum score of 100</p>
