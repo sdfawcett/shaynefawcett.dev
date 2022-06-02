@@ -11,6 +11,7 @@ import CallToAction from 'sections/call-to-action';
 import Featured from 'sections/featured';
 import FAQ from 'sections/faq';
 import Subscribe from 'sections/subscribe';
+import CallToActionSubHero from 'sections/cta-sub-hero';
 
 export default function IndexPage() {
   return (
@@ -19,6 +20,7 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Shayne Fawcett Web Development" />
           <Banner />
+          <CallToActionSubHero />
           <UltimateFeatures />
           <CallToAction />
           <FaqOne />
