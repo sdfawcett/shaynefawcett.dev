@@ -3,7 +3,6 @@
 import { jsx, Box, Container } from 'theme-ui';
 import BlockTitle from 'components/block-title';
 import Feature from 'components/cards/feature';
-import { useInView } from 'react-intersection-observer';
 import { keyframes } from '@emotion/core';
 
 import icon1 from 'assets/features/1.png';
@@ -23,6 +22,7 @@ const data = [
   },
   {
     id: 2,
+    delay: '300',
     icon: icon2,
     path: '#!',
     title: 'Site Migrations and Replatforming',
@@ -30,6 +30,7 @@ const data = [
   },
   {
     id: 3,
+    delay: '500',
     icon: icon3,
     path: '#!',
     title: 'Updates To Existing Sites',
@@ -37,6 +38,7 @@ const data = [
   },
   {
     id: 4,
+    delay: '700',
     icon: icon4,
     path: '#!',
     title: 'eCommerce Consulting and Development',
@@ -44,6 +46,7 @@ const data = [
   },
   {
     id: 5,
+    delay: '900',
     icon: icon5,
     path: '#!',
     title: 'Headless eCommerce Solutions',
@@ -51,6 +54,7 @@ const data = [
   },
   {
     id: 6,
+    delay: '1100',
     icon: icon6,
     path: '#!',
     title: 'React Development',
@@ -60,8 +64,6 @@ const data = [
 
 export default function UltimateFeatures() {
 
-  const { ref: myRef, inView: myElementIsVisible } = useInView()
-
   return (
     <section id="services" sx={styles.section}>
       <Container>
@@ -69,10 +71,10 @@ export default function UltimateFeatures() {
           title="Ways I Can Benefit Your Web Project"
           text="Don't settle for just a website or app. Invest in an online experience."
         />
-        <Box ref={myRef} sx={styles.grid}>
+        <Box sx={styles.grid}>
           
             {data?.map((item) => (
-              <Feature className="feature-item" key={item.id} data={item} />
+              <Feature data-aos-delay={item.delay} data-aos="fade-right" className="feature-item" key={item.id} data={item} />
             ))}
           
         </Box>

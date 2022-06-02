@@ -1,8 +1,6 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
 import { keyframes } from '@emotion/core';
 import { Box, Container, Flex, Text, Heading, Image, Grid, Avatar } from 'theme-ui';
-import { Link } from 'components/link';
 import ReactIcon from 'assets/react.svg';
 import NextIcon from 'assets/nextdotjs.svg';
 import GatsbyIcon from 'assets/gatsby.svg';
@@ -15,8 +13,6 @@ import WordPressIcon from 'assets/wordpress.svg';
 import FloatingIconsBg from 'assets/banner-icon-1-6.svg';
 
 const CallToAction = () => {
-
-  const { ref: myRef, inView: myElementIsVisible } = useInView()
 
   return (
     <Box as="section" sx={styles.callToAction}>
@@ -40,37 +36,37 @@ const CallToAction = () => {
             </Box>
           </Box>
 
-          <Box ref={myRef} as="section">
-            <Box sx={myElementIsVisible ? styles.animatepopIn : ''} >
+          <Box as="section">
+            <Box>
               <Container sx={styles.container}>      
                 <Grid sx={styles.gridContainer} columns={[3, '1fr 1fr 1fr']}>
 
                   <a href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar alt='react' src={ReactIcon} />
+                    <Avatar data-aos="flip-left" alt='react' src={ReactIcon} />
                   </a>
                   <a href='https://nextjs.org/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar alt='next.js' src={NextIcon} />
+                    <Avatar data-aos-delay='300' data-aos="flip-left" alt='next.js' src={NextIcon} />
                   </a>
                   <a href='https://www.gatsbyjs.com/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar alt='gatsby.js' src={GatsbyIcon} />
+                    <Avatar data-aos-delay='500' data-aos="flip-left" alt='gatsby.js' src={GatsbyIcon} />
                   </a>
                   <a href='https://wordpress.org/download/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar alt='wordpress' src={WordPressIcon} />
+                    <Avatar data-aos-delay='700' data-aos="flip-left" alt='wordpress' src={WordPressIcon} />
                   </a>
                   <a href='https://www.shopify.com/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar alt='shopify' src={ShopifyIcon} />
+                    <Avatar data-aos-delay='900' data-aos="flip-left" alt='shopify' src={ShopifyIcon} />
                   </a>
                   <a href='https://graphql.org/' target='_blank' rel='noopener noreferrer'>
-                    <Avatar alt='graph ql' src={GraphqlIcon} />
+                    <Avatar data-aos-delay='1100' data-aos="flip-left" alt='graph ql' src={GraphqlIcon} />
                   </a>
                   <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank' rel='noopener noreferrer'>
-                    <Avatar alt='html' src={HtmlIcon} />
+                    <Avatar data-aos-delay='1300' data-aos="flip-left" alt='html' src={HtmlIcon} />
                   </a>
                   <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' target='_blank' rel='noopener noreferrer'>
-                    <Avatar alt='css' src={CssIcon} />
+                    <Avatar data-aos-delay='1500' data-aos="flip-left" alt='css' src={CssIcon} />
                   </a>
                   <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' target='_blank' rel='noopener noreferrer'>
-                    <Avatar alt='javascript' src={JavaScriptIcon} />
+                    <Avatar data-aos-delay='1700' data-aos="flip-left" alt='javascript' src={JavaScriptIcon} />
                   </a>
   
                 </Grid>
