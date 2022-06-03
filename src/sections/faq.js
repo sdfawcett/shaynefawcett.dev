@@ -13,7 +13,7 @@ const accordionData = [
 
         <p>There are so many options for building websites nowadays, but in my personal opinion I like the balance between speed, developer experience, and static/dynamic rendering that Next.js offers. It allows you to get started on your project much faster than cobbling together dozens of plugins to get your environment set up.</p>
 
-        <p>In terms of CSS and React, I tend to go for a solution like Emotion. Although I like the familiar syntax of Styled Components, I prefer the scoping and naming conventions of Emotion.</p>
+        <p>In terms of CSS-in-JS, I tend to go for a solution like Emotion. Although I like the familiar syntax of Styled Components, I prefer the scoping and naming conventions of Emotion.</p>
 
         <p>Message me any time to find out more. I love to talk about web technologies!</p>
       </div>

@@ -8,9 +8,9 @@ const Subscribe = () => {
   return (
     <Box as="section" id='contact' sx={styles.subscribe}>
       <Container>
-        <Heading as="h2">Subscribe to get notified about event</Heading>
+        <Heading as="h2">Contact me anytime</Heading>
         <Text as="p">
-          By subscribing with your mail, you will accept our privacy policy
+          Let's talk about your next project.
         </Text>
         <Box as="form" sx={styles.form}>
           <Box as="label" htmlFor="contactName" variant="styles.srOnly">
@@ -98,7 +98,6 @@ const styles = {
     p: {
       fontSize: ['16px', null, null, '18px'],
       color: '#fffffe',
-      opacity: '.6',
       letterSpacing: ['-0.5px'],
       textAlign: 'center',
       width: ['70%', null, null, 'auto'],
