@@ -27,9 +27,9 @@ export default function IndexPage() {
         <Layout>
           <SEO title="Shayne Fawcett Web Development" />
           <Banner />
-          <CallToActionSubHero />
-          <UltimateFeatures />
           <CallToAction />
+          <UltimateFeatures />
+          <CallToActionSubHero />
           <FaqOne />
           <Featured />
           <FAQ />

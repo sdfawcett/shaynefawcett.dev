@@ -24,14 +24,14 @@ const CallToAction = () => {
               Innovative Web Solutions Driven By Modern Technologies
             </Heading>
             <Text as="p">
-              I know what it takes to build a stunning store and optimize it. And I get excited about new technologies.
+            I have more than a decade of experience building complex interfaces and putting together solutions for all kinds of users. I can help you identify the most appropriate technologies for your project based on your business needs and goals.
             </Text>
             <Text as="p">
-              Why not leverage my focus on innovation to make your project a success?
+              With widespread quarantines during the pandemic, eCommerce has grown exponentially. That's why lately I've been delivering headless Shopify storefronts using React, GraphQL Storefront API, and a host of other API-driven technologies. 
             </Text>
             <Box sx={styles.linkButtonWrapper}>
               <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
-                Start A Project
+                See More
               </a>
             </Box>
           </Box>
@@ -116,7 +116,11 @@ const styles = {
     justifyContent: 'space-evenly',
   },
   container: {
-    margin: '15% 0',
+    margin: '30% 0',
+
+    '@media(max-width: 991px)': {
+      margin: '11% 0',
+    },
   },
   gridContainer: {
     columnGap: '3.5rem',
@@ -129,7 +133,7 @@ const styles = {
   },
   content: {
     flex: ['0 0 100%', null, null, null, '0 0 50.5%'],
-    textAlign: ['center', null, null, null, 'left'],
+    textAlign: 'left',
     pt: ['80px', null, null, null, '0'],
     maxWidth: ['100%', null, null, '80%', '100%'],
     mx: ['auto', null, null, null, '0'],

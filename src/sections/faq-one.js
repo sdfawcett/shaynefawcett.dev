@@ -18,7 +18,7 @@ const FAQ_ONE_DATA = {
   tagline: 'Featured Project',
   title: 'Bomb Botanicals eCommerce Store Redesign and Rebuild',
   text:
-    'Build an incredible workplace and grow your business with Gusto’s all-in-one platform with amazing contents.',
+    'An eCommerce storefront for a wellness brand selling CBD products online.',
   faqs: [
     {
       isExpanded: true,
@@ -57,9 +57,9 @@ const FAQ_ONE_DATA = {
 
           </div>
           <div>
-            <p className='accordionIconText'>Get your website ads tests delivered at let collect sample from the
-            victory of the managments that supplies best design system which
-            guidelines ever with multiple features.</p>
+            <p className='accordionIconText'>
+              Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for data-fetching.
+            </p>
           </div>
         </>
       ),

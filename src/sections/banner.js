@@ -82,7 +82,7 @@ const Banner = () => {
                     
                       <motion.div
                         key={point.id}
-                        initial={{ x: 1050 }}
+                        initial={{ x: 2050 }}
                         animate={{ x: 0 }}
                         className='point'
                         transition={{ duration: 3, delay: i * 1.5, type: 'spring', stiffness: 500 }}

@@ -51,7 +51,7 @@ const Subscribe = () => {
 
           <Box as='div' sx={styles.orDivider}><span>OR</span></Box>
 
-          <Button type="submit" sx={styles.button}>
+          <Button sx={styles.button}>
             <div className='icon'><AiFillPhone /></div>
             <div className='withIcon'>Schedule A Call</div>
           </Button>

@@ -26,9 +26,8 @@ export default function Accordion({ items, ...props }) {
             <AccordionItem
               key={item.title}
               isOpen={openIndexes.includes(index)}
-              onClick={() => handleItemClick(index)}
             >
-              <AccordionButton>
+              <AccordionButton onClick={() => handleItemClick(index)}>
                 <span>
                   {openIndexes.includes(index) ? openIcon : closeIcon}
                 </span>

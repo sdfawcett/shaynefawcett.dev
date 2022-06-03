@@ -5,60 +5,60 @@ import BlockTitle from 'components/block-title';
 import Feature from 'components/cards/feature';
 import { keyframes } from '@emotion/core';
 
-import icon1 from 'assets/features/1.png';
-import icon2 from 'assets/features/2.png';
-import icon3 from 'assets/features/3.png';
-import icon4 from 'assets/features/4.png';
-import icon5 from 'assets/features/5.png';
-import icon6 from 'assets/features/6.png';
+import icon1 from 'assets/features/communication.svg';
+import icon2 from 'assets/features/ux.svg';
+import icon3 from 'assets/features/web-dev.svg';
+import icon4 from 'assets/features/ecomm-consulting.svg';
+import icon5 from 'assets/features/cwv.svg';
+import icon6 from 'assets/features/headless.svg';
 
 const data = [
   {
     id: 1,
     icon: icon1,
     path: '#!',
-    title: 'Web Design and Development',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Communication',
+    description: `Before web development, my professional experience was in corporate communications. It's helped make me a communicative developer who provides regular, thorough status updates.`,
   },
   {
     id: 2,
     delay: '300',
     icon: icon2,
     path: '#!',
-    title: 'Site Migrations and Replatforming',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'User Experience',
+    description: `I spent five years working as a UX developer on a 60-person user experience team. It's why I'm always striving to include new and innovative interactions to enhance UX.`,
   },
   {
     id: 3,
     delay: '500',
     icon: icon3,
     path: '#!',
-    title: 'Updates To Existing Sites',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Web Development',
+    description: `My goal as a developer is to write less code more efficiently, combining the power of reusable components with modern tools. And I experiment continually with new techniques and tools to stay sharp and marketable.`,
   },
   {
     id: 4,
     delay: '700',
     icon: icon4,
     path: '#!',
-    title: 'eCommerce Consulting and Development',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'eCommerce Consulting',
+    description: `If you have an eCommerce business idea but you don't know where to start, I can recommend the right suite of tools and technological approach based on current trends.`,
   },
   {
     id: 5,
     delay: '900',
     icon: icon5,
     path: '#!',
-    title: 'Headless eCommerce Solutions',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Core Web Vitals Optimization',
+    description: `Good Page Experience and Core Web Vitals are a must. Any good website should be optimized to load in the shortest time possible. I can help you identify all the opportunities for increasing your performance scores.`,
   },
   {
     id: 6,
     delay: '1100',
     icon: icon6,
     path: '#!',
-    title: 'React Development',
-    description: `We’re driven beyond just finishing projects. We want to find smart solutions.`,
+    title: 'Headless eCommerce Storefronts',
+    description: `I believe headless solutions are the future of eCommerce because of their speed and flexibility. But it's not the right solution for every business. I can map out the implications for your business and help you decide which data-fetching approach is right for you.`,
   },
 ];
 
@@ -68,7 +68,7 @@ export default function UltimateFeatures() {
     <section id="services" sx={styles.section}>
       <Container>
       <BlockTitle
-          title="Ways I Can Benefit Your Web Project"
+          title="How I Can Benefit Your Web Project"
           text="Don't settle for just a website or app. Invest in an online experience."
         />
         <Box sx={styles.grid}>

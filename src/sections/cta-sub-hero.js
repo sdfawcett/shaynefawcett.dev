@@ -1,21 +1,18 @@
 import React from 'react';
-import { useInView } from 'react-intersection-observer';
 import { keyframes } from '@emotion/core';
 import { Box, Container, Flex, Text, Heading, Image } from 'theme-ui';
-import coreWebVitals from 'assets/core-web-vitals.webp';
+import coreWebVitals from 'assets/core-web-vitals-large.webp';
 
 const CallToActionSubHero = () => {
-
-  const { ref: myRef, inView: myElementIsVisible } = useInView()
 
   return (
     <Box as="section" sx={styles.callToAction}>
       <Container>
         <Flex sx={styles.flex}>
           <Box sx={styles.content}>
-            <Text as="span">Behind the design</Text>
+            <Text as="span">Slow websites are ranked lower</Text>
             <Heading as="h2">
-              Innovative Web Solutions Driven By Modern Technologies
+              Page Experience and Core Web Vitals
             </Heading>
             <Text as="p">
               I know what it takes to build a stunning store and optimize it. And I get excited about new technologies.
@@ -29,14 +26,13 @@ const CallToActionSubHero = () => {
          <Box sx={styles.images}>   
             <Box data-aos="flip-up">
               <Image src={coreWebVitals} layout='fill' alt="shaynefawcett.dev real google core web vitals report" />
-              <p>This website's actual <a href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> report with the maximum score of 100</p>
+              <p>This website's <a href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> report with the maximum score of 100</p>
             </Box>
          </Box>
 
         </Flex>
       </Container>
     </Box>
-
     
   );
 };
@@ -103,7 +99,7 @@ const styles = {
   },
   content: {
     flex: ['0 0 100%', null, null, null, '0 0 40.5%'],
-    textAlign: ['center', null, null, null, 'left'],
+    textAlign: 'left',
     pt: ['80px', null, null, null, '0'],
     maxWidth: ['100%', null, null, '80%', '100%'],
     mx: ['auto', null, null, null, '0'],
