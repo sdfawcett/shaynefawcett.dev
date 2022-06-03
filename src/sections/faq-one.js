@@ -58,7 +58,7 @@ const FAQ_ONE_DATA = {
           </div>
           <div>
             <p className='accordionIconText'>
-              Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for data-fetching.
+              Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for fetching data.
             </p>
           </div>
         </>
@@ -69,9 +69,7 @@ const FAQ_ONE_DATA = {
       title: 'Project Details and Scope',
       contents: (
         <div>
-          Get your website ads tests delivered at let collect sample from the
-          victory of the managments that supplies best design system which
-          guidelines ever with multiple features.
+          <p>This store is deployed to Vercel, includes custom controls for adjusting/displaying product options and variants, has a responsive mini-cart that uses the React Context API, queries the Shopify Storefront API using GraphQL, and uses SWR to track and display real-time inventory data from Shopify.</p>
         </div>
       ),
     },
@@ -214,7 +212,17 @@ const styles = {
     maxWidth: ['80%', null, null, '94%', null, '100%'],
     mx: ['auto', null, null, null, 0],
 
-    '@media(min-width: 1024px)': {
+    '@media(min-width: 2001px)': {
+      display: 'block',
+      width: '100%',
+    },
+    
+    '@media only screen and (min-width: 1200px) and (max-width: 2000px)': {
+      display: 'block',
+      width: '75%',
+    },
+
+    '@media only screen and (min-width: 1024px) and (max-width: 1199px)': {
       display: 'block',
       width: '100%',
     },
@@ -331,7 +339,7 @@ const styles = {
       flex: '0 0 50%',
     },
 
-    '@media (max-width: 1024px)': {
+    '@media (max-width: 1023px)': {
       pl: '0',
     },
 

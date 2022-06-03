@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Box, Container, Button, Avatar } from 'theme-ui';
+import { Box, Container, Button, Avatar, Heading } from 'theme-ui';
 import { keyframes } from '@emotion/core';
 import BlockTitleDarkBg from 'components/block-title-dark-bg';
 import Image from 'components/image';
@@ -10,6 +10,11 @@ import cowtownTeesLogo from '../assets/cowtown-logo-light-cropped.svg';
 import mindfulLogo from '../assets/bb-globe-only.svg';
 import { VscGithub } from 'react-icons/vsc';
 import { BiLinkExternal } from 'react-icons/bi';
+import { GrGatsbyjs } from 'react-icons/gr';
+import { FaReact } from 'react-icons/fa';
+import { FaShopify } from 'react-icons/fa';
+import { SiJavascript } from 'react-icons/si';
+import { SiGraphql } from 'react-icons/si';
 
 const Featured = () => {
   const [tab, setTab] = useState({
@@ -36,7 +41,7 @@ const Featured = () => {
         <Container sx={styles.container}>
           <BlockTitleDarkBg
             title="Other Recent Projects"
-            text="Modern solutions built with modern technologies."
+            text="Modern business solutions built with modern technologies."
           />
           <Box sx={styles.tabButtonTopWrapper}>
             <Box sx={styles.tabButtonWrapper}>
@@ -61,6 +66,37 @@ const Featured = () => {
             {tab.active === 'budget' && (
               <>
                 <Image src={cowtownTeesCard} alt="cowtown tees screenshot" className="tabImage" />
+
+                <Heading sx={styles.projectHeader} as='h3'>Technology Overview</Heading>
+
+                <Box sx={styles.icons}>
+                  <span className='gatsby'>
+                    <GrGatsbyjs />
+                  </span>
+
+                  <span className='react'>
+                    <FaReact />
+                  </span>
+
+                  <span className='shopify'>
+                    <FaShopify />
+                  </span>
+
+                  <span className='js'>
+                    <SiJavascript />
+                  </span>
+
+                  <span className='gq'>
+                    <SiGraphql />
+                  </span>
+                </Box>
+
+                <Box as='p' sx={styles.projectText}>Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for fetching data.</Box>
+
+                <Heading sx={styles.projectHeader} as='h3'>Project Details and Scope</Heading>
+
+                <Box as='p' sx={styles.projectText}>Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for fetching data.</Box>
+
                 <Box sx={styles.linkButtonWrapper}>
                   <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
                       <span className='icon'><BiLinkExternal /></span>
@@ -77,6 +113,37 @@ const Featured = () => {
             {tab.active === 'adjust' && (
               <>
                 <Image src={mindfulCard} alt="mindful web partnership screenshot" className="tabImage" />
+
+                <Heading sx={styles.projectHeader} as='h3'>Technology Overview</Heading>
+
+                <Box sx={styles.icons}>
+                  <span className='gatsby'>
+                    <GrGatsbyjs />
+                  </span>
+
+                  <span className='react'>
+                    <FaReact />
+                  </span>
+
+                  <span className='shopify'>
+                    <FaShopify />
+                  </span>
+
+                  <span className='js'>
+                    <SiJavascript />
+                  </span>
+
+                  <span className='gq'>
+                    <SiGraphql />
+                  </span>
+                </Box>
+
+                <Box as='p' sx={styles.projectText}>Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for fetching data.</Box>
+
+                <Heading sx={styles.projectHeader} as='h3'>Project Details and Scope</Heading>
+
+                <Box as='p' sx={styles.projectText}>Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for fetching data.</Box>
+
                 <Box sx={styles.linkButtonWrapper}>
 
                   <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
@@ -248,6 +315,20 @@ const styles = {
       },
     },
   },
+  projectHeader: {
+    color: '#ff8e3c',
+    fontWeight: '700',
+  },
+  projectText: {
+    color: '#fffffe',
+    mb: '2rem',
+  },
+  icons: {
+    display: 'flex',
+    justifyContent: 'flex-start',
+    fontSize: '1.75rem',
+    width: '60%',
+  },
   tabContent: {
     position: 'relative',
     margin: '0 20%',
@@ -269,6 +350,26 @@ const styles = {
     '.tabImage': {
       position: 'relative',
       animation: `${fadeIn} 0.8s linear`,
+    },
+    '.gatsby': {
+      color: '#663399',
+      pr: '1rem',
+    },
+    '.react': {
+      color: '#61DAFB',
+      pr: '1rem',
+    },
+    '.shopify': {
+      color: '#7AB55C',
+      pr: '1rem',
+    },
+    '.js': {
+      color: '#F7DF1E',
+      pr: '1rem',
+    },
+    '.gq': {
+      color: '#E10098',
+      pr: '1rem',
     },
   },
   linkButtonWrapper: {

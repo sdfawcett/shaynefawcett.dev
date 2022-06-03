@@ -15,10 +15,13 @@ const CallToActionSubHero = () => {
               Page Experience and Core Web Vitals
             </Heading>
             <Text as="p">
-              I know what it takes to build a stunning store and optimize it. And I get excited about new technologies.
+              <a href='https://developers.google.com/search/docs/advanced/experience/page-experience' target='_blank' rel='noopener noreferrer'>Page Experience</a> is a set of signals from Google that measure how users perceive the experience of interacting with your website. <a href='https://web.dev/vitals/#core-web-vitals' target='_blank' rel='noopener noreferrer'>Core Web Vitals</a> are a set of real-world, user-centered metrics that quantify key aspects of your website's user experience.
             </Text>
             <Text as="p">
-              Why not leverage my focus on innovation to make your project a success?
+              Google uses Web Vitals and Page Experience to decide which links to display first in search results. I'll help ensure your Page Experience and Web Vitals are fully optimized so your content reaches the most people. 
+            </Text>
+            <Text as="p">
+              
             </Text>
 
           </Box>
@@ -191,6 +194,11 @@ const styles = {
   },
   images: {
     flex: ['0 0 100%', null, null, null, '0 0 49.5%'],
+    margin: '7% 0',
+
+    '@media(max-width: 991px)': {
+      margin: '0',
+    },
   },
   boxBg: {
     backgroundSize: 'contain',
