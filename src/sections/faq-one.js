@@ -32,7 +32,7 @@ const FAQ_ONE_DATA = {
               display: 'flex',
               justifyContent: 'flex-start',
               fontSize: '1.75rem',
-              width: '60%',
+              width: '100%',
             }}
           >
             <span className='next'>
@@ -175,27 +175,27 @@ const styles = {
 
     '.next': {
       color: '#000000',
-      pr: '1rem',
+      pr: '.5rem',
     },
     '.react': {
       color: '#61DAFB',
-      pr: '1rem',
+      pr: '.5rem',
     },
     '.shopify': {
       color: '#7AB55C',
-      pr: '1rem',
+      pr: '.5rem',
     },
     '.js': {
       color: '#F7DF1E',
-      pr: '1rem',
+      pr: '.5rem',
     },
     '.gq': {
       color: '#E10098',
-      pr: '1rem',
+      pr: '.5rem',
     },
     '.tw': {
       color: '#06B6D4',
-      pr: '1rem',
+      pr: '.5rem',
     },
   },
   desktop: {

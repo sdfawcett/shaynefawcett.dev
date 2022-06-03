@@ -18,7 +18,7 @@ const data = [
     icon: icon1,
     path: '#!',
     title: 'Communication',
-    description: `Before web development, my professional experience was in corporate communications. It's helped make me a communicative developer who provides regular, thorough status updates.`,
+    description: `Before web development, my professional experience was in corporate communications. It's made me a better developer who delivers clear project updates, and I can write content whenever I need to.`,
   },
   {
     id: 2,

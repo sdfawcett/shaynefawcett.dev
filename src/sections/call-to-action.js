@@ -1,6 +1,7 @@
 import React from 'react';
 import { keyframes } from '@emotion/core';
-import { Box, Container, Flex, Text, Heading, Image, Grid, Avatar } from 'theme-ui';
+import { Box, Container, Flex, Text, Heading, Grid, Avatar } from 'theme-ui';
+import { Link as ScrollLink } from 'react-scroll';
 import ReactIcon from 'assets/react.svg';
 import NextIcon from 'assets/nextdotjs.svg';
 import GatsbyIcon from 'assets/gatsby.svg';
@@ -30,9 +31,17 @@ const CallToAction = () => {
               With widespread quarantines during the pandemic, eCommerce has grown exponentially. That's why lately I've been delivering headless Shopify storefronts using React, GraphQL Storefront API, and a host of other API-driven technologies. 
             </Text>
             <Box sx={styles.linkButtonWrapper}>
-              <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
-                See More
-              </a>
+              <ScrollLink
+                to="work"
+                variant="buttons.primary"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className='buttonLink'
+              >
+                See Some Stores
+              </ScrollLink>
             </Box>
           </Box>
 
@@ -187,6 +196,7 @@ const styles = {
       transition: 'all 500ms ease',
       fontFamily: 'Raleway, sans-serif', 
       zIndex: '100',
+      cursor: 'pointer',
 
       '@media(max-width: 590px)': {
         mb: '.5rem',

@@ -138,6 +138,10 @@ const styles = {
     flexDirection: 'row',
     mt: '1rem',
 
+    '@media(min-width: 1200px)': {
+      justifyContent: 'flex-start',
+    },
+
     '@media(max-width: 590px)': {
       flexDirection: 'column',
     },

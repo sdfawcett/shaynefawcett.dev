@@ -60,7 +60,7 @@ const Banner = () => {
             <Heading as="h1">I'll turn your
               <span>
                 <Typed
-                  strings={["thoughts", "designs", "prototypes", "data", "ideas", "mockups", "content", "pitches"]}
+                  strings={["thoughts", "designs", "data", "ideas", "mockups", "content", "pitches"]}
                   typeSpeed={200}
                   backSpeed={50}
                   backDelay={1000}
@@ -220,7 +220,7 @@ const styles = {
       },
 
       span: {
-        ml: '.25rem',
+        ml: '.15rem',
       },
 
       '.typed, span': {
@@ -233,6 +233,10 @@ const styles = {
 
       '@media(max-width: 767px)': {
         textAlign: 'left',
+      },
+      '@media(max-width: 400px)': {
+        fontSize: '1.5rem',
+        mb: '50px',
       },
     },
     h2: {
@@ -252,10 +256,18 @@ const styles = {
         textAlign: 'left',
         width: '100%',
       },
+
+      '@media(max-width: 400px)': {
+        fontSize: '1.3rem',
+      },
     },
     p: {
       color: '#fffffe',
       fontSize: '1.25rem',
+
+      '@media(max-width: 400px)': {
+        fontSize: '1.2rem',
+      },
     },
   },
 
@@ -448,6 +460,10 @@ const styles = {
 
       '@media(max-width: 767px)': {
         mb: '0',
+      },
+
+      '@media(max-width: 400px)': {
+        fontSize: '1.3rem',
       },
     },
 
