@@ -12,6 +12,7 @@ import { FaReact } from 'react-icons/fa';
 import { FaShopify } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
 import { SiGraphql } from 'react-icons/si';
+import { SiTailwindcss } from 'react-icons/si';
 
 const FAQ_ONE_DATA = {
   sectionImage: image,
@@ -54,7 +55,9 @@ const FAQ_ONE_DATA = {
               <SiGraphql />
             </span>
             
-
+            <span className='tw'>
+              <SiTailwindcss />
+            </span>
           </div>
           <div>
             <p className='accordionIconText'>
@@ -69,7 +72,7 @@ const FAQ_ONE_DATA = {
       title: 'Project Details and Scope',
       contents: (
         <div>
-          <p>This store is deployed to Vercel, includes custom controls for adjusting/displaying product options and variants, has a responsive mini-cart that uses the React Context API, queries the Shopify Storefront API using GraphQL, and uses SWR to track and display real-time inventory data from Shopify.</p>
+          <p>This store is deployed to Vercel, includes custom controls for adjusting/displaying product options and variants, has a responsive mini-cart that uses the React Context API, queries the Shopify Storefront API using GraphQL, features an on-demand theme switcher with "Day Mode" and "Zen Mode", and uses SWR to track and display real-time inventory data from Shopify.</p>
         </div>
       ),
     },
@@ -188,6 +191,10 @@ const styles = {
     },
     '.gq': {
       color: '#E10098',
+      pr: '1rem',
+    },
+    '.tw': {
+      color: '#06B6D4',
       pr: '1rem',
     },
   },

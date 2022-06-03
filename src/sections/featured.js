@@ -15,6 +15,10 @@ import { FaReact } from 'react-icons/fa';
 import { FaShopify } from 'react-icons/fa';
 import { SiJavascript } from 'react-icons/si';
 import { SiGraphql } from 'react-icons/si';
+import { SiStyledComponents } from 'react-icons/si';
+import { AiFillHtml5 } from 'react-icons/ai';
+import { IoLogoCss3 } from 'react-icons/io';
+import { SiSass } from 'react-icons/si';
 
 const Featured = () => {
   const [tab, setTab] = useState({
@@ -89,13 +93,17 @@ const Featured = () => {
                   <span className='gq'>
                     <SiGraphql />
                   </span>
+
+                  <span className='sc'>
+                    <SiStyledComponents />
+                  </span>
                 </Box>
 
-                <Box as='p' sx={styles.projectText}>Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for fetching data.</Box>
+                <Box as='p' sx={styles.projectText}>Uses Shopify for inventory management, Gatsby and React for rendering, Styled Components for styling, and GraphQL for fetching data.</Box>
 
                 <Heading sx={styles.projectHeader} as='h3'>Project Details and Scope</Heading>
 
-                <Box as='p' sx={styles.projectText}>Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for fetching data.</Box>
+                <Box as='p' sx={styles.projectText}>This store is deployed to Netlify, watches for Shopify inventory changes and dynamically rebuilds when data is updated, includes a dynamic search component allowing users to search products and filter results, has a responsive mini-cart with controls for adjusting cart quantities, and has a dynamic product page image gallery that updates in sync with the product variant selector. </Box>
 
                 <Box sx={styles.linkButtonWrapper}>
                   <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
@@ -117,32 +125,30 @@ const Featured = () => {
                 <Heading sx={styles.projectHeader} as='h3'>Technology Overview</Heading>
 
                 <Box sx={styles.icons}>
-                  <span className='gatsby'>
-                    <GrGatsbyjs />
+
+                  <span className='html'>
+                    <AiFillHtml5 />
                   </span>
 
-                  <span className='react'>
-                    <FaReact />
+                  <span className='css'>
+                    <IoLogoCss3 />
                   </span>
 
-                  <span className='shopify'>
-                    <FaShopify />
+                  <span className='sass'>
+                    <SiSass />
                   </span>
 
                   <span className='js'>
                     <SiJavascript />
                   </span>
 
-                  <span className='gq'>
-                    <SiGraphql />
-                  </span>
                 </Box>
 
-                <Box as='p' sx={styles.projectText}>Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for fetching data.</Box>
+                <Box as='p' sx={styles.projectText}>Built for speed, simplicity, and semantics with HTML, CSS, and vanilla JavaScript. Uses Sass for CSS tooling.</Box>
 
                 <Heading sx={styles.projectHeader} as='h3'>Project Details and Scope</Heading>
 
-                <Box as='p' sx={styles.projectText}>Uses Shopify for inventory management, Next.js and React for rendering, Tailwind CSS for styling, and GraphQL for fetching data.</Box>
+                <Box as='p' sx={styles.projectText}>This site includes several videos and uses <a href='https://github.com/paulirish/lite-youtube-embed' className='buttonLink' target='_blank' rel='noopener noreferrer'>Lite YouTube Embed</a> from Paul Irish. The site renders on-page video elements &#126;224 times faster than normal YouTube embeds. Site also features a scroll-enabled progress bar component and an attractive dark theme.</Box>
 
                 <Box sx={styles.linkButtonWrapper}>
 
@@ -322,6 +328,10 @@ const styles = {
   projectText: {
     color: '#fffffe',
     mb: '2rem',
+
+    a: {
+      color: '#fffffe',
+    },
   },
   icons: {
     display: 'flex',
@@ -369,6 +379,22 @@ const styles = {
     },
     '.gq': {
       color: '#E10098',
+      pr: '1rem',
+    },
+    '.sc': {
+      color: '#DB7093',
+      pr: '1rem',
+    },
+    '.html': {
+      color: '#E34F26',
+      pr: '1rem',
+    },
+    '.css': {
+      color: '#1572B6',
+      pr: '1rem',
+    },
+    '.sass': {
+      color: '#CC6699',
       pr: '1rem',
     },
   },
