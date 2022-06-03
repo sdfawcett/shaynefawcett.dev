@@ -69,7 +69,7 @@ export default function UltimateFeatures() {
       <Container>
       <BlockTitle
           title="How I Can Benefit Your Web Project"
-          text="Don't settle for just a website or app. Invest in an online experience."
+          text="A seasoned developer from a communications background with UX chops."
         />
         <Box sx={styles.grid}>
           

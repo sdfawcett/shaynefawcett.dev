@@ -1,77 +1,59 @@
 import React from 'react';
 import { Box, Container, Flex, Text, Heading } from 'theme-ui';
-import { Link } from 'components/link';
 import BlockTitle from 'components/block-title';
 import Accordion from 'components/accordion/accordion';
 
 const accordionData = [
   {
-    isExpanded: false,
-    title: 'How much does it cost to be a credit card merchant?',
-    contents: (
-      <div>
-        For our recent trip to S.A. I booked several accommodation thru SA
-        Places. I just wanted to tell you that everything worked out perfectly
-        with all the bookings and also your booking was very quick and
-        professional. I hope I have the opportunity to re-visit South Africa
-        soon, I will then make my bookings with your company again. I will also
-        recommend
-      </div>
-    ),
-  },
-  {
     isExpanded: true,
-    title: 'How can I open a merchant account?',
+    title: 'What tech stack did you use to build this site?',
     contents: (
       <div>
-        For our recent trip to S.A. I booked several accommodation thru SA
-        Places. I just wanted to tell you that everything worked out perfectly
-        with all the bookings and also your booking was very quick and
-        professional. I hope I have the opportunity to re-visit South Africa
-        soon, I will then make my bookings with your company again. I will also
-        recommend
+        <p>This site uses Vercel for serverless functions and hosting, Next.js and React for rendering, Emotion for CSS, and Framer Motion and CSS for animations. Checkout out the <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>Github repo</a> for more info.</p>
+
+        <p>There are so many options for building websites nowadays, but in my personal opinion I like the balance between speed, developer experience, and static/dynamic rendering that Next.js offers. It allows you to get started on your project much faster than cobbling together dozens of plugins to get your environment set up.</p>
+
+        <p>In terms of CSS and React, I tend to go for a solution like Emotion. Although I like the familiar syntax of Styled Components, I prefer the scoping and naming conventions of Emotion.</p>
+
+        <p>Message me any time to find out more. I love to talk about web technologies!</p>
       </div>
     ),
   },
   {
     isExpanded: false,
-    title: 'How long does the application take?',
+    title: 'What is so good about Shopify?',
     contents: (
       <div>
-        For our recent trip to S.A. I booked several accommodation thru SA
-        Places. I just wanted to tell you that everything worked out perfectly
-        with all the bookings and also your booking was very quick and
-        professional. I hope I have the opportunity to re-visit South Africa
-        soon, I will then make my bookings with your company again. I will also
-        recommend
+        <p>The pandemic pushed many more businesses online, and I think the Shopify platform has the most momentum, name recognition, and long-term potential. It’s an accessible, robust eCommerce platform that offers a lot of features out-of-the-box. </p>
+
+        <p>Shopify also offers the best inventory management experience for users, while the Storefront API offers a great developer experience.</p>
+
+        <p>Shopify's React-based framework called Hydrogen is poised to be an eCommerce game-changer too. There's a lot to like.</p>
+
       </div>
     ),
   },
   {
     isExpanded: false,
-    title: 'Can I make payment outside of Hong Kong?',
+    title: 'What tools and techniques do you use to handle projects?',
     contents: (
       <div>
-        For our recent trip to S.A. I booked several accommodation thru SA
-        Places. I just wanted to tell you that everything worked out perfectly
-        with all the bookings and also your booking was very quick and
-        professional. I hope I have the opportunity to re-visit South Africa
-        soon, I will then make my bookings with your company again. I will also
-        recommend
+        <p>I'm a big believer in asynchronous communication when it comes to projects. That's why I like to record video walkthroughs to keep projects moving along. I typically send clients project update videos, which they can watch at their convenience. Then they can comment on the video using timestamps.</p>
+
+        <p>Trello is also a great tool for asynchronous project communication. Everything related to the project is in one place and you can comment on any aspect of the project at any time. </p>
       </div>
     ),
   },
   {
     isExpanded: false,
-    title: 'How do I get the payment complete?',
+    title: 'Do you build only React and eCommerce websites?',
     contents: (
       <div>
-        For our recent trip to S.A. I booked several accommodation thru SA
-        Places. I just wanted to tell you that everything worked out perfectly
-        with all the bookings and also your booking was very quick and
-        professional. I hope I have the opportunity to re-visit South Africa
-        soon, I will then make my bookings with your company again. I will also
-        recommend
+        <p>I like to work on all kinds of web projects!</p>
+
+        <p>In the past I've built plenty of sites in static HTML/CSS/JavaScript and on platforms like WordPress. I try not to confine myself to just one or two solutions. I think each project has an ideal tech stack, and I try to get as close to that ideal solution as possible.</p>
+
+        <p>During the pandemic I realized how much eCommerce was growing, and I saw how quickly Shopify was increasing their market share. That was the rationale behind my recent decision to focus on eCommerce storefronts.</p>
       </div>
     ),
   },
@@ -83,7 +65,7 @@ const FAQ = () => {
       <Container>
         <BlockTitle
           title="More Info About Me"
-          text="Answers to questions you may be asking"
+          text="I have answers."
         />
         <Flex sx={styles.flex}>
           <Box sx={styles.faqWrapper}>
