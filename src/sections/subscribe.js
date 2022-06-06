@@ -1,8 +1,7 @@
 import React from 'react';
-import { Button, Input, Box, Container, Heading, Text, Textarea } from 'theme-ui';
+import { Box, Container, Heading, Text } from 'theme-ui';
 import { keyframes } from '@emotion/core';
-import { AiFillPhone } from "react-icons/ai";
-import { GrMail } from 'react-icons/gr';
+import ContactForm from 'components/contact-form';
 
 const Subscribe = () => {
   return (
@@ -12,51 +11,7 @@ const Subscribe = () => {
         <Text as="p">
           Let's talk about your next project.
         </Text>
-        <Box as="form" sx={styles.form}>
-          <Box as="label" htmlFor="contactName" variant="styles.srOnly">
-            First Name
-          </Box>
-          <Input
-            placeholder="Enter your first name"
-            type="text"
-            id="contactName"
-            sx={styles.input}
-          />
-
-          <Box as="label" htmlFor="contactEmail" variant="styles.srOnly">
-            Email
-          </Box>
-          <Input
-            placeholder="Enter your email address"
-            type="email"
-            id="contactEmail"
-            sx={styles.input}
-          />
-
-          <Box as="label" htmlFor="contactMessage" variant="styles.srOnly">
-            Your message
-          </Box>
-          <Textarea
-            id="contactMessage"
-            sx={styles.textarea}
-            placeholder="Your message here"
-          >
-
-          </Textarea>
-
-          <Button type="submit" sx={styles.button}>
-            <div className='icon'><GrMail /></div>
-            <div className='withIcon'>Send Email</div>
-          </Button>
-
-          <Box as='div' sx={styles.orDivider}><span>OR</span></Box>
-
-          <a href='https://calendly.com/mindfulwebpartnership/15min' className='buttonLink' target='_blank' rel='noopener noreferrer'>   
-            <div className='icon'><AiFillPhone /></div>
-            <div className='withIcon'>Schedule A Call</div>
-          </a>
-
-        </Box>
+        <ContactForm />
       </Container>
     </Box>
   );
