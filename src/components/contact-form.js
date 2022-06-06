@@ -57,14 +57,17 @@ const ContactForm = () => {
             errors={state.errors}
          />
 
-          <Button type="submit" disabled={state.submitting} sx={styles.button}>
+          <button
+            type="submit"
+            disabled={state.submitting}
+            className='buttonLink'>
             <div className='icon'><GrMail /></div>
             <div className='withIcon'>Send Email</div>
-          </Button>
+          </button>
 
           <Box as='div' sx={styles.orDivider}><span>OR</span></Box>
 
-          <a href='https://calendly.com/mindfulwebpartnership/15min' className='buttonLink' target='_blank' rel='noopener noreferrer'>   
+          <a href='https://calendly.com/mindfulwebpartnership/15min' className='buttonLinkSchedule' target='_blank' rel='noopener noreferrer'>   
             <div className='icon'><AiFillPhone /></div>
             <div className='withIcon'>Schedule A Call</div>
           </a>
@@ -92,14 +95,17 @@ const ContactForm = () => {
         alignItems: 'center',
         flexDirection: 'row',
         fontFamily: 'Raleway',
+        fontSize: '1rem',
         width: '100%',
         textDecoration: 'none',
         backgroundColor: '#fffffe',
         border: '1px solid #020718',
         color: '#232946',
-        padding: '.5rem',
+        padding: '1rem',
         borderRadius: '4px',
         fontWeight: '700',
+        transition: '500ms',
+        cursor: 'pointer',
   
         '.withIcon': {
           paddingLeft: '.5rem',
@@ -107,16 +113,45 @@ const ContactForm = () => {
         '.icon': {
           paddingTop: '.3rem',
         },
+
+        '&:hover': {
+          transform: 'translateY(-0.45rem)',
+        },
+      },
+      '.buttonLinkSchedule': {
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        flexDirection: 'row',
+        fontFamily: 'Raleway',
+        fontSize: '1rem',
+        width: '100%',
+        textDecoration: 'none',
+        backgroundColor: '#fffffe',
+        border: '1px solid #020718',
+        color: '#232946',
+        padding: '.75rem',
+        borderRadius: '4px',
+        fontWeight: '700',
+        transition: '500ms',
+        cursor: 'pointer',
+  
+        '.withIcon': {
+          paddingLeft: '.5rem',
+        },
+        '.icon': {
+          paddingTop: '.3rem',
+        },
+
+        '&:hover': {
+          transform: 'translateY(-0.45rem)',
+        },
       },
   
       a: {
         textDecoration: 'none',
         width: '100%',
-        transition: '500ms',
   
-        '&:hover': {
-          transform: 'translateY(-0.45rem)',
-        },
       },
     },
     input: {
