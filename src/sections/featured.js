@@ -106,12 +106,12 @@ const Featured = () => {
                 <Box as='p' sx={styles.projectText}>This store is deployed to Netlify, watches for Shopify inventory changes and dynamically rebuilds when data is updated, includes a dynamic search component allowing users to search products and filter results, has a responsive mini-cart with controls for adjusting cart quantities, and has a dynamic product page image gallery that updates in sync with the product variant selector. </Box>
 
                 <Box sx={styles.linkButtonWrapper}>
-                  <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://epic-kare-f19545.netlify.app/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
                       <span className='icon'><BiLinkExternal /></span>
                       <div className='withIcon'>Live Demo</div>
                   </a>
 
-                  <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://github.com/sdfawcett/gatsby-x-shopify' className='buttonLink' target='_blank' rel='noopener noreferrer'>
                       <span className='icon'><VscGithub /></span>
                       <div className='withIcon'>Github Repo</div>
                   </a>
@@ -148,16 +148,16 @@ const Featured = () => {
 
                 <Heading sx={styles.projectHeader} as='h3'>Project Details and Scope</Heading>
 
-                <Box as='p' sx={styles.projectText}>This site includes several videos and uses <a href='https://github.com/paulirish/lite-youtube-embed' className='buttonLink' target='_blank' rel='noopener noreferrer'>Lite YouTube Embed</a> from Paul Irish. The site renders on-page video elements &#126;224 times faster than normal YouTube embeds. Site also features a scroll-enabled progress bar component and an attractive dark theme.</Box>
+                <Box as='p' sx={styles.projectText}>This site includes several videos and uses <a href='https://github.com/paulirish/lite-youtube-embed' className='buttonLink' target='_blank' rel='noopener noreferrer'>Lite YouTube Embed</a> from <a href='https://www.paulirish.com/' className='buttonLink' target='_blank' rel='noopener noreferrer'>Paul Irish</a>. The site renders on-page video elements &#126;224 times faster than normal YouTube embeds. Site also features a scroll-enabled progress bar component and an attractive dark theme.</Box>
 
                 <Box sx={styles.linkButtonWrapper}>
 
-                  <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://mindfulwebpartnership.com/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
                     <span className='icon'><BiLinkExternal /></span>
                     <div className='withIcon'>Live Site</div>
                   </a>
 
-                  <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://github.com/sdfawcett/mindfulwebpartnership' className='buttonLink' target='_blank' rel='noopener noreferrer'>
                     <span className='icon'><VscGithub /></span>
                     <div className='withIcon'>Github Repo</div>
                   </a>

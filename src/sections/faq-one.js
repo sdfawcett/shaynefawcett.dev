@@ -119,12 +119,12 @@ const FaqOne = () => {
               </Box>
 
               <Box sx={styles.linkButtonWrapper}>
-                <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                <a href='https://next-x-shopify-g5u4tj5y2-sdfawcett.vercel.app/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
                   <span className='icon'><FaExternalLinkSquareAlt /></span>
                   <div className='withIcon'>Live Demo</div>
                 </a>
 
-                <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                <a href='https://github.com/sdfawcett/next-x-shopify' className='buttonLink' target='_blank' rel='noopener noreferrer'>
                   <span className='icon'><FaGithub /></span>
                   <div className='withIcon'>Github Repo</div>
                 </a>
@@ -134,12 +134,12 @@ const FaqOne = () => {
 
             <Box sx={styles.desktop}>
               <Box sx={styles.linkButtonWrapper}>
-                <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                <a href='https://next-x-shopify-g5u4tj5y2-sdfawcett.vercel.app/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
                   <span className='icon'><FaExternalLinkSquareAlt /></span>
                   <div className='withIcon'>Live Demo</div>
                 </a>
 
-                <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+                <a href='https://github.com/sdfawcett/next-x-shopify' className='buttonLink' target='_blank' rel='noopener noreferrer'>
                   <span className='icon'><FaGithub /></span>
                   <div className='withIcon'>Github Repo</div>
                 </a>

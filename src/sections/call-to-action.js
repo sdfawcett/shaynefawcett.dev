@@ -28,7 +28,7 @@ const CallToAction = () => {
             I have more than a decade of experience building complex interfaces and putting together solutions for all kinds of users. I can help you identify the most appropriate technologies for your project based on your business needs and goals.
             </Text>
             <Text as="p">
-              With widespread quarantines during the pandemic, eCommerce has grown exponentially. That's why lately I've been delivering headless Shopify storefronts using React, GraphQL Storefront API, and a host of other API-driven technologies. 
+              With widespread quarantines during the pandemic, eCommerce has grown exponentially. That's why lately I've been delivering headless <a href='https://developers.google.com/search/docs/advanced/experience/page-experience' target='_blank' rel='noopener noreferrer'>Shopify</a> storefronts using <a href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>React</a>, <a href='https://shopify.dev/api/storefront' target='_blank' rel='noopener noreferrer'>GraphQL Storefront API</a>, and a host of other API-driven technologies. 
             </Text>
             <Box sx={styles.linkButtonWrapper}>
               <ScrollLink

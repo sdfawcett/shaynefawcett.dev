@@ -230,10 +230,6 @@ const styles = {
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
       },
-
-      '@media(max-width: 767px)': {
-        textAlign: 'left',
-      },
       '@media(max-width: 400px)': {
         fontSize: '1.5rem',
         mb: '50px',

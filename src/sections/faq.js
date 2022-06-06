@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Container, Flex, Text, Heading } from 'theme-ui';
+import { Link as ScrollLink } from 'react-scroll';
 import BlockTitle from 'components/block-title';
 import Accordion from 'components/accordion/accordion';
 
@@ -9,11 +10,11 @@ const accordionData = [
     title: 'What tech stack did you use to build this site?',
     contents: (
       <div>
-        <p>This site uses Vercel for serverless functions and hosting, Next.js and React for rendering, Emotion for CSS, and Framer Motion and CSS for animations. Checkout out the <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>Github repo</a> for more info.</p>
+        <p>This site uses Vercel for serverless functions and hosting, Next.js and React for rendering, <a href='https://emotion.sh/docs/introduction' className='buttonLink' target='_blank' rel='noopener noreferrer'>Emotion</a> for CSS, and <a href='https://www.framer.com/motion/' className='buttonLink' target='_blank' rel='noopener noreferrer'>Framer Motion</a> and CSS for animations. Checkout out the <a href='https://github.com/sdfawcett/shaynefawcett.dev' className='buttonLink' target='_blank' rel='noopener noreferrer'>Github repo</a> for more info.</p>
 
         <p>There are so many options for building websites nowadays, but in my personal opinion I like the balance between speed, developer experience, and static/dynamic rendering that Next.js offers. It allows you to get started on your project much faster than cobbling together dozens of plugins to get your environment set up.</p>
 
-        <p>In terms of CSS-in-JS, I tend to go for a solution like Emotion. Although I like the familiar syntax of Styled Components, I prefer the scoping and naming conventions of Emotion.</p>
+        <p>In terms of CSS-in-JS, I tend to go for a solution like Emotion mostly because I prefer its scoping and naming conventions compared to how other libraries handle CSS-in-JS.</p>
 
         <p>Message me any time to find out more. I love to talk about web technologies!</p>
       </div>
@@ -28,7 +29,7 @@ const accordionData = [
 
         <p>Shopify also offers the best inventory management experience for users, while the Storefront API offers a great developer experience.</p>
 
-        <p>Shopify's React-based framework called Hydrogen is poised to be an eCommerce game-changer too. There's a lot to like.</p>
+        <p>Shopify's React-based framework called <a href='https://hydrogen.shopify.dev/' className='buttonLink' target='_blank' rel='noopener noreferrer'>Hydrogen</a> is poised to be an eCommerce game-changer too. There's a lot to like.</p>
 
       </div>
     ),
@@ -40,7 +41,7 @@ const accordionData = [
       <div>
         <p>I'm a big believer in asynchronous communication when it comes to projects. That's why I like to record video walkthroughs to keep projects moving along. I typically send clients project update videos, which they can watch at their convenience. Then they can comment on the video using timestamps.</p>
 
-        <p>Trello is also a great tool for asynchronous project communication. Everything related to the project is in one place and you can comment on any aspect of the project at any time. </p>
+        <p><a href='https://trello.com/en-US' className='buttonLink' target='_blank' rel='noopener noreferrer'>Trello</a> is also a great tool for asynchronous project communication. Everything related to the project is in one place and you can comment on any aspect of the project at any time. </p>
       </div>
     ),
   },
@@ -79,9 +80,17 @@ const FAQ = () => {
               Let's talk. Feel free to contact me anytime.
             </Text>
             <Box sx={styles.linkButtonWrapper}>
-              <a href='https://reactjs.org/' className='buttonLink' target='_blank' rel='noopener noreferrer'>
+              <ScrollLink
+                to="contact"
+                variant="buttons.primary"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className='buttonLink'
+              >
                 Ask a question
-              </a>
+              </ScrollLink>
             </Box>
           </Box>
         </Flex>
@@ -161,6 +170,7 @@ const styles = {
       transition: 'all 500ms ease',
       fontFamily: 'Raleway, sans-serif', 
       zIndex: '100',
+      cursor: 'pointer',
 
       '@media(max-width: 590px)': {
         mb: '.5rem',

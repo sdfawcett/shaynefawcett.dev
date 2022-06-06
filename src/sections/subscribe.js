@@ -51,10 +51,10 @@ const Subscribe = () => {
 
           <Box as='div' sx={styles.orDivider}><span>OR</span></Box>
 
-          <Button sx={styles.button}>
+          <a href='https://calendly.com/mindfulwebpartnership/15min' className='buttonLink' target='_blank' rel='noopener noreferrer'>   
             <div className='icon'><AiFillPhone /></div>
             <div className='withIcon'>Schedule A Call</div>
-          </Button>
+          </a>
 
         </Box>
       </Container>
@@ -104,6 +104,7 @@ const styles = {
       mx: ['auto', null, null, '0'],
       mt: ['10px', null, null, '0'],
     },
+
   },
   form: {
     width: ['100%'],
@@ -112,6 +113,39 @@ const styles = {
     display: ['flex'],
     flexDirection: 'column',
     mt: ['30px', null, null, null, '60px'],
+    
+    '.buttonLink': {
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+      flexDirection: 'row',
+      fontFamily: 'Raleway',
+      width: '100%',
+      textDecoration: 'none',
+      backgroundColor: '#fffffe',
+      border: '1px solid #020718',
+      color: '#232946',
+      padding: '.5rem',
+      borderRadius: '4px',
+      fontWeight: '700',
+
+      '.withIcon': {
+        paddingLeft: '.5rem',
+      },
+      '.icon': {
+        paddingTop: '.3rem',
+      },
+    },
+
+    a: {
+      textDecoration: 'none',
+      width: '100%',
+      transition: '500ms',
+
+      '&:hover': {
+        transform: 'translateY(-0.45rem)',
+      },
+    },
   },
   input: {
     width: ['100%'],
@@ -178,6 +212,7 @@ const styles = {
     alignItems: 'center',
     flexDirection: 'row',
     fontFamily: 'Raleway', 
+    width: '100%',
 
     '.withIcon': {
       paddingLeft: '.5rem',
@@ -186,7 +221,6 @@ const styles = {
       paddingTop: '.3rem',
     },
   },
-
 
   orDivider: {
     display: 'flex',
