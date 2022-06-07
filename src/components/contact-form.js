@@ -8,7 +8,7 @@ import { GrMail } from 'react-icons/gr';
 const ContactForm = () => {
    const [state, handleSubmit] = useForm("mqknjawr");
    if (state.succeeded) {
-       return <p>Thanks for joining!</p>;
+       return <p>✅Got it! Thanks for reaching out! I'll get to your question ASAP.</p>;
    }
    return (
 
