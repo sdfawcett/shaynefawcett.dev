@@ -10,7 +10,7 @@ export default function SEO({
   const metaData = [
     {
       name: `description`,
-      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Building web and eCommerce experiences using Shopify, React, WordPress, and other API-driven technologies.⚡`,
+      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Web experiences built with Shopify, React, WordPress, and more.⚡`,
     },
     {
       property: `og:title`,
