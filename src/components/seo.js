@@ -26,7 +26,7 @@ export default function SEO({
     },
     {
       property: `og:image`,
-      content: `https://www.shaynefawcett.dev/open-graph-site-thumbnail.png`,
+      content: `https://www.shaynefawcett.dev/open-graph-site-thumbnail.webp`,
     },
     {
       property: `og:url`,
