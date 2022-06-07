@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import { Box, Button, Input, Textarea } from 'theme-ui';
 
@@ -12,7 +12,7 @@ const ContactForm = () => {
    }
    return (
 
-      <Box as="form" sx={styles.form} onSubmit={handleSubmit}>
+      <Box as="form" sx={styles.form} onSubmit={handleSubmit} method="POST" action='https://formspree.io/f/mqknjawr'>
           <Box as="label" htmlFor="name" variant="styles.srOnly">
             First Name
           </Box>
@@ -21,6 +21,7 @@ const ContactForm = () => {
             type="text"
             id="name"
             name="name"
+            required
             sx={styles.input}
           />
 
@@ -32,6 +33,7 @@ const ContactForm = () => {
             type="email"
             id="email"
             name="email"
+            required
             sx={styles.input}
           />
 
@@ -47,6 +49,7 @@ const ContactForm = () => {
           <Textarea
             id="message"
             name="message"
+            required
             sx={styles.textarea}
             placeholder="Your message here"
           >
@@ -56,6 +59,10 @@ const ContactForm = () => {
             field="message"
             errors={state.errors}
          />
+
+         {
+           console.log(state.errors)
+         }
 
           <button
             type="submit"

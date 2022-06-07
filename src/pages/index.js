@@ -5,6 +5,7 @@ import theme from 'theme';
 import SEO from 'components/seo';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import { FormspreeProvider } from '@formspree/react';
 import Layout from 'components/layout';
 import Banner from 'sections/banner';
 import FaqOne from 'sections/faq-one';
