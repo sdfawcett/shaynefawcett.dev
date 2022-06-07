@@ -25,12 +25,16 @@ export default function SEO({
       content: `website`,
     },
     {
+      property: `og:url`,
+      content: `https://www.shaynefawcett.dev/`,
+    },
+    {
       name: `twitter:card`,
       content: `summary`,
     },
     {
       name: `twitter:creator`,
-      content: `author with backticks`,
+      content: `Shayne Fawcett`,
     },
     {
       name: `twitter:title`,
