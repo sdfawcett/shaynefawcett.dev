@@ -2,15 +2,15 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'sf.dev descriptions',
+  description = 'With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!',
   author = 'Shayne Fawcett',
   meta,
-  title = 'sf.dev title',
+  title = 'THE TITLE',
 }) {
   const metaData = [
     {
       name: `description`,
-      content: description,
+      content: `description with backticks`,
     },
     {
       property: `og:title`,

@@ -60,10 +60,6 @@ const ContactForm = () => {
             errors={state.errors}
          />
 
-         {
-           console.log(state.errors)
-         }
-
           <button
             type="submit"
             disabled={state.submitting}
@@ -74,7 +70,7 @@ const ContactForm = () => {
 
           <Box as='div' sx={styles.orDivider}><span>OR</span></Box>
 
-          <a href='https://calendly.com/mindfulwebpartnership/15min' className='buttonLinkSchedule' target='_blank' rel='noopener noreferrer'>   
+          <a href='https://calendly.com/mindfulwebpartnership/15min' className='buttonLinkSchedule' target='_blank' rel='noopener'>   
             <div className='icon'><AiFillPhone /></div>
             <div className='withIcon'>Schedule A Call</div>
           </a>

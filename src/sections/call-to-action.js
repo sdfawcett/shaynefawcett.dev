@@ -28,7 +28,7 @@ const CallToAction = () => {
             I have more than a decade of experience building complex interfaces and putting together solutions for all kinds of users. I can help you identify the most appropriate technologies for your project based on your business needs and goals.
             </Text>
             <Text as="p">
-              With widespread quarantines during the pandemic, eCommerce has grown exponentially. That's why lately I've been delivering headless <a href='https://developers.google.com/search/docs/advanced/experience/page-experience' target='_blank' rel='noopener noreferrer'>Shopify</a> storefronts using <a href='https://reactjs.org/' target='_blank' rel='noopener noreferrer'>React</a>, <a href='https://shopify.dev/api/storefront' target='_blank' rel='noopener noreferrer'>GraphQL Storefront API</a>, and a host of other API-driven technologies. 
+              With widespread quarantines during the pandemic, eCommerce has grown exponentially. That's why lately I've been delivering headless <a href='https://developers.google.com/search/docs/advanced/experience/page-experience' target='_blank' rel='noopener'>Shopify</a> storefronts using <a href='https://reactjs.org/' target='_blank' rel='noopener'>React</a>, <a href='https://shopify.dev/api/storefront' target='_blank' rel='noopener'>GraphQL Storefront API</a>, and a host of other API-driven technologies. 
             </Text>
             <Box sx={styles.linkButtonWrapper}>
               <ScrollLink
@@ -50,31 +50,31 @@ const CallToAction = () => {
               <Container sx={styles.container}>      
                 <Grid sx={styles.gridContainer} columns={[3, '1fr 1fr 1fr']}>
 
-                  <a href='https://reactjs.org/' aria-label='react icon link' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://reactjs.org/' aria-label='react icon link' target='_blank' rel='noopener'>
                     <Avatar data-aos="flip-left" alt='react' src={ReactIcon} />
                   </a>
-                  <a href='https://nextjs.org/' aria-label='next.js icon link' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://nextjs.org/' aria-label='next.js icon link' target='_blank' rel='noopener'>
                     <Avatar data-aos-delay='300' data-aos="flip-left" alt='next.js' src={NextIcon} />
                   </a>
-                  <a href='https://www.gatsbyjs.com/' aria-label='gatsby icon link' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://www.gatsbyjs.com/' aria-label='gatsby icon link' target='_blank' rel='noopener'>
                     <Avatar data-aos-delay='500' data-aos="flip-left" alt='gatsby.js' src={GatsbyIcon} />
                   </a>
-                  <a href='https://wordpress.org/download/' aria-label='wordpress icon link' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://wordpress.org/download/' aria-label='wordpress icon link' target='_blank' rel='noopener'>
                     <Avatar data-aos-delay='700' data-aos="flip-left" alt='wordpress' src={WordPressIcon} />
                   </a>
-                  <a href='https://www.shopify.com/' aria-label='shopify icon link' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://www.shopify.com/' aria-label='shopify icon link' target='_blank' rel='noopener'>
                     <Avatar data-aos-delay='900' data-aos="flip-left" alt='shopify' src={ShopifyIcon} />
                   </a>
-                  <a href='https://graphql.org/' aria-label='graphql icon link' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://graphql.org/' aria-label='graphql icon link' target='_blank' rel='noopener'>
                     <Avatar data-aos-delay='1100' data-aos="flip-left" alt='graph ql' src={GraphqlIcon} />
                   </a>
-                  <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' aria-label='html icon link' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' aria-label='html icon link' target='_blank' rel='noopener'>
                     <Avatar data-aos-delay='1300' data-aos="flip-left" alt='html' src={HtmlIcon} />
                   </a>
-                  <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' aria-label='css icon link' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://developer.mozilla.org/en-US/docs/Web/CSS' aria-label='css icon link' target='_blank' rel='noopener'>
                     <Avatar data-aos-delay='1500' data-aos="flip-left" alt='css' src={CssIcon} />
                   </a>
-                  <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' aria-label='javascript icon link' target='_blank' rel='noopener noreferrer'>
+                  <a href='https://developer.mozilla.org/en-US/docs/Web/JavaScript' aria-label='javascript icon link' target='_blank' rel='noopener'>
                     <Avatar data-aos-delay='1700' data-aos="flip-left" alt='javascript' src={JavaScriptIcon} />
                   </a>
   

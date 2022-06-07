@@ -10,7 +10,7 @@ const accordionData = [
     title: 'What tech stack did you use to build this site?',
     contents: (
       <div>
-        <p>This site uses Vercel for serverless functions and hosting, Next.js and React for rendering, <a href='https://emotion.sh/docs/introduction' className='buttonLink' target='_blank' rel='noopener noreferrer'>Emotion</a> for CSS, and <a href='https://www.framer.com/motion/' className='buttonLink' target='_blank' rel='noopener noreferrer'>Framer Motion</a> and CSS for animations. Checkout out the <a href='https://github.com/sdfawcett/shaynefawcett.dev' className='buttonLink' target='_blank' rel='noopener noreferrer'>Github repo</a> for more info.</p>
+        <p>This site uses Vercel for serverless functions and hosting, Next.js and React for rendering, <a href='https://emotion.sh/docs/introduction' className='buttonLink' target='_blank' rel='noopener'>Emotion</a> for CSS, and <a href='https://www.framer.com/motion/' className='buttonLink' target='_blank' rel='noopener'>Framer Motion</a> and CSS for animations. Checkout out the <a href='https://github.com/sdfawcett/shaynefawcett.dev' className='buttonLink' target='_blank' rel='noopener'>Github repo</a> for more info.</p>
 
         <p>There are so many options for building websites nowadays, but in my personal opinion I like the balance between speed, developer experience, and static/dynamic rendering that Next.js offers. It allows you to get started on your project much faster than cobbling together dozens of plugins to get your environment set up.</p>
 
@@ -29,7 +29,7 @@ const accordionData = [
 
         <p>Shopify also offers the best inventory management experience for users, while the Storefront API offers a great developer experience.</p>
 
-        <p>Shopify's React-based framework called <a href='https://hydrogen.shopify.dev/' className='buttonLink' target='_blank' rel='noopener noreferrer'>Hydrogen</a> is poised to be an eCommerce game-changer too. There's a lot to like.</p>
+        <p>Shopify's React-based framework called <a href='https://hydrogen.shopify.dev/' className='buttonLink' target='_blank' rel='noopener'>Hydrogen</a> is poised to be an eCommerce game-changer too. There's a lot to like.</p>
 
       </div>
     ),
@@ -41,7 +41,7 @@ const accordionData = [
       <div>
         <p>I'm a big believer in asynchronous communication when it comes to projects. That's why I like to record video walkthroughs to keep projects moving along. I typically send clients project update videos, which they can watch at their convenience. Then they can comment on the video using timestamps.</p>
 
-        <p><a href='https://trello.com/en-US' className='buttonLink' target='_blank' rel='noopener noreferrer'>Trello</a> is also a great tool for asynchronous project communication. Everything related to the project is in one place and you can comment on any aspect of the project at any time. </p>
+        <p><a href='https://trello.com/en-US' className='buttonLink' target='_blank' rel='noopener'>Trello</a> is also a great tool for asynchronous project communication. Everything related to the project is in one place and you can comment on any aspect of the project at any time. </p>
       </div>
     ),
   },

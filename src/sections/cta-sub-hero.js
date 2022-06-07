@@ -15,7 +15,7 @@ const CallToActionSubHero = () => {
               Page Experience and Core Web Vitals
             </Heading>
             <Text as="p">
-              <a href='https://developers.google.com/search/docs/advanced/experience/page-experience' target='_blank' rel='noopener noreferrer'>Page Experience</a> is a set of signals from Google that measure how users perceive the experience of interacting with your website. <a href='https://web.dev/vitals/#core-web-vitals' target='_blank' rel='noopener noreferrer'>Core Web Vitals</a> are a set of real-world, user-centered metrics that quantify key aspects of your website's user experience.
+              <a href='https://developers.google.com/search/docs/advanced/experience/page-experience' target='_blank' rel='noopener'>Page Experience</a> is a set of signals from Google that measure how users perceive the experience of interacting with your website. <a href='https://web.dev/vitals/#core-web-vitals' target='_blank' rel='noopener'>Core Web Vitals</a> are a set of real-world, user-centered metrics that quantify key aspects of your website's user experience.
             </Text>
             <Text as="p">
               Google uses Web Vitals and Page Experience to decide which links to display first in search results. I'll help ensure your Page Experience and Web Vitals are fully optimized so your content reaches the most people. 
@@ -29,7 +29,7 @@ const CallToActionSubHero = () => {
          <Box sx={styles.images}>   
             <Box data-aos="flip-up">
               <Image src={coreWebVitals} layout='fill' alt="shaynefawcett.dev real google core web vitals report" />
-              <p>This website's <a href='https://pagespeed.web.dev/' target='_blank' rel='noopener noreferrer'>PageSpeed Insights</a> report with the maximum score of 100</p>
+              <p>This website's <a href='https://pagespeed.web.dev/' target='_blank' rel='noopener'>PageSpeed Insights</a> report with the maximum score of 100</p>
             </Box>
          </Box>
 

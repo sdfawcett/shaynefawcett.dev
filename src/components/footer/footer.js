@@ -21,14 +21,14 @@ export default function Footer() {
           <Box
             sx={styles.footerText}
           >
-            Copyright &copy; {new Date().getFullYear()} Shayne Fawcett and <a className='footerLink' href='https://www.mindfulwebpartnership.com' target='_blank' rel='noopener noreferrer'>Mindful Web Partnership, LLC</a>. All rights reserved. <br />Designed, coded, and written by Shayne Fawcett. ✌️<br />
+            Copyright &copy; {new Date().getFullYear()} Shayne Fawcett and <a className='footerLink' href='https://www.mindfulwebpartnership.com' target='_blank' rel='noopener'>Mindful Web Partnership, LLC</a>. All rights reserved. <br />Designed, coded, and written by Shayne Fawcett. ✌️<br />
             <Box
               sx={styles.iconContainer}
             >
-              <a aria-label='shayne fawcett linkedin profile' href='https://www.linkedin.com/in/shaynefawcett/' target='_blank' rel='noopener noreferrer'>
+              <a aria-label='shayne fawcett linkedin profile' href='https://www.linkedin.com/in/shaynefawcett/' target='_blank' rel='noopener'>
               <FaLinkedin />
               </a>
-              <a aria-label='shayne fawcett github profile' href='https://github.com/sdfawcett' target='_blank' rel='noopener noreferrer'>
+              <a aria-label='shayne fawcett github profile' href='https://github.com/sdfawcett' target='_blank' rel='noopener'>
               <FaGithub />
               </a>
             </Box>
