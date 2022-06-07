@@ -14,7 +14,7 @@ export default function SEO({
     },
     {
       property: `og:title`,
-      content: `Web Development, eCommerce Consulting &#38; UX Optimization | Shayne Fawcett`,
+      content: `Web Development, eCommerce &#38; UX Optimization | Shayne Fawcett`,
     },
     {
       property: `og:description`,
