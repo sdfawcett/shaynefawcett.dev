@@ -25,7 +25,7 @@ export default function IndexPage() {
     <ThemeProvider theme={theme}>
       <StickyProvider>
         <Layout>
-          <SEO title="Web Development, eCommerce Consulting &#38; UX Optimization | Shayne Fawcett" />
+          <SEO title="Web Development, eCommerce &#38; UX Optimization" />
           <Banner />
           <CallToAction />
           <UltimateFeatures />

@@ -2,23 +2,27 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = '⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Web and eCommerce using Shopify, React, WordPress, and more.⚡',
+  description = '⚡Shayne Fawcett: a seasoned web developer who builds websites and eCommerce storefronts using Shopify, React, WordPress, and more.⚡',
   author = 'Shayne Fawcett',
   meta,
-  title = 'Web Development, eCommerce &#38; UX Optimization | Shayne Fawcett',
+  title = 'Web Development, eCommerce &#38; UX Optimization',
 }) {
   const metaData = [
     {
       name: `description`,
-      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Web and eCommerce using Shopify, React, WordPress, and more.⚡`,
+      content: `⚡Shayne Fawcett: a seasoned web developer who builds websites and eCommerce storefronts using Shopify, React, WordPress, and more.⚡`,
+    },
+    {
+      name: `keywords`,
+      content: `web, web design, web development, ecommerce, ecommerce website, shopify, react, next.js, wordpress, ux, user experience, headless, graphql`,
     },
     {
       property: `og:title`,
-      content: `Web Development, eCommerce &#38; UX Optimization | Shayne Fawcett`,
+      content: `Web Development, eCommerce &#38; UX Optimization`,
     },
     {
       property: `og:description`,
-      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Web and eCommerce using Shopify, React, WordPress, and more.⚡`,
+      content: `⚡Shayne Fawcett: a seasoned web developer who builds websites and eCommerce storefronts using Shopify, React, WordPress, and more.⚡`,
     },
     {
       property: `og:type`,
@@ -42,18 +46,18 @@ export default function SEO({
     },
     {
       name: `twitter:title`,
-      content: `Web Development, eCommerce &#38; UX Optimization | Shayne Fawcett`,
+      content: `Web Development, eCommerce &#38; UX Optimization`,
     },
     {
       name: `twitter:description`,
-      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Web and eCommerce using Shopify, React, WordPress, and more.⚡`,
+      content: `⚡Shayne Fawcett: a seasoned web developer who builds websites and eCommerce storefronts using Shopify, React, WordPress, and more.⚡`,
     },
   ].concat(meta);
   return (
     <Head>
       <title>{title}</title>
-      {metaData.map(({ name, content, property }, i) => (
-        <meta key={i} property={property} name={name} content={content} />
+      {metaData.map(({ name, content, property, keywords }, i) => (
+        <meta key={i} property={property} name={name} keywords={keywords} content={content} />
       ))}
     </Head>
   );
