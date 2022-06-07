@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = '⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Building web and eCommerce experiences using Shopify, React, WordPress, and other API-driven technologies.⚡',
+  description = '⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Web and eCommerce using Shopify, React, WordPress, and more.⚡',
   author = 'Shayne Fawcett',
   meta,
   title = 'Web Development, eCommerce Consulting &#38; UX Optimization | Shayne Fawcett',
@@ -18,7 +18,7 @@ export default function SEO({
     },
     {
       property: `og:description`,
-      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Building web and eCommerce experiences using Shopify, React, WordPress, and other API-driven technologies.⚡`,
+      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Web and eCommerce using Shopify, React, WordPress, and more.⚡`,
     },
     {
       property: `og:type`,
@@ -46,7 +46,7 @@ export default function SEO({
     },
     {
       name: `twitter:description`,
-      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Building web and eCommerce experiences using Shopify, React, WordPress, and other API-driven technologies.⚡`,
+      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Web and eCommerce using Shopify, React, WordPress, and more.⚡`,
     },
   ].concat(meta);
   return (
