@@ -2,23 +2,23 @@ import React from 'react';
 import Head from 'next/head';
 
 export default function SEO({
-  description = 'With Meta Tags you can edit and experiment with your content then preview how your webpage will look on Google, Facebook, Twitter and more!',
+  description = '⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Building web and eCommerce experiences using Shopify, React, WordPress, and other API-driven technologies.⚡',
   author = 'Shayne Fawcett',
   meta,
-  title = 'THE TITLE',
+  title = 'Web Development, eCommerce Consulting &#38; UX Optimization | Shayne Fawcett',
 }) {
   const metaData = [
     {
       name: `description`,
-      content: `description with backticks`,
+      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Building web and eCommerce experiences using Shopify, React, WordPress, and other API-driven technologies.⚡`,
     },
     {
       property: `og:title`,
-      content: title,
+      content: `Web Development, eCommerce Consulting &#38; UX Optimization | Shayne Fawcett`,
     },
     {
       property: `og:description`,
-      content: description,
+      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Building web and eCommerce experiences using Shopify, React, WordPress, and other API-driven technologies.⚡`,
     },
     {
       property: `og:type`,
@@ -30,22 +30,22 @@ export default function SEO({
     },
     {
       name: `twitter:creator`,
-      content: author,
+      content: `author with backticks`,
     },
     {
       name: `twitter:title`,
-      content: title,
+      content: `Web Development, eCommerce Consulting &#38; UX Optimization | Shayne Fawcett`,
     },
     {
       name: `twitter:description`,
-      content: description,
+      content: `⚡Shayne Fawcett: a seasoned web developer from a communications background with UX chops. Building web and eCommerce experiences using Shopify, React, WordPress, and other API-driven technologies.⚡`,
     },
   ].concat(meta);
   return (
     <Head>
       <title>{title}</title>
-      {metaData.map(({ name, content }, i) => (
-        <meta key={i} name={name} content={content} />
+      {metaData.map(({ name, content, property }, i) => (
+        <meta key={i} property={property} name={name} content={content} />
       ))}
     </Head>
   );
