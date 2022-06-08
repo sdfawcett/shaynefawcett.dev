@@ -1,15 +1,16 @@
 import { useEffect } from 'react';
 import Router from 'next/router';
-import { initGA, logPageView } from 'analytics';
+import * as ga from '../../lib/analytics';
 import 'rc-drawer/assets/index.css';
 import 'typeface-raleway';
 import '@fontsource/space-grotesk';
 
 export default function CustomApp({ Component, pageProps }) {
   useEffect(() => {
-    initGA();
-    logPageView();
-    Router.events.on('routeChangeComplete', logPageView);
+    const handleRouteChange = (url) => {
+      ga.pageview(url)
+    }
+    Router.events.on('routeChangeComplete', handleRouteChange);
   }, []);
 
   return <Component {...pageProps} />;
