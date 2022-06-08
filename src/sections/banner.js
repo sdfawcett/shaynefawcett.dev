@@ -220,7 +220,7 @@ const styles = {
       mb: ['65px', null, null, '65px'],
     },
     h2: {
-      fontSize: '1.5rem',
+      fontSize: '1.95rem',
       fontFamily: 'Raleway, sans-serif',
       lineHeight: 1.25,
       color: '#fffffe',
@@ -245,6 +245,9 @@ const styles = {
         backgroundSize: '200% auto',
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
+      },
+      '@media(max-width: 767px)': {
+        fontSize: '1.5rem',
       },
       '@media(max-width: 400px)': {
         fontSize: '1.5rem',
