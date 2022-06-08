@@ -5,7 +5,7 @@ export default function SEO({
   description = '⚡Shayne Fawcett: a seasoned web developer who builds websites and eCommerce storefronts using Shopify, React, WordPress, and more.⚡',
   author = 'Shayne Fawcett',
   meta,
-  title = 'Web Development, eCommerce &#38; UX Optimization',
+  title = 'Websites, eCommerce &#38; User Experience | Shayne Fawcett',
 }) {
   const metaData = [
     {
@@ -18,7 +18,7 @@ export default function SEO({
     },
     {
       property: `og:title`,
-      content: `Web Development, eCommerce &#38; UX Optimization`,
+      content: `Websites, eCommerce &#38; User Experience | Shayne Fawcett`,
     },
     {
       property: `og:description`,
@@ -46,7 +46,7 @@ export default function SEO({
     },
     {
       name: `twitter:title`,
-      content: `Web Development, eCommerce &#38; UX Optimization`,
+      content: `Websites, eCommerce &#38; User Experience | Shayne Fawcett`,
     },
     {
       name: `twitter:description`,

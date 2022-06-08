@@ -57,7 +57,11 @@ const Banner = () => {
             }}
           >
             <Text as="p">Hi, I'm Shayne ✌</Text>
-            <Heading as="h1">I'll turn your
+
+            <Heading as="h1">Web Developer, eCommerce Consultant &#38; User Experience Professional
+            </Heading>
+
+            <Heading as="h2">I'll turn your
               <span>
                 <Typed
                   strings={["thoughts", "designs", "data", "ideas", "mockups", "content", "pitches"]}
@@ -88,9 +92,9 @@ const Banner = () => {
                         transition={{ duration: 3, delay: i * 1.5, type: 'spring', stiffness: 500 }}
                       >
                         <span className='icon'><RiShieldCheckFill /></span>
-                        <h2 className='withIcon'>
+                        <h3 className='withIcon'>
                           {point.years}
-                        </h2>
+                        </h3>
                         <p>{point.description}</p>
                       </motion.div>
                     
@@ -214,6 +218,18 @@ const styles = {
       mx: 'auto',
       mt: '30px',
       mb: ['65px', null, null, '65px'],
+    },
+    h2: {
+      fontSize: '1.5rem',
+      fontFamily: 'Raleway, sans-serif',
+      lineHeight: 1.25,
+      color: '#fffffe',
+      fontWeight: 600,
+      width: '100%',
+      maxWidth: ['100%', null, null, '800px', '800px', '800px', '900px'],
+      mx: 'auto',
+      mt: '30px',
+      mb: ['65px', null, null, '65px'],
 
       '.typed, .typed-cursor': {
         WebkitTextFillColor: '#fffffe',
@@ -235,7 +251,7 @@ const styles = {
         mb: '50px',
       },
     },
-    h2: {
+    h3: {
       
       fontSize: '1.5rem',
       lineHeight: 1.25,
