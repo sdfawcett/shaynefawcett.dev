@@ -189,20 +189,10 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
-"@fontsource/red-hat-display@^4.5.9":
-  version "4.5.9"
-  resolved "https://registry.yarnpkg.com/@fontsource/red-hat-display/-/red-hat-display-4.5.9.tgz#1337eb360813d9b4c605a382e099c569910735bd"
-  integrity sha512-AbZUzPCOUpkyo/R7H2P39yQORJNPj/8s6JrYJVac7fANN/pHMoQ1JgeyCCCoRZeNKHlAfrMx1pQ+SDiS425t+A==
-
 "@fontsource/space-grotesk@^4.5.8":
   version "4.5.8"
   resolved "https://registry.yarnpkg.com/@fontsource/space-grotesk/-/space-grotesk-4.5.8.tgz#4f3c6a80bbd556e73338eadf2f19f214657580b5"
   integrity sha512-2+eifFW1dlCGo/zq4xNFNEMrQEfX6rdC39S5t+jSrpRhBnocgr1m8QNBnaM6gok9c+78bUurJ3BjDgC/+WpIAQ==
-
-"@fontsource/yeseva-one@^4.5.8":
-  version "4.5.8"
-  resolved "https://registry.yarnpkg.com/@fontsource/yeseva-one/-/yeseva-one-4.5.8.tgz#f1fa9c6734256147ccb0f820a452596c4396d47f"
-  integrity sha512-HIvY3aXsOFNx8IqKpwl1qM2yEOIwbefkTUNXCHLIgzkD6ggw6FHmHPnNtK4KkV7bmO2H5l0iUz5ReyXyGeH64A==
 
 "@formspree/core@^2.6.3":
   version "2.6.4"
@@ -5053,16 +5043,6 @@ typed.js@^2.0.6:
   version "2.0.12"
   resolved "https://registry.yarnpkg.com/typed.js/-/typed.js-2.0.12.tgz#246aff074c8e18d32ec27acb7be15094ac0bc0e1"
   integrity sha512-lyACZh1cu+vpfYY3DG/bvsGLXXbdoDDpWxmqta10IQUdMXisMXOEyl+jos+YT9uBbzK4QaKYBjT3R0kTJO0Slw==
-
-typeface-dm-sans@^1.1.3:
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/typeface-dm-sans/-/typeface-dm-sans-1.1.13.tgz#6bc7135b79653698bd67888279cf9ffa12b6e337"
-  integrity sha512-3hxynNc9Lk+WErlzSZ/7P7/37b98cOTIlfqT1fIcsDnlzifsd1a2vGNbhK9bDGt6Gxs+1z39UwAJjdvuLLXZmg==
-
-typeface-nunito-sans@^1.1.13:
-  version "1.1.13"
-  resolved "https://registry.yarnpkg.com/typeface-nunito-sans/-/typeface-nunito-sans-1.1.13.tgz#c27635416b7c8df7414a5ce087ed9e3a9f16772d"
-  integrity sha512-wpRTCwHdHcq4CKBBGzTDNAjck64O1prpCjKiUJyMFHn+E9k1aELJuSVeMBsgScdR1b5u7HFP1Px7Gi2OUMu33w==
 
 typeface-raleway@^1.1.13:
   version "1.1.13"
