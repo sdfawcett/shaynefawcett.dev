@@ -29,6 +29,31 @@ const Banner = () => {
     { id: 3, years: "5+ Years", description: "of professional experience in digital marketing and communication" },
   ];
 
+  const headings = [
+    { id: 1, body: (
+      <h1>Web Developer, eCommerce Consultant &#38; User Experience Professional</h1>
+      ) 
+    },
+
+    { id: 2, body: (
+      <h2>I'll turn your
+      <span>
+        <Typed
+          strings={["thoughts", "designs", "data", "ideas", "mockups", "content", "pitches"]}
+          typeSpeed={200}
+          backSpeed={50}
+          backDelay={1000}
+          loop
+          smartBackspace
+          cursorChar={'_'}
+          className='typed'
+        /><br />
+      </span>
+      into user-centric, interactive web experiences.</h2>
+      ) 
+    },
+  ];
+
   return (
     <Box as="section" id="banner" sx={styles.banner}>
       <Box sx={styles.bg}>
@@ -36,60 +61,45 @@ const Banner = () => {
 
           <Image sx={styles.logo} src={gravatarImage} alt="Shayne Fawcett gravatar image" />
 
-          <motion.div 
-          initial="hidden" 
-          animate="visible"
-          transition={{
-            delay: 0, type: 'tween'
-          }} 
-          variants={{
-              hidden: {
-                scale: .1,
-                opacity: 0
-              },
-              visible: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: .2
-                }
-              },
-            }}
-          >
             <Text as="p">Hi, I'm Shayne ✌</Text>
 
-            <Heading as="h1">Web Developer, eCommerce Consultant &#38; User Experience Professional
-            </Heading>
-
-            <Heading as="h2">I'll turn your
-              <span>
-                <Typed
-                  strings={["thoughts", "designs", "data", "ideas", "mockups", "content", "pitches"]}
-                  typeSpeed={200}
-                  backSpeed={50}
-                  backDelay={1000}
-                  loop
-                  smartBackspace
-                  cursorChar={'_'}
-                  className='typed'
-                /><br />
-              </span>
-              into user-centric, interactive web experiences.
-            </Heading>
+            {
+            headings.map((heading, i) => (
+                  <motion.div
+                    key={heading.id}
+                    initial={{ y: 2050 }}
+                    animate={{ y: 0 }}
+                    className='heading'
+                    transition={{ duration: 3, delay: i * 1.5, type: 'spring', stiffness: 500 }}
+                  >
+                    <Box>{heading.body}</Box>
+                  </motion.div>     
+              ))
+              }
             
-
-          </motion.div>
-
                 <Box sx={styles.points}>
 
                   {points.map((point, i) => (
-                    
+
                       <motion.div
                         key={point.id}
-                        initial={{ x: 2050 }}
-                        animate={{ x: 0 }}
+                        initial="hidden" 
+                        animate="visible"
                         className='point'
-                        transition={{ duration: 3, delay: i * 1.5, type: 'spring', stiffness: 500 }}
+                        transition={{ duration: 6, delay: i * 1.5, type: 'tween', }}
+                        variants={{
+                          hidden: {
+                            scale: .1,
+                            opacity: 0
+                          },
+                          visible: {
+                            scale: 1,
+                            opacity: 1,
+                            transition: {
+                              delay: 3
+                            }
+                          },
+                        }}
                       >
                         <span className='icon'><RiShieldCheckFill /></span>
                         <h3 className='withIcon'>
@@ -220,7 +230,7 @@ const styles = {
       mb: ['65px', null, null, '65px'],
     },
     h2: {
-      fontSize: '1.95rem',
+      fontSize: '2.2rem',
       fontFamily: 'Raleway, sans-serif',
       lineHeight: 1.25,
       color: '#fffffe',
@@ -246,8 +256,14 @@ const styles = {
         WebkitBackgroundClip: 'text',
         WebkitTextFillColor: 'transparent',
       },
+      '@media(max-width: 1199px)': {
+        fontSize: '1.95rem',
+      },
       '@media(max-width: 767px)': {
         fontSize: '1.5rem',
+      },
+      '@media(max-width: 600px)': {
+        textAlign: 'left',
       },
       '@media(max-width: 400px)': {
         fontSize: '1.5rem',
