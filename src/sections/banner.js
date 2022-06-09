@@ -220,6 +220,7 @@ const styles = {
     pt: ['110px', null, null, null, '110px'],
     h1: {
       fontSize: ['28px', null, null, '32px', '38px', '48px', '64px'],
+      fontFamily: 'Space Grotesk, sans-serif',
       lineHeight: 1.25,
       color: '#fffffe',
       fontWeight: 800,
