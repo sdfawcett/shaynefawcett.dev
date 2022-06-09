@@ -7,7 +7,7 @@ import cowtownTeesCard from 'assets/cowtown-tees-card.webp';
 import mindfulCard from 'assets/mindful-card.webp';
 import dotPattern from 'assets/dot-pattern.svg';
 import cowtownTeesLogo from '../assets/cowtown-logo-light-cropped.svg';
-import mindfulLogo from '../assets/bb-globe-only.svg';
+import mindfulLogo from '../assets/mwp-logo.png';
 import { VscGithub } from 'react-icons/vsc';
 import { BiLinkExternal } from 'react-icons/bi';
 import { GrGatsbyjs } from 'react-icons/gr';

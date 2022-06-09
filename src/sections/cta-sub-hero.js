@@ -29,7 +29,7 @@ const CallToActionSubHero = () => {
          <Box sx={styles.images}>   
             <Box data-aos="flip-up">
               <Image src={coreWebVitals} layout='fill' alt="shaynefawcett.dev real google core web vitals report" />
-              <p>This website's <a href='https://pagespeed.web.dev/' target='_blank' rel='noopener'>PageSpeed Insights</a> report with the maximum score of 100</p>
+              <p>This website's <a href='https://pagespeed.web.dev/report?url=https%3A%2F%2Fwww.shaynefawcett.dev%2F&form_factor=desktop' target='_blank' rel='noopener'>PageSpeed Insights</a> report with the maximum score of 100</p>
             </Box>
          </Box>
 
