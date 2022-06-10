@@ -124,7 +124,7 @@ const FaqOne = () => {
                   <div className='withIcon'>Live Demo</div>
                 </a>
 
-                <a href='https://github.com/sdfawcett/next-x-shopify' className='buttonLink' target='_blank' rel='noopener'>
+                <a href='https://github.com/sdfawcett/next-x-shopify/tree/main/modern-ecommerce-2' className='buttonLink' target='_blank' rel='noopener'>
                   <span className='icon'><FaGithub /></span>
                   <div className='withIcon'>Github Repo</div>
                 </a>
@@ -139,7 +139,7 @@ const FaqOne = () => {
                   <div className='withIcon'>Live Demo</div>
                 </a>
 
-                <a href='https://github.com/sdfawcett/next-x-shopify' className='buttonLink' target='_blank' rel='noopener'>
+                <a href='https://github.com/sdfawcett/next-x-shopify/tree/main/modern-ecommerce-2' className='buttonLink' target='_blank' rel='noopener'>
                   <span className='icon'><FaGithub /></span>
                   <div className='withIcon'>Github Repo</div>
                 </a>
