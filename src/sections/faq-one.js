@@ -1,10 +1,10 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { keyframes } from '@emotion/core';
-import Image from 'components/image';
+import Image from 'next/image'
 import { Box, Container, Flex, Heading, Text, Button } from 'theme-ui';
 import Accordion from 'components/accordion/accordion';
-import image from 'assets/bb-static-tablet_ipad_silver_landscape.png';
+import tablet from '../../public/bb-static-tablet_ipad_silver_landscape.png';
 import { FaGithub } from 'react-icons/fa';
 import { FaExternalLinkSquareAlt } from 'react-icons/fa';
 import { SiNextDotJs } from 'react-icons/si';
@@ -15,7 +15,7 @@ import { SiGraphql } from 'react-icons/si';
 import { SiTailwindcss } from 'react-icons/si';
 
 const FAQ_ONE_DATA = {
-  sectionImage: image,
+  sectionImage: tablet,
   tagline: 'Featured Project',
   title: 'Bomb Botanicals eCommerce Store Redesign and Rebuild',
   text:
@@ -91,9 +91,9 @@ const FaqOne = () => {
       <Box sx={myElementIsVisible ? styles.animateInFromLeft : ''} >
         <Box sx={styles.sectionImage}>
           <Image
-            src={sectionImage}
-            width="1000"
-            height="600"
+            src={tablet}
+            width={1000}
+            height={600}
             alt="bomb botanicals website mockup"
           />
         </Box>
@@ -111,9 +111,9 @@ const FaqOne = () => {
             <Box ref={mySecRef} sx={styles.sectionAccordionImage}>
               <Box sx={mySecElementIsVisible ? styles.animateInFromLeft : ''} >
                 <Image
-                  src={sectionImage}
-                  width="100%"
-                  height="auto"
+                  src={tablet}
+                  width={1000}
+                  height={600}
                   alt="bomb botanicals website mockup"
                 />
               </Box>
