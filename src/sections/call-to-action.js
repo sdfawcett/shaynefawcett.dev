@@ -40,7 +40,7 @@ const CallToAction = () => {
                 duration={500}
                 className='buttonLink'
               >
-                See Some Stores
+                See Some Storefronts
               </ScrollLink>
             </Box>
           </Box>
