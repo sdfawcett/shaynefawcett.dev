@@ -31,11 +31,8 @@ const Banner = () => {
 
   const headings = [
     { id: 1, body: (
+      <>
       <h1>Web Developer, eCommerce Consultant &#38; User Experience Professional</h1>
-      ) 
-    },
-
-    { id: 2, body: (
       <h2>I'll turn your
       <span>
         <Typed
@@ -50,8 +47,9 @@ const Banner = () => {
         /><br />
       </span>
       into user-centric, interactive web experiences.</h2>
+      </>
       ) 
-    },
+    }
   ];
 
   return (
@@ -86,7 +84,7 @@ const Banner = () => {
                         initial="hidden" 
                         animate="visible"
                         className='point'
-                        transition={{ duration: 6, delay: i * 1.5, type: 'tween', }}
+                        transition={{ duration: 3, type: 'tween', }}
                         variants={{
                           hidden: {
                             scale: .1,

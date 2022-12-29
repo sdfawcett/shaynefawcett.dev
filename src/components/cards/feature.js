@@ -57,7 +57,7 @@ const styles = {
     p: {
       fontSize: [1, null, null, null, 2],
       lineHeight: 1.88,
-      color: 'headingSecondary',
+      color: '#02073E',
     },
     a: {
       mt: [2, null, null, null, 6],

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { keyframes } from '@emotion/core';
-import Image from 'next/image'
+import Image from 'next/legacy/image'
 import { Box, Container, Flex, Heading, Text, Button } from 'theme-ui';
 import Accordion from 'components/accordion/accordion';
 import tablet from '../../public/bb-static-tablet_ipad_silver_landscape.png';
@@ -93,7 +93,8 @@ const FaqOne = () => {
           <Image
             src={tablet}
             width={1000}
-            height={600}
+            height={700}
+            
             alt="bomb botanicals website mockup"
           />
         </Box>
@@ -113,7 +114,8 @@ const FaqOne = () => {
                 <Image
                   src={tablet}
                   width={1000}
-                  height={600}
+                  height={700}
+                  
                   alt="bomb botanicals website mockup"
                 />
               </Box>
@@ -241,15 +243,18 @@ const styles = {
     '@media(min-width: 1240px)': {
       left: '-25%',
     },
-    '@media(min-width: 1440px)': {
-      left: '-17%',
+
+    '@media(min-width: 1500px)': {
+      left: '-15%',
     },
-    '@media(min-width: 1750px)': {
+
+    '@media(min-width: 1800px)': {
       left: '-10%',
     },
-    '@media(min-width: 1850px)': {
-      left: '-8%',
-    },
+
+    '@media(min-width: 2100px)': {
+      left: '0%',
+    }
   },
   sectionAccordionImage: {
     display: 'none',
