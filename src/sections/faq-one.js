@@ -385,7 +385,7 @@ const styles = {
       display: 'block',
     },
     p: {
-      color: '#0F2137',
+      color: '#02073E',
       fontSize: '16px',
       lineHeight: 2.19,
       maxWidth: ['100%', null, '400px', null, '100%'],
